@@ -3,7 +3,8 @@ import config from './config';
 import GameScene from './scenes/Game';
 
 new Phaser.Game(
-  Object.assign(config, {
+  {
+    ...config,
     scene: [GameScene],
-  }),
+  },
 );

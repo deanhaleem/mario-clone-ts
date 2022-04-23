@@ -17,7 +17,7 @@ module.exports = {
       files: ['**/*.ts', '**/*.tsx'],
       extends: ['airbnb-typescript/base'],
       parserOptions: {
-        project: './tsconfig.json',
+        project: './mario-clone-ts/tsconfig.json',
       },
     },
   ],
