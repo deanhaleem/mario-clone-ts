@@ -14,4 +14,10 @@ export interface ISprite extends IUpdatable {
 
 export class Sprite {
   private readonly sourceFrames: Record<string, Phaser.Math.Vector4>;
+
+  private texture: Phaser.Textures.Texture;
+
+  public Sprite(scene: Phaser.Scene, textureName: string) {
+    this.texture = scene.textures.get(textureName);
+  }
 }
