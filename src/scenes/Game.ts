@@ -18,7 +18,7 @@ export default class Demo extends Phaser.Scene {
       duration: 1500,
       ease: 'Sine.inOut',
       yoyo: true,
-      repeat: -1
+      repeat: -1,
     });
   }
 }
