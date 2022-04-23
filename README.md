@@ -1,27 +1,89 @@
-<h1 align="center">
-  <br>
-  <a href="https://github.com/geocine/phaser3-rollup-typescript#readme"><img src="https://i.imgur.com/6lcIxDs.png" alt="header" width="600"/></a>
-  <br>
-  Phaser 3 TypeScript Starter
-  <br>
-</h1>
+<div id="top"></div>
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <!-- <a href="https://github.com/deanhaleem/mario-clone-js">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a> -->
 
-This is a [Phaser 3](https://github.com/photonstorm/phaser) starter with [TypeScript](https://www.typescriptlang.org/), [Rollup](https://rollupjs.org) with ⚡️ lightning fast HMR through [Vite](https://vitejs.dev/).
+<h3 align="center">Super Mario Bros Clone</h3>
 
-## Available Commands
+  <p align="center">
+    Clone of the original Super Mario Bros writting in JavaScript
+    <br />
+    <a href="https://github.com/deanhaleem/mario-clone-ts"><strong>Play it here »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/deanhaleem/mario-clone-ts">View Demo</a>
+    ·
+    <a href="https://github.com/deanhaleem/mario-clone-ts/issues">Request Feature</a>
+  </p>
+</div>
 
-| Command | Description |
-|---------|-------------|
-| `yarn install` | Install project dependencies |
-| `yarn dev` | Builds project and open web server, watching for changes |
-| `yarn build` | Builds code bundle with production settings  |
-| `yarn serve` | Run a web server to serve built code bundle |
 
-## Development
 
-After cloning the repo, run `yarn install` from your project directory. Then, you can start the local development
-server by running `yarn dev` and navigate to http://localhost:3000.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## Production
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-After running `yarn build`, the files you need for production will be on the `dist` folder. To test code on your `dist` folder, run `yarn serve` and navigate to http://localhost:5000
+A 2D Platformer clone of the original Super Mario Bros. Tried to clone as many features as possible.
+
+<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
+
+
+
+### Built With
+
+* [Phaser.js](https://phaser.io/)
+* [Typescript](https://www.typescriptlang.org/)
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+* Node/npm: https://nodejs.org/en/download/
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/deanhaleem/mario-clone-ts.git
+   ```
+2. Install NPM packages
+   ```sh
+   yarn install
+   ```
+3. Build & Serve
+   ```js
+   yarn dev
+   ```
+4. Navigate to localhost:3000 to start playing!
+
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [ ] Import assets
+- [ ] Create test level
+
+See the [open issues](https://github.com/deanhaleem/mario-clone-ts/issues) for a full list of proposed features (and known issues).
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Dean Haleem - [deanhaleem.com](https://deanhaleem.com/) - deanhaleem.10@gmail.com
