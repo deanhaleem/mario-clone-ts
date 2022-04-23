@@ -57,11 +57,11 @@ To get a local copy up and running follow these simple example steps.
    ```
 2. Install NPM packages
    ```sh
-   yarn install
+   npm install
    ```
 3. Build & Serve
    ```js
-   yarn dev
+   npm run dev
    ```
 4. Navigate to localhost:3000 to start playing!
 
