@@ -17,7 +17,3 @@ assignees: ''
 ### References
 <!-- list of references to help perform the TODOs -->
 - Reference
-
-### Acceptance Criteria
-<!-- these must be met for the story to be considered finished -->
-- [ ] Done
