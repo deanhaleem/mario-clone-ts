@@ -1,6 +1,6 @@
 <!-- Please title this PR with the following structure: -->
-<!-- (Story|Feat|Fix|Docs)(files changed)[Issue Number]: brief description of PR -- >
-<!-- Example: Story(audio)[#23]: updated game over sound -->
+<!-- (System)(files changed)[Issue Number]: brief description of PR -- >
+<!-- Example: Audio(sound fx)[#23]: updated game over sound -->
 
 ### Github Issue
 <!-- Issue number this PR addresses -->
