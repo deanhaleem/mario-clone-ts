@@ -1,525 +1,525 @@
 {
     "frames": [
         {
-            "fileName": "dead-mario",
+            "filename": "dead-mario",
             "frame": { "x": 183, "y": 34, "w": 14, "h": 14 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 14 },
             "sourceSize": { "w": 14, "h": 14 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-right-crouching-mario",
+            "filename": "big-right-crouching-mario",
             "frame": { "x": 182, "y": 11, "w": 16, "h": 22 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 22 },
             "sourceSize": { "w": 16, "h": 22 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-left-crouching-mario",
+            "filename": "big-left-crouching-mario",
             "frame": { "x": 696, "y": 11, "w": 16, "h": 22 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 22 },
             "sourceSize": { "w": 16, "h": 22 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-right-jumping-mario",
+            "filename": "big-right-jumping-mario",
             "frame": { "x": 165, "y": 1, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-left-jumping-mario",
+            "filename": "big-left-jumping-mario",
             "frame": { "x": 713, "y": 1, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-right-standing-mario",
+            "filename": "big-right-standing-mario",
             "frame": { "x": 80, "y": 1, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-left-standing-mario",
+            "filename": "big-left-standing-mario",
             "frame": { "x": 798, "y": 1, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-right-sliding-mario",
+            "filename": "big-right-sliding-mario",
             "frame": { "x": 148, "y": 1, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-left-sliding-mario",
+            "filename": "big-left-sliding-mario",
             "frame": { "x": 730, "y": 1, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-right-walking-mario-1",
+            "filename": "big-right-walking-mario-1",
             "frame": { "x": 97, "y": 3, "w": 16, "h": 30 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 30 },
             "sourceSize": { "w": 16, "h": 30 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-right-walking-mario-2",
+            "filename": "big-right-walking-mario-2",
             "frame": { "x": 115, "y": 2, "w": 14, "h": 31 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 31 },
             "sourceSize": { "w": 14, "h": 31 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-right-walking-mario-3",
+            "filename": "big-right-walking-mario-3",
             "frame": { "x": 131, "y": 1, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-left-walking-mario-1",
+            "filename": "big-left-walking-mario-1",
             "frame": { "x": 781, "y": 3, "w": 16, "h": 30 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 30 },
             "sourceSize": { "w": 16, "h": 30 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-left-walking-mario-2",
+            "filename": "big-left-walking-mario-2",
             "frame": { "x": 765, "y": 2, "w": 14, "h": 31 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 31 },
             "sourceSize": { "w": 14, "h": 31 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-left-walking-mario-3",
+            "filename": "big-left-walking-mario-3",
             "frame": { "x": 747, "y": 1, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-right-running-mario-1",
+            "filename": "big-right-running-mario-1",
             "frame": { "x": 97, "y": 3, "w": 16, "h": 30 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 30 },
             "sourceSize": { "w": 16, "h": 30 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-right-running-mario-2",
+            "filename": "big-right-running-mario-2",
             "frame": { "x": 115, "y": 2, "w": 14, "h": 31 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 31 },
             "sourceSize": { "w": 14, "h": 31 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-right-running-mario-3",
+            "filename": "big-right-running-mario-3",
             "frame": { "x": 131, "y": 1, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-left-running-mario-1",
+            "filename": "big-left-running-mario-1",
             "frame": { "x": 781, "y": 3, "w": 16, "h": 30 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 30 },
             "sourceSize": { "w": 16, "h": 30 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-left-running-mario-2",
+            "filename": "big-left-running-mario-2",
             "frame": { "x": 765, "y": 2, "w": 14, "h": 31 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 31 },
             "sourceSize": { "w": 14, "h": 31 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-left-running-mario-3",
+            "filename": "big-left-running-mario-3",
             "frame": { "x": 747, "y": 1, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-right-upgrading-mario-1",
+            "filename": "big-right-upgrading-mario-1",
             "frame": { "x": 335, "y": 9, "w": 16, "h": 24 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 24 },
             "sourceSize": { "w": 16, "h": 24 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-right-upgrading-mario-2",
+            "filename": "big-right-upgrading-mario-2",
             "frame": { "x": 82, "y": 34, "w": 12, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 16 },
             "sourceSize": { "w": 12, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-left-upgrading-mario-1",
+            "filename": "big-left-upgrading-mario-1",
             "frame": { "x": 543, "y": 9, "w": 16, "h": 24 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 24 },
             "sourceSize": { "w": 16, "h": 24 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-left-upgrading-mario-2",
+            "filename": "big-left-upgrading-mario-2",
             "frame": { "x": 800, "y": 34, "w": 12, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 16 },
             "sourceSize": { "w": 12, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-right-victory-mario",
+            "filename": "big-right-victory-mario",
             "frame": { "x": 218, "y": 3, "w": 14, "h": 27 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 27 },
             "sourceSize": { "w": 14, "h": 27 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "big-left-victory-mario",
+            "filename": "big-left-victory-mario",
             "frame": { "x": 662, "y": 3, "w": 14, "h": 27 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 27 },
             "sourceSize": { "w": 14, "h": 27 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-right-crouching-mario",
+            "filename": "fire-right-crouching-mario",
             "frame": { "x": 182, "y": 139, "w": 16, "h": 22 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 22 },
             "sourceSize": { "w": 16, "h": 22 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-left-crouching-mario",
+            "filename": "fire-left-crouching-mario",
             "frame": { "x": 696, "y": 139, "w": 16, "h": 22 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 22 },
             "sourceSize": { "w": 16, "h": 22 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-right-jumping-mario",
+            "filename": "fire-right-jumping-mario",
             "frame": { "x": 165, "y": 129, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-left-jumping-mario",
+            "filename": "fire-left-jumping-mario",
             "frame": { "x": 713, "y": 129, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-right-standing-mario",
+            "filename": "fire-right-standing-mario",
             "frame": { "x": 80, "y": 129, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-left-standing-mario",
+            "filename": "fire-left-standing-mario",
             "frame": { "x": 798, "y": 129, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-right-sliding-mario",
+            "filename": "fire-right-sliding-mario",
             "frame": { "x": 148, "y": 129, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-left-sliding-mario",
+            "filename": "fire-left-sliding-mario",
             "frame": { "x": 730, "y": 129, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-right-attacking-mario",
+            "filename": "fire-right-attacking-mario",
             "frame": { "x": 233, "y": 131, "w": 16, "h": 30 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 30 },
             "sourceSize": { "w": 16, "h": 30 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-left-attacking-mario",
+            "filename": "fire-left-attacking-mario",
             "frame": { "x": 526, "y": 129, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-right-walking-mario-1",
+            "filename": "fire-right-walking-mario-1",
             "frame": { "x": 97, "y": 131, "w": 16, "h": 30 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 30 },
             "sourceSize": { "w": 16, "h": 30 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-right-walking-mario-2",
+            "filename": "fire-right-walking-mario-2",
             "frame": { "x": 115, "y": 130, "w": 14, "h": 31 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 31 },
             "sourceSize": { "w": 14, "h": 31 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-right-walking-mario-3",
+            "filename": "fire-right-walking-mario-3",
             "frame": { "x": 131, "y": 129, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-left-walking-mario-1",
+            "filename": "fire-left-walking-mario-1",
             "frame": { "x": 781, "y": 131, "w": 16, "h": 30 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 30 },
             "sourceSize": { "w": 16, "h": 30 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-left-walking-mario-2",
+            "filename": "fire-left-walking-mario-2",
             "frame": { "x": 765, "y": 130, "w": 14, "h": 31 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 31 },
             "sourceSize": { "w": 14, "h": 31 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-left-walking-mario-3",
+            "filename": "fire-left-walking-mario-3",
             "frame": { "x": 747, "y": 129, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-right-running-mario-1",
+            "filename": "fire-right-running-mario-1",
             "frame": { "x": 97, "y": 131, "w": 16, "h": 30 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 30 },
             "sourceSize": { "w": 16, "h": 30 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-right-running-mario-2",
+            "filename": "fire-right-running-mario-2",
             "frame": { "x": 115, "y": 130, "w": 14, "h": 31 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 31 },
             "sourceSize": { "w": 14, "h": 31 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-right-running-mario-3",
+            "filename": "fire-right-running-mario-3",
             "frame": { "x": 131, "y": 129, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-left-running-mario-1",
+            "filename": "fire-left-running-mario-1",
             "frame": { "x": 781, "y": 131, "w": 16, "h": 30 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 30 },
             "sourceSize": { "w": 16, "h": 30 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-left-running-mario-2",
+            "filename": "fire-left-running-mario-2",
             "frame": { "x": 765, "y": 130, "w": 14, "h": 31 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 31 },
             "sourceSize": { "w": 14, "h": 31 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-left-running-mario-3",
+            "filename": "fire-left-running-mario-3",
             "frame": { "x": 747, "y": 129, "w": 16, "h": 32 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 32 },
             "sourceSize": { "w": 16, "h": 32 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-right-victory-mario",
+            "filename": "fire-right-victory-mario",
             "frame": { "x": 218, "y": 131, "w": 14, "h": 27 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 27 },
             "sourceSize": { "w": 14, "h": 27 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "fire-left-victory-mario",
+            "filename": "fire-left-victory-mario",
             "frame": { "x": 662, "y": 131, "w": 14, "h": 27 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 27 },
             "sourceSize": { "w": 14, "h": 27 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-right-jumping-mario",
+            "filename": "small-right-jumping-mario",
             "frame": { "x": 165, "y": 34, "w": 16, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
             "sourceSize": { "w": 16, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-left-jumping-mario",
+            "filename": "small-left-jumping-mario",
             "frame": { "x": 713, "y": 34, "w": 16, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
             "sourceSize": { "w": 16, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-right-standing-mario",
+            "filename": "small-right-standing-mario",
             "frame": { "x": 82, "y": 34, "w": 12, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 16 },
             "sourceSize": { "w": 12, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-left-standing-mario",
+            "filename": "small-left-standing-mario",
             "frame": { "x": 800, "y": 34, "w": 12, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 16 },
             "sourceSize": { "w": 12, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-right-sliding-mario",
+            "filename": "small-right-sliding-mario",
             "frame": { "x": 149, "y": 34, "w": 13, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 13, "h": 16 },
             "sourceSize": { "w": 13, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-left-sliding-mario",
+            "filename": "small-left-sliding-mario",
             "frame": { "x": 732, "y": 34, "w": 13, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 13, "h": 16 },
             "sourceSize": { "w": 13, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-right-walking-mario-1",
+            "filename": "small-right-walking-mario-1",
             "frame": { "x": 98, "y": 35, "w": 12, "h": 15 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 15 },
             "sourceSize": { "w": 12, "h": 15 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-right-walking-mario-2",
+            "filename": "small-right-walking-mario-2",
             "frame": { "x": 117, "y": 34, "w": 11, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 11, "h": 16 },
             "sourceSize": { "w": 11, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-right-walking-mario-3",
+            "filename": "small-right-walking-mario-3",
             "frame": { "x": 131, "y": 34, "w": 15, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 15, "h": 16 },
             "sourceSize": { "w": 15, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-left-walking-mario-1",
+            "filename": "small-left-walking-mario-1",
             "frame": { "x": 783, "y": 35, "w": 12, "h": 15 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 15 },
             "sourceSize": { "w": 12, "h": 15 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-left-walking-mario-2",
+            "filename": "small-left-walking-mario-2",
             "frame": { "x": 766, "y": 34, "w": 11, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 11, "h": 16 },
             "sourceSize": { "w": 11, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-left-walking-mario-3",
+            "filename": "small-left-walking-mario-3",
             "frame": { "x": 748, "y": 34, "w": 15, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 15, "h": 16 },
             "sourceSize": { "w": 15, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-right-running-mario-1",
+            "filename": "small-right-running-mario-1",
             "frame": { "x": 98, "y": 35, "w": 12, "h": 15 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 15 },
             "sourceSize": { "w": 12, "h": 15 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-right-running-mario-2",
+            "filename": "small-right-running-mario-2",
             "frame": { "x": 117, "y": 34, "w": 11, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 11, "h": 16 },
             "sourceSize": { "w": 11, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-right-running-mario-3",
+            "filename": "small-right-running-mario-3",
             "frame": { "x": 131, "y": 34, "w": 15, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 15, "h": 16 },
             "sourceSize": { "w": 15, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-left-running-mario-1",
+            "filename": "small-left-running-mario-1",
             "frame": { "x": 783, "y": 35, "w": 12, "h": 15 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 15 },
             "sourceSize": { "w": 12, "h": 15 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-left-running-mario-2",
+            "filename": "small-left-running-mario-2",
             "frame": { "x": 766, "y": 34, "w": 11, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 11, "h": 16 },
             "sourceSize": { "w": 11, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-left-running-mario-3",
+            "filename": "small-left-running-mario-3",
             "frame": { "x": 748, "y": 34, "w": 15, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 15, "h": 16 },
             "sourceSize": { "w": 15, "h": 16 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-right-downgrading-mario-1",
+            "filename": "small-right-downgrading-mario-1",
             "frame": { "x": 250, "y": 3, "w": 16, "h": 29 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 29 },
             "sourceSize": { "w": 16, "h": 29 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-right-downgrading-mario-2",
+            "filename": "small-right-downgrading-mario-2",
             "frame": { "x": 0, "y": 0, "w": 0, "h": 0 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 0, "h": 0 },
             "sourceSize": { "w": 0, "h": 0 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-left-downgrading-mario-1",
+            "filename": "small-left-downgrading-mario-1",
             "frame": { "x": 628, "y": 3, "w": 16, "h": 29 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 29 },
             "sourceSize": { "w": 16, "h": 29 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-left-downgrading-mario-2",
+            "filename": "small-left-downgrading-mario-2",
             "frame": { "x": 0, "y": 0, "w": 0, "h": 0 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 0, "h": 0 },
             "sourceSize": { "w": 0, "h": 0 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-right-victory-mario",
+            "filename": "small-right-victory-mario",
             "frame": { "x": 218, "y": 35, "w": 12, "h": 15 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 15 },
             "sourceSize": { "w": 12, "h": 15 },
             "pivot": { "x": 0.5, "y": 1 }
         },
         {
-            "fileName": "small-left-victory-mario",
+            "filename": "small-left-victory-mario",
             "frame": { "x": 664, "y": 35, "w": 12, "h": 15 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 15 },
             "sourceSize": { "w": 12, "h": 15 },
