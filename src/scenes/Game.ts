@@ -6,7 +6,7 @@ export default class Demo extends Phaser.Scene {
   }
 
   preload() {
-    this.load.atlas('misc', 'assets/sprite-sheets/Items-Extras.png', 'assets/atlas/misc-atlas.json');
+    this.load.atlas('mario', 'assets/sprite-sheets/mario.png', 'assets/atlas/mario-atlas.json');
 
     this.load.audio('theme', [
       'assets/sound-fx/smb_1-up.wav',
@@ -16,8 +16,8 @@ export default class Demo extends Phaser.Scene {
   }
 
   create() {
-    this.add.image(50, 475, 'misc', 'hud-coin-1');
+    const image = this.add.image(50, 375, 'mario', 'small-left-jumping-mario');
 
-    this.sound.add('theme').play();
+    image.setScale(2).setTint(0xA290ff);
   }
 }

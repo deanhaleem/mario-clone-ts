@@ -5,7 +5,8 @@
             "frame": { "x": 183, "y": 34, "w": 14, "h": 14 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 14, "h": 14 },
             "sourceSize": { "w": 14, "h": 14 },
-            "pivot": { "x": 0.5, "y": 1 }
+            "pivot": { "x": 0.5, "y": 1 },
+            "tint": "#A290ff"
         },
         {
             "filename": "big-right-crouching-mario",
@@ -376,7 +377,8 @@
             "frame": { "x": 82, "y": 34, "w": 12, "h": 16 },
             "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 16 },
             "sourceSize": { "w": 12, "h": 16 },
-            "pivot": { "x": 0.5, "y": 1 }
+            "pivot": { "x": 0.5, "y": 1 },
+            "scale": "2"
         },
         {
             "filename": "small-left-standing-mario",
