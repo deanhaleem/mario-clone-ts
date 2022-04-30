@@ -13,11 +13,21 @@ export default class Demo extends Phaser.Scene {
     ]);
 
     this.add.text(100, 100, 'Button', { fontFamily: 'Emulogic' });
+
+    //this.load.image('mario-temp', 'assets/sprite-sheets/mario.png');
   }
 
   create() {
-    const image = this.add.image(50, 375, 'mario', 'small-left-jumping-mario');
+    // TODO: update atlas config to be like c#, except instead of the "0": [] for frames, I need to create entirely new object. key will just be dead-mario-0 for example
+    // TODO: then each sprite will have image game object like below.
+   // const image = this.add.image(50, 375, 'mario', 'small-left-jumping-mario');
+   const image = new Phaser.GameObjects.Image(this, 0, 0, 'mario', 'dead-mario').setScale(2)
 
-    image.setScale(2).setTint(0xA290ff);
+    //image.setScale(2).setTint(0xA290ff);
+    const rt = this.add.renderTexture(0, 0, 800, 480);
+    rt.beginDraw();
+    //rt.batchDrawFrame('mario',  'dead-mario', 155, 200)
+    rt.batchDraw(image, 510, 200)
+    rt.endDraw();
   }
 }
