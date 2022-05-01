@@ -21,15 +21,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.99,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigRightCrouchingMario-0-0",
@@ -52,15 +44,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 22
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigLeftCrouchingMario-0-0",
@@ -83,15 +67,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 22
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigRightJumpingMario-0-0",
@@ -114,15 +90,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigLeftJumpingMario-0-0",
@@ -145,15 +113,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigRightStandingMario-0-0",
@@ -176,15 +136,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigLeftStandingMario-0-0",
@@ -207,15 +159,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigRightSlidingMario-0-0",
@@ -238,15 +182,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigLeftSlidingMario-0-0",
@@ -269,15 +205,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigRightWalkingMario-0-0",
@@ -300,15 +228,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigRightWalkingMario-1-0",
@@ -331,15 +251,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigRightWalkingMario-2-0",
@@ -362,15 +274,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigLeftWalkingMario-0-0",
@@ -393,15 +297,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigLeftWalkingMario-1-0",
@@ -424,15 +320,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigLeftWalkingMario-2-0",
@@ -455,15 +343,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigRightRunningMario-0-0",
@@ -486,15 +366,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigRightRunningMario-1-0",
@@ -517,15 +389,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigRightRunningMario-2-0",
@@ -548,15 +412,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigLeftRunningMario-0-0",
@@ -579,15 +435,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigLeftRunningMario-1-0",
@@ -610,15 +458,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigLeftRunningMario-2-0",
@@ -641,15 +481,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigRightUpgradingMario-0-0",
@@ -672,15 +504,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigRightUpgradingMario-1-0",
@@ -703,15 +527,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigLeftUpgradingMario-0-0",
@@ -734,15 +550,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigLeftUpgradingMario-1-0",
@@ -765,15 +573,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigRightVictoryMario-0-0",
@@ -796,15 +596,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 27
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "BigLeftVictoryMario-0-0",
@@ -827,15 +619,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 27
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireRightCrouchingMario-0-0",
@@ -858,15 +642,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 22
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireLeftCrouchingMario-0-0",
@@ -889,15 +665,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 22
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireRightJumpingMario-0-0",
@@ -920,15 +688,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireLeftJumpingMario-0-0",
@@ -951,15 +711,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireRightStandingMario-0-0",
@@ -982,15 +734,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireLeftStandingMario-0-0",
@@ -1013,15 +757,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireRightSlidingMario-0-0",
@@ -1044,15 +780,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireLeftSlidingMario-0-0",
@@ -1075,15 +803,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireRightAttackingMario-0-0",
@@ -1106,15 +826,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireLeftAttackingMario-0-0",
@@ -1137,15 +849,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireRightWalkingMario-0-0",
@@ -1168,15 +872,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireRightWalkingMario-1-0",
@@ -1199,15 +895,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireRightWalkingMario-2-0",
@@ -1230,15 +918,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireLeftWalkingMario-0-0",
@@ -1261,15 +941,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireLeftWalkingMario-1-0",
@@ -1292,15 +964,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireLeftWalkingMario-2-0",
@@ -1323,15 +987,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireRightRunningMario-0-0",
@@ -1354,15 +1010,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireRightRunningMario-1-0",
@@ -1385,15 +1033,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireRightRunningMario-2-0",
@@ -1416,15 +1056,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireLeftRunningMario-0-0",
@@ -1447,15 +1079,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireLeftRunningMario-1-0",
@@ -1478,15 +1102,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireLeftRunningMario-2-0",
@@ -1509,15 +1125,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireRightVictoryMario-0-0",
@@ -1540,15 +1148,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 27
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "FireLeftVictoryMario-0-0",
@@ -1571,15 +1171,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 27
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallRightJumpingMario-0-0",
@@ -1602,15 +1194,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallLeftJumpingMario-0-0",
@@ -1633,15 +1217,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallRightStandingMario-0-0",
@@ -1664,15 +1240,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallLeftStandingMario-0-0",
@@ -1695,15 +1263,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallRightSlidingMario-0-0",
@@ -1726,15 +1286,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 13,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallLeftSlidingMario-0-0",
@@ -1757,15 +1309,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 13,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallRightWalkingMario-0-0",
@@ -1788,15 +1332,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallRightWalkingMario-1-0",
@@ -1819,15 +1355,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallRightWalkingMario-2-0",
@@ -1850,15 +1378,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallLeftWalkingMario-0-0",
@@ -1881,15 +1401,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallLeftWalkingMario-1-0",
@@ -1912,15 +1424,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallLeftWalkingMario-2-0",
@@ -1943,15 +1447,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallRightRunningMario-0-0",
@@ -1974,15 +1470,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallRightRunningMario-1-0",
@@ -2005,15 +1493,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallRightRunningMario-2-0",
@@ -2036,15 +1516,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallLeftRunningMario-0-0",
@@ -2067,15 +1539,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallLeftRunningMario-1-0",
@@ -2098,15 +1562,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallLeftRunningMario-2-0",
@@ -2129,15 +1585,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallRightDowngradingMario-0-0",
@@ -2160,15 +1608,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallRightDowngradingMario-1-0",
@@ -2191,15 +1631,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallLeftDowngradingMario-0-0",
@@ -2222,15 +1654,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallLeftDowngradingMario-1-0",
@@ -2253,15 +1677,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallRightVictoryMario-0-0",
@@ -2284,15 +1700,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "SmallLeftVictoryMario-0-0",
@@ -2315,15 +1723,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 1,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightCrouchingMario-0-0",
@@ -2346,15 +1746,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 22
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightCrouchingMario-0-1",
@@ -2377,15 +1769,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 22
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightCrouchingMario-0-2",
@@ -2408,15 +1792,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 22
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftCrouchingMario-0-0",
@@ -2439,15 +1815,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 22
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftCrouchingMario-0-1",
@@ -2470,15 +1838,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 22
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftCrouchingMario-0-2",
@@ -2501,15 +1861,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 22
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightJumpingMario-0-0",
@@ -2532,15 +1884,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightJumpingMario-0-1",
@@ -2563,15 +1907,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightJumpingMario-0-2",
@@ -2594,15 +1930,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftJumpingMario-0-0",
@@ -2625,15 +1953,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftJumpingMario-0-1",
@@ -2656,15 +1976,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftJumpingMario-0-2",
@@ -2687,15 +1999,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightStandingMario-0-0",
@@ -2718,15 +2022,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightStandingMario-0-1",
@@ -2749,15 +2045,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightStandingMario-0-2",
@@ -2780,15 +2068,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftStandingMario-0-0",
@@ -2811,15 +2091,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftStandingMario-0-1",
@@ -2842,15 +2114,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftStandingMario-0-2",
@@ -2873,15 +2137,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightSlidingMario-0-0",
@@ -2904,15 +2160,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightSlidingMario-0-1",
@@ -2935,15 +2183,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightSlidingMario-0-2",
@@ -2966,15 +2206,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftSlidingMario-0-0",
@@ -2997,15 +2229,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftSlidingMario-0-1",
@@ -3028,15 +2252,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftSlidingMario-0-2",
@@ -3059,15 +2275,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightWalkingMario-0-0",
@@ -3090,15 +2298,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightWalkingMario-1-0",
@@ -3121,15 +2321,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightWalkingMario-2-0",
@@ -3152,15 +2344,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightWalkingMario-0-1",
@@ -3183,15 +2367,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightWalkingMario-1-1",
@@ -3214,15 +2390,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightWalkingMario-2-1",
@@ -3245,15 +2413,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightWalkingMario-0-2",
@@ -3276,15 +2436,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightWalkingMario-1-2",
@@ -3307,15 +2459,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightWalkingMario-2-2",
@@ -3338,15 +2482,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftWalkingMario-0-0",
@@ -3369,15 +2505,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftWalkingMario-1-0",
@@ -3400,15 +2528,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftWalkingMario-2-0",
@@ -3431,15 +2551,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftWalkingMario-0-1",
@@ -3462,15 +2574,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftWalkingMario-1-1",
@@ -3493,15 +2597,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftWalkingMario-2-1",
@@ -3524,15 +2620,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftWalkingMario-0-2",
@@ -3555,15 +2643,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftWalkingMario-1-2",
@@ -3586,15 +2666,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftWalkingMario-2-2",
@@ -3617,15 +2689,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightRunningMario-0-0",
@@ -3648,15 +2712,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightRunningMario-1-0",
@@ -3679,15 +2735,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightRunningMario-2-0",
@@ -3710,15 +2758,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightRunningMario-0-1",
@@ -3741,15 +2781,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightRunningMario-1-1",
@@ -3772,15 +2804,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightRunningMario-2-1",
@@ -3803,15 +2827,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightRunningMario-0-2",
@@ -3834,15 +2850,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightRunningMario-1-2",
@@ -3865,15 +2873,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightRunningMario-2-2",
@@ -3896,15 +2896,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftRunningMario-0-0",
@@ -3927,15 +2919,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftRunningMario-1-0",
@@ -3958,15 +2942,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftRunningMario-2-0",
@@ -3989,15 +2965,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftRunningMario-0-1",
@@ -4020,15 +2988,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftRunningMario-1-1",
@@ -4051,15 +3011,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftRunningMario-2-1",
@@ -4082,15 +3034,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftRunningMario-0-2",
@@ -4113,15 +3057,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 30
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftRunningMario-1-2",
@@ -4144,15 +3080,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 14,
-                "Y": 31
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftRunningMario-2-2",
@@ -4175,15 +3103,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 16,
-                "Y": 32
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightUpgradingMario-0-0",
@@ -4206,15 +3126,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightUpgradingMario-1-0",
@@ -4237,15 +3149,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightUpgradingMario-0-1",
@@ -4268,15 +3172,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightUpgradingMario-1-1",
@@ -4299,15 +3195,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightUpgradingMario-0-2",
@@ -4330,15 +3218,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigRightUpgradingMario-1-2",
@@ -4361,15 +3241,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftUpgradingMario-0-0",
@@ -4392,15 +3264,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftUpgradingMario-1-0",
@@ -4423,15 +3287,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftUpgradingMario-0-1",
@@ -4454,15 +3310,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftUpgradingMario-1-1",
@@ -4485,15 +3333,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftUpgradingMario-0-2",
@@ -4516,15 +3356,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarBigLeftUpgradingMario-1-2",
@@ -4547,15 +3379,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 0,
-                "Y": 0
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 8,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightJumpingMario-0-0",
@@ -4578,15 +3402,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightJumpingMario-0-1",
@@ -4609,15 +3425,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightJumpingMario-0-2",
@@ -4640,15 +3448,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftJumpingMario-0-0",
@@ -4671,15 +3471,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftJumpingMario-0-1",
@@ -4702,15 +3494,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftJumpingMario-0-2",
@@ -4733,15 +3517,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightStandingMario-0-0",
@@ -4764,15 +3540,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightStandingMario-0-1",
@@ -4795,15 +3563,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightStandingMario-0-2",
@@ -4826,15 +3586,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftStandingMario-0-0",
@@ -4857,15 +3609,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftStandingMario-0-1",
@@ -4888,15 +3632,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftStandingMario-0-2",
@@ -4919,15 +3655,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightSlidingMario-0-0",
@@ -4950,15 +3678,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 13,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightSlidingMario-0-1",
@@ -4981,15 +3701,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 13,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightSlidingMario-0-2",
@@ -5012,15 +3724,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 13,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftSlidingMario-0-0",
@@ -5043,15 +3747,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 13,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftSlidingMario-0-1",
@@ -5074,15 +3770,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 13,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftSlidingMario-0-2",
@@ -5105,15 +3793,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 13,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 1,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightWalkingMario-0-0",
@@ -5136,15 +3816,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightWalkingMario-1-0",
@@ -5167,15 +3839,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightWalkingMario-2-0",
@@ -5198,15 +3862,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightWalkingMario-0-1",
@@ -5229,15 +3885,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightWalkingMario-1-1",
@@ -5260,15 +3908,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightWalkingMario-2-1",
@@ -5291,15 +3931,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightWalkingMario-0-2",
@@ -5322,15 +3954,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightWalkingMario-1-2",
@@ -5353,15 +3977,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightWalkingMario-2-2",
@@ -5384,15 +4000,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftWalkingMario-0-0",
@@ -5415,15 +4023,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftWalkingMario-1-0",
@@ -5446,15 +4046,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftWalkingMario-2-0",
@@ -5477,15 +4069,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftWalkingMario-0-1",
@@ -5508,15 +4092,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftWalkingMario-1-1",
@@ -5539,15 +4115,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftWalkingMario-2-1",
@@ -5570,15 +4138,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftWalkingMario-0-2",
@@ -5601,15 +4161,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftWalkingMario-1-2",
@@ -5632,15 +4184,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftWalkingMario-2-2",
@@ -5663,15 +4207,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 5,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightRunningMario-0-0",
@@ -5694,15 +4230,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightRunningMario-1-0",
@@ -5725,15 +4253,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightRunningMario-2-0",
@@ -5756,15 +4276,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightRunningMario-0-1",
@@ -5787,15 +4299,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightRunningMario-1-1",
@@ -5818,15 +4322,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightRunningMario-2-1",
@@ -5849,15 +4345,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightRunningMario-0-2",
@@ -5880,15 +4368,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightRunningMario-1-2",
@@ -5911,15 +4391,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallRightRunningMario-2-2",
@@ -5942,15 +4414,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftRunningMario-0-0",
@@ -5973,15 +4437,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftRunningMario-1-0",
@@ -6004,15 +4460,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftRunningMario-2-0",
@@ -6035,15 +4483,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftRunningMario-0-1",
@@ -6066,15 +4506,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftRunningMario-1-1",
@@ -6097,15 +4529,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftRunningMario-2-1",
@@ -6128,15 +4552,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftRunningMario-0-2",
@@ -6159,15 +4575,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 12,
-                "Y": 15
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftRunningMario-1-2",
@@ -6190,15 +4598,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 11,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         },
         {
             "filename": "StarSmallLeftRunningMario-2-2",
@@ -6221,15 +4621,7 @@
             "pivot": {
                 "x": 0.5,
                 "y": 1
-            },
-            "hitbox": {
-                "X": 15,
-                "Y": 16
-            },
-            "layerDepth": 0.8,
-            "frameDelay": 3,
-            "colorTintDelay": 4,
-            "scale": 2
+            }
         }
     ]
 }

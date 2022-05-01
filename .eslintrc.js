@@ -24,6 +24,7 @@ module.exports = {
   rules: {
     'linebreak-style': 0,
     'class-methods-use-this': 0,
+    // TODO: find out why these next two aren't working
     'lines-between-class-members': 0,
     '@typescript-eslint/lines-between-class-members': 0,
     'no-plusplus': 0,

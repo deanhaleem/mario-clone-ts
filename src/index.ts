@@ -1,4 +1,4 @@
-import Phaser, { Game } from 'phaser';
+import Phaser from 'phaser';
 import config from './config';
 import GameScene from './scenes/Game';
 
@@ -9,4 +9,4 @@ const game = new Phaser.Game(
   },
 );
 
-export const getCurrentScene = (): Phaser.Scene => game.scene.scenes[0];
+export default game;
