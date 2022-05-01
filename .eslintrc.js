@@ -17,12 +17,15 @@ module.exports = {
       files: ['**/*.ts', '**/*.tsx'],
       extends: ['airbnb-typescript/base'],
       parserOptions: {
-        project: './tsconfig.json',
+        project: './mario-clone-ts/tsconfig.json',
       },
     },
   ],
   rules: {
     'linebreak-style': 0,
     'class-methods-use-this': 0,
+    'lines-between-class-members': 0,
+    '@typescript-eslint/lines-between-class-members': 0,
+    'no-plusplus': 0,
   },
 };

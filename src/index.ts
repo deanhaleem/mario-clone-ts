@@ -9,10 +9,4 @@ const game = new Phaser.Game(
   },
 );
 
-export const getCurrentScene = (): Phaser.Scene => {
-  console.log('here')
-  console.log(game.scene.scenes)
-  const temp = game.scene.scenes[0];
-  console.log('hi')
-  return temp
-}
+export const getCurrentScene = (): Phaser.Scene => game.scene.scenes[0];
