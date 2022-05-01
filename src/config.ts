@@ -9,7 +9,4 @@ export default {
     width: 800,
     height: 400,
   },
-  physics: {
-    default: 'arcade',
-  },
 };

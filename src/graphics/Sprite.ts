@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/lines-between-class-members */
 import { IUpdatable } from '../Interfaces';
 
 export interface ISprite extends IUpdatable {
@@ -17,29 +18,18 @@ export interface SpriteDetails {
 
 export class Sprite implements ISprite {
   private readonly sourceFrames: Record<string, Phaser.GameObjects.Image[]> = {};
-
   private readonly spriteSheet;
-
   private readonly spriteSizes: Phaser.Math.Vector2[] = [];
-
   private readonly spriteScale: number;
-
   private readonly spriteDepth: number;
-
   private readonly totalColorTints: number;
-
   private readonly colorTintDelay: number;
-
   private readonly totalFrames: number;
-
   private readonly frameDelay: number;
 
   private currentColorTint: number;
-
   private _colorTintDelayTimer: number;
-
   private currentFrame: number;
-
   private _frameDelayTimer: number;
 
   constructor(spriteDetails: SpriteDetails, scene: Phaser.Scene) {
