@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/lines-between-class-members */
 import { IUpdatable } from '../Interfaces';
 
 export interface ISprite extends IUpdatable {
@@ -72,10 +71,6 @@ export class Sprite implements ISprite {
     return this._colorTintDelayTimer;
   }
 
-  private get frameDelayTimer(): number {
-    return this._frameDelayTimer;
-  }
-
   private set colorTintDelayTimer(delta: number) {
     if (Math.round(this._colorTintDelayTimer) >= Math.round(this.colorTintDelay)) {
       this.currentColorTint = this.currentColorTint + 1 === this.totalColorTints ? 0 : this.currentColorTint + 1;
@@ -83,6 +78,10 @@ export class Sprite implements ISprite {
     } else {
       this._colorTintDelayTimer += delta;
     }
+  }
+
+  private get frameDelayTimer(): number {
+    return this._frameDelayTimer;
   }
 
   private set frameDelayTimer(delta: number) {
