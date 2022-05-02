@@ -1,24 +1,9 @@
-import { IUpdatable } from '../Interfaces';
-
-export interface ISprite extends IUpdatable {
-  size: Phaser.Math.Vector2;
-  draw(renderTexture: Phaser.GameObjects.RenderTexture, location: Phaser.Math.Vector2): void;
-}
-
-export interface SpriteDetails {
-  layerDepth: number;
-  frameDelay: number;
-  colorTintDelay: number;
-  scale: number;
-  textureName: string;
-  sourceFrames: Record<string, string[]>;
-  sizes: { x: number, y: number }[];
-}
+import { ISprite, SpriteDetails } from './types';
 
 export class Sprite implements ISprite {
   private readonly sourceFrames: Record<string, Phaser.GameObjects.Image[]> = {};
-  private readonly spriteSheet;
-  private readonly spriteSizes: Phaser.Math.Vector2[] = [];
+  private readonly spriteSheet: string;
+  private readonly spriteSizes: Phaser.Math.Vector2[];
   private readonly spriteScale: number;
   private readonly spriteDepth: number;
   private readonly totalColorTints: number;
@@ -32,19 +17,17 @@ export class Sprite implements ISprite {
   private _frameDelayTimer: number;
 
   constructor(spriteDetails: SpriteDetails, scene: Phaser.Scene) {
+    const sourceFrameKeys = Object.keys(spriteDetails.sourceFrames);
+    sourceFrameKeys.forEach((key) => {
+      this.sourceFrames[key] = spriteDetails.sourceFrames[key].map((frame) => new Phaser.GameObjects.Image(scene, 0, 0, spriteDetails.textureName, frame).setScale(spriteDetails.scale).setDepth(spriteDetails.spriteDepth));
+    });
+
     this.spriteSheet = spriteDetails.textureName;
     this.spriteSizes = spriteDetails.sizes.map((size) => new Phaser.Math.Vector2(size.x, size.y));
     this.spriteScale = spriteDetails.scale;
     this.spriteDepth = spriteDetails.layerDepth;
     this.frameDelay = spriteDetails.frameDelay;
     this.colorTintDelay = spriteDetails.colorTintDelay;
-
-    const sourceFrameKeys = Object.keys(spriteDetails.sourceFrames);
-
-    sourceFrameKeys.forEach((key) => {
-      this.sourceFrames[key] = spriteDetails.sourceFrames[key].map((frame) => new Phaser.GameObjects.Image(scene, 0, 0, this.spriteSheet, frame).setScale(this.spriteScale).setDepth(this.spriteDepth));
-    });
-
     this.totalFrames = this.sourceFrames['0'].length;
     this.totalColorTints = sourceFrameKeys.length;
 
@@ -55,7 +38,7 @@ export class Sprite implements ISprite {
   }
 
   public update(time: number, delta: number) {
-    this.frameDelayTimer += delta / 1000;
+    this.frameDelayTimer += (delta / 1000);
     this.colorTintDelayTimer += delta / 1000;
   }
 
@@ -88,6 +71,7 @@ export class Sprite implements ISprite {
     if (Math.round(this._frameDelayTimer) >= Math.round(this.frameDelay)) {
       this.currentFrame = this.currentFrame + 1 === this.totalFrames ? 0 : this.currentFrame + 1;
       this._frameDelayTimer = 0;
+      
     } else {
       this._frameDelayTimer += delta;
     }

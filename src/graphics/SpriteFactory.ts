@@ -1,6 +1,7 @@
 import atlasMap from '../../public/assets/atlas/atlas-map.json';
 import getCurrentScene from '../scenes/Scene';
-import { Sprite, SpriteDetails } from './Sprite';
+import { Sprite } from './Sprite';
+import { SpriteDetails } from './types';
 
 export default class SpriteFactory {
   public static readonly instance = new SpriteFactory();
