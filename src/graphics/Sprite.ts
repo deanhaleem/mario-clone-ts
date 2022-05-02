@@ -17,6 +17,7 @@ export class Sprite implements ISprite {
   private _frameDelayTimer: number;
 
   constructor(spriteDetails: SpriteDetails, scene: Phaser.Scene) {
+    // convert spriteDetails.sourceFrames to Images before storing
     const sourceFrameKeys = Object.keys(spriteDetails.sourceFrames);
     sourceFrameKeys.forEach((key) => {
       this.sourceFrames[key] = spriteDetails.sourceFrames[key].map((frame) => new Phaser.GameObjects.Image(scene, 0, 0, spriteDetails.textureName, frame).setScale(spriteDetails.scale).setDepth(spriteDetails.spriteDepth));
@@ -55,6 +56,7 @@ export class Sprite implements ISprite {
   }
 
   private set colorTintDelayTimer(delta: number) {
+    // update the currentColorTint and reset colorTintDelayTimer if we've reached colorTintDelay time
     if (Math.round(this._colorTintDelayTimer) >= Math.round(this.colorTintDelay)) {
       this.currentColorTint = this.currentColorTint + 1 === this.totalColorTints ? 0 : this.currentColorTint + 1;
       this._colorTintDelayTimer = 0;
@@ -68,10 +70,10 @@ export class Sprite implements ISprite {
   }
 
   private set frameDelayTimer(delta: number) {
+    // update the currentFrame and reset frameDelayTimer if we've reached frameDelay time
     if (Math.round(this._frameDelayTimer) >= Math.round(this.frameDelay)) {
       this.currentFrame = this.currentFrame + 1 === this.totalFrames ? 0 : this.currentFrame + 1;
       this._frameDelayTimer = 0;
-      
     } else {
       this._frameDelayTimer += delta;
     }
