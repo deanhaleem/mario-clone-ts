@@ -11,7 +11,11 @@ export default class SpriteFactory {
 
   public loadContent(scene: Phaser.Scene) {
     // TODO: should I make this more of a data driven method?
-    scene.load.atlas('mario', 'assets/sprite-sheets/mario.png', 'assets/atlas/mario-atlas.json');
+    scene.load.atlas(
+      'mario',
+      'assets/sprite-sheets/mario.png',
+      'assets/atlas/mario-atlas.json'
+    );
   }
 
   public createSprite(objectName: string): Sprite {
