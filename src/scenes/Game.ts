@@ -1,6 +1,6 @@
-import Phaser from "phaser";
-import SpriteFactory from "../graphics/SpriteFactory";
-import { ISprite } from "../graphics/types";
+import Phaser from 'phaser';
+import SpriteFactory from '../graphics/SpriteFactory';
+import { ISprite } from '../graphics/types';
 
 export default class Demo extends Phaser.Scene {
   private sprite: ISprite;
@@ -10,7 +10,7 @@ export default class Demo extends Phaser.Scene {
   private fpsText;
 
   constructor() {
-    super("GameScene");
+    super('GameScene');
   }
 
   preload() {
@@ -20,11 +20,11 @@ export default class Demo extends Phaser.Scene {
   create() {
     this.rt = this.add.renderTexture(0, 0, 800, 480);
     this.sprite = SpriteFactory.instance.createSprite(
-      "StarSmallLeftRunningMario"
+      'StarSmallLeftRunningMario'
     );
 
-    this.fpsText = this.add.text(10, 10, "FPS: -- \n-- Particles", {
-      font: "bold 26px Arial",
+    this.fpsText = this.add.text(10, 10, 'FPS: -- \n-- Particles', {
+      font: 'bold 26px Arial',
     });
   }
 

@@ -1,4 +1,4 @@
-import { ISprite, SpriteDetails } from "./types";
+import { ISprite, SpriteDetails } from './types';
 
 export class Sprite implements ISprite {
   private readonly sourceFrames: Record<string, Phaser.GameObjects.Image[]> =
@@ -42,7 +42,7 @@ export class Sprite implements ISprite {
     this.spriteDepth = spriteDetails.layerDepth;
     this.frameDelay = spriteDetails.frameDelay;
     this.colorTintDelay = spriteDetails.colorTintDelay;
-    this.totalFrames = this.sourceFrames["0"].length;
+    this.totalFrames = this.sourceFrames['0'].length;
     this.totalColorTints = sourceFrameKeys.length;
 
     this.currentColorTint = 0;

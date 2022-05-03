@@ -1,4 +1,4 @@
-import { IUpdatable } from "../types";
+import { IUpdatable } from '../types';
 
 export interface ISprite extends IUpdatable {
   /**

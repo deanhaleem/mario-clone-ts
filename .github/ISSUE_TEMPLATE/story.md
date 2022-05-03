@@ -1,9 +1,9 @@
 ---
 name: Story
 about: Encapsulate tasks for building the project
-title: "[Story] Story Title"
+title: '[Story] Story Title'
 labels: story
-assignees: ""
+assignees: ''
 ---
 
 ### Description
