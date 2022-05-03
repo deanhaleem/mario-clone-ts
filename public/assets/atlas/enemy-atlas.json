@@ -2,73 +2,233 @@
   "frames": [
     {
       "filename": "walking-goomba-1",
-      "frame": { "x": 296, "y": 187, "w": 16, "h": 16 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 16, "h": 16 },
-      "sourceSize": { "w": 16, "h": 16 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 296,
+        "y": 187,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     },
     {
       "filename": "walking-goomba-2",
-      "frame": { "x": 315, "y": 187, "w": 16, "h": 16 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 16, "h": 16 },
-      "sourceSize": { "w": 16, "h": 16 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 315,
+        "y": 187,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     },
     {
       "filename": "left-walking-koopa-1",
-      "frame": { "x": 201, "y": 207, "w": 16, "h": 23 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 16, "h": 23 },
-      "sourceSize": { "w": 16, "h": 23 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 201,
+        "y": 207,
+        "w": 16,
+        "h": 23
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 16,
+        "h": 23
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 23
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     },
     {
       "filename": "left-walking-koopa-2",
-      "frame": { "x": 182, "y": 206, "w": 16, "h": 24 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 16, "h": 24 },
-      "sourceSize": { "w": 16, "h": 24 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 182,
+        "y": 206,
+        "w": 16,
+        "h": 24
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 16,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 24
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     },
     {
       "filename": "right-walking-koopa-1",
-      "frame": { "x": 297, "y": 207, "w": 16, "h": 23 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 16, "h": 23 },
-      "sourceSize": { "w": 16, "h": 23 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 297,
+        "y": 207,
+        "w": 16,
+        "h": 23
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 16,
+        "h": 23
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 23
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     },
     {
       "filename": "right-walking-koopa-2",
-      "frame": { "x": 315, "y": 206, "w": 16, "h": 24 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 16, "h": 24 },
-      "sourceSize": { "w": 16, "h": 24 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 315,
+        "y": 206,
+        "w": 16,
+        "h": 24
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 16,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 24
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     },
     {
       "filename": "stomped-goomba",
-      "frame": { "x": 277, "y": 195, "w": 16, "h": 8 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 16, "h": 8 },
-      "sourceSize": { "w": 16, "h": 8 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 277,
+        "y": 195,
+        "w": 16,
+        "h": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 16,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     },
     {
       "filename": "flipped-goomba",
-      "frame": { "x": 809, "y": 198, "w": 16, "h": 16 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 16, "h": 16 },
-      "sourceSize": { "w": 16, "h": 16 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 809,
+        "y": 198,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     },
     {
       "filename": "stomped-koopa",
-      "frame": { "x": 144, "y": 216, "w": 16, "h": 14 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 16, "h": 14 },
-      "sourceSize": { "w": 16, "h": 14 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 144,
+        "y": 216,
+        "w": 16,
+        "h": 14
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 16,
+        "h": 14
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 14
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     },
     {
       "filename": "flipped-koopa",
-      "frame": { "x": 353, "y": 216, "w": 16, "h": 14 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 16, "h": 14 },
-      "sourceSize": { "w": 16, "h": 14 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 353,
+        "y": 216,
+        "w": 16,
+        "h": 14
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 16,
+        "h": 14
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 14
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     }
   ]
 }

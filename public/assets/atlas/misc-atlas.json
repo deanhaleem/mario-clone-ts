@@ -2,31 +2,95 @@
   "frames": [
     {
       "filename": "hud-coin-1",
-      "frame": { "x": 9, "y": 160, "w": 5, "h": 8 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 5, "h": 8 },
-      "sourceSize": { "w": 5, "h": 8 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 9,
+        "y": 160,
+        "w": 5,
+        "h": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 5,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 5,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     },
     {
       "filename": "hud-coin-2",
-      "frame": { "x": 17, "y": 160, "w": 5, "h": 8 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 5, "h": 8 },
-      "sourceSize": { "w": 5, "h": 8 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 17,
+        "y": 160,
+        "w": 5,
+        "h": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 5,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 5,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     },
     {
       "filename": "hud-coin-3",
-      "frame": { "x": 1, "y": 160, "w": 5, "h": 8 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 5, "h": 8 },
-      "sourceSize": { "w": 5, "h": 8 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 1,
+        "y": 160,
+        "w": 5,
+        "h": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 5,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 5,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     },
     {
       "filename": "cross",
-      "frame": { "x": 41, "y": 162, "w": 5, "h": 5 },
-      "spriteSourceSize": { "x": 0, " y": 0, "w": 5, "h": 5 },
-      "sourceSize": { "w": 5, "h": 5 },
-      "pivot": { "x": 0.5, "y": 1 }
+      "frame": {
+        "x": 41,
+        "y": 162,
+        "w": 5,
+        "h": 5
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        " y": 0,
+        "w": 5,
+        "h": 5
+      },
+      "sourceSize": {
+        "w": 5,
+        "h": 5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
     }
   ]
 }

@@ -6,7 +6,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["DeadMario-0-0"]
+      "0": [
+        "DeadMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -22,7 +24,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["BigRightCrouchingMario-0-0"]
+      "0": [
+        "BigRightCrouchingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -38,7 +42,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["BigLeftCrouchingMario-0-0"]
+      "0": [
+        "BigLeftCrouchingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -54,7 +60,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["BigRightJumpingMario-0-0"]
+      "0": [
+        "BigRightJumpingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -70,7 +78,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["BigLeftJumpingMario-0-0"]
+      "0": [
+        "BigLeftJumpingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -86,7 +96,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["BigRightStandingMario-0-0"]
+      "0": [
+        "BigRightStandingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -102,7 +114,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["BigLeftStandingMario-0-0"]
+      "0": [
+        "BigLeftStandingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -118,7 +132,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["BigRightSlidingMario-0-0"]
+      "0": [
+        "BigRightSlidingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -134,7 +150,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["BigLeftSlidingMario-0-0"]
+      "0": [
+        "BigLeftSlidingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -262,7 +280,10 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["BigRightUpgradingMario-0-0", "BigRightUpgradingMario-1-0"]
+      "0": [
+        "BigRightUpgradingMario-0-0",
+        "BigRightUpgradingMario-1-0"
+      ]
     },
     "sizes": [
       {
@@ -282,7 +303,10 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["BigLeftUpgradingMario-0-0", "BigLeftUpgradingMario-1-0"]
+      "0": [
+        "BigLeftUpgradingMario-0-0",
+        "BigLeftUpgradingMario-1-0"
+      ]
     },
     "sizes": [
       {
@@ -302,7 +326,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["BigRightVictoryMario-0-0"]
+      "0": [
+        "BigRightVictoryMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -318,7 +344,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["BigLeftVictoryMario-0-0"]
+      "0": [
+        "BigLeftVictoryMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -334,7 +362,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["FireRightCrouchingMario-0-0"]
+      "0": [
+        "FireRightCrouchingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -350,7 +380,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["FireLeftCrouchingMario-0-0"]
+      "0": [
+        "FireLeftCrouchingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -366,7 +398,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["FireRightJumpingMario-0-0"]
+      "0": [
+        "FireRightJumpingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -382,7 +416,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["FireLeftJumpingMario-0-0"]
+      "0": [
+        "FireLeftJumpingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -398,7 +434,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["FireRightStandingMario-0-0"]
+      "0": [
+        "FireRightStandingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -414,7 +452,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["FireLeftStandingMario-0-0"]
+      "0": [
+        "FireLeftStandingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -430,7 +470,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["FireRightSlidingMario-0-0"]
+      "0": [
+        "FireRightSlidingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -446,7 +488,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["FireLeftSlidingMario-0-0"]
+      "0": [
+        "FireLeftSlidingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -462,7 +506,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["FireRightAttackingMario-0-0"]
+      "0": [
+        "FireRightAttackingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -478,7 +524,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["FireLeftAttackingMario-0-0"]
+      "0": [
+        "FireLeftAttackingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -606,7 +654,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["FireRightVictoryMario-0-0"]
+      "0": [
+        "FireRightVictoryMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -622,7 +672,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["FireLeftVictoryMario-0-0"]
+      "0": [
+        "FireLeftVictoryMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -638,7 +690,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["SmallRightJumpingMario-0-0"]
+      "0": [
+        "SmallRightJumpingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -654,7 +708,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["SmallLeftJumpingMario-0-0"]
+      "0": [
+        "SmallLeftJumpingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -670,7 +726,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["SmallRightStandingMario-0-0"]
+      "0": [
+        "SmallRightStandingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -686,7 +744,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["SmallLeftStandingMario-0-0"]
+      "0": [
+        "SmallLeftStandingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -702,7 +762,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["SmallRightSlidingMario-0-0"]
+      "0": [
+        "SmallRightSlidingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -718,7 +780,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["SmallLeftSlidingMario-0-0"]
+      "0": [
+        "SmallLeftSlidingMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -846,7 +910,10 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["SmallRightDowngradingMario-0-0", "SmallRightDowngradingMario-1-0"]
+      "0": [
+        "SmallRightDowngradingMario-0-0",
+        "SmallRightDowngradingMario-1-0"
+      ]
     },
     "sizes": [
       {
@@ -866,7 +933,10 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["SmallLeftDowngradingMario-0-0", "SmallLeftDowngradingMario-1-0"]
+      "0": [
+        "SmallLeftDowngradingMario-0-0",
+        "SmallLeftDowngradingMario-1-0"
+      ]
     },
     "sizes": [
       {
@@ -886,7 +956,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["SmallRightVictoryMario-0-0"]
+      "0": [
+        "SmallRightVictoryMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -902,7 +974,9 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["SmallLeftVictoryMario-0-0"]
+      "0": [
+        "SmallLeftVictoryMario-0-0"
+      ]
     },
     "sizes": [
       {
@@ -918,9 +992,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarBigRightCrouchingMario-0-0"],
-      "1": ["StarBigRightCrouchingMario-0-1"],
-      "2": ["StarBigRightCrouchingMario-0-2"]
+      "0": [
+        "StarBigRightCrouchingMario-0-0"
+      ],
+      "1": [
+        "StarBigRightCrouchingMario-0-1"
+      ],
+      "2": [
+        "StarBigRightCrouchingMario-0-2"
+      ]
     },
     "sizes": [
       {
@@ -936,9 +1016,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarBigLeftCrouchingMario-0-0"],
-      "1": ["StarBigLeftCrouchingMario-0-1"],
-      "2": ["StarBigLeftCrouchingMario-0-2"]
+      "0": [
+        "StarBigLeftCrouchingMario-0-0"
+      ],
+      "1": [
+        "StarBigLeftCrouchingMario-0-1"
+      ],
+      "2": [
+        "StarBigLeftCrouchingMario-0-2"
+      ]
     },
     "sizes": [
       {
@@ -954,9 +1040,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarBigRightJumpingMario-0-0"],
-      "1": ["StarBigRightJumpingMario-0-1"],
-      "2": ["StarBigRightJumpingMario-0-2"]
+      "0": [
+        "StarBigRightJumpingMario-0-0"
+      ],
+      "1": [
+        "StarBigRightJumpingMario-0-1"
+      ],
+      "2": [
+        "StarBigRightJumpingMario-0-2"
+      ]
     },
     "sizes": [
       {
@@ -972,9 +1064,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarBigLeftJumpingMario-0-0"],
-      "1": ["StarBigLeftJumpingMario-0-1"],
-      "2": ["StarBigLeftJumpingMario-0-2"]
+      "0": [
+        "StarBigLeftJumpingMario-0-0"
+      ],
+      "1": [
+        "StarBigLeftJumpingMario-0-1"
+      ],
+      "2": [
+        "StarBigLeftJumpingMario-0-2"
+      ]
     },
     "sizes": [
       {
@@ -990,9 +1088,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarBigRightStandingMario-0-0"],
-      "1": ["StarBigRightStandingMario-0-1"],
-      "2": ["StarBigRightStandingMario-0-2"]
+      "0": [
+        "StarBigRightStandingMario-0-0"
+      ],
+      "1": [
+        "StarBigRightStandingMario-0-1"
+      ],
+      "2": [
+        "StarBigRightStandingMario-0-2"
+      ]
     },
     "sizes": [
       {
@@ -1008,9 +1112,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarBigLeftStandingMario-0-0"],
-      "1": ["StarBigLeftStandingMario-0-1"],
-      "2": ["StarBigLeftStandingMario-0-2"]
+      "0": [
+        "StarBigLeftStandingMario-0-0"
+      ],
+      "1": [
+        "StarBigLeftStandingMario-0-1"
+      ],
+      "2": [
+        "StarBigLeftStandingMario-0-2"
+      ]
     },
     "sizes": [
       {
@@ -1026,9 +1136,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarBigRightSlidingMario-0-0"],
-      "1": ["StarBigRightSlidingMario-0-1"],
-      "2": ["StarBigRightSlidingMario-0-2"]
+      "0": [
+        "StarBigRightSlidingMario-0-0"
+      ],
+      "1": [
+        "StarBigRightSlidingMario-0-1"
+      ],
+      "2": [
+        "StarBigRightSlidingMario-0-2"
+      ]
     },
     "sizes": [
       {
@@ -1044,9 +1160,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarBigLeftSlidingMario-0-0"],
-      "1": ["StarBigLeftSlidingMario-0-1"],
-      "2": ["StarBigLeftSlidingMario-0-2"]
+      "0": [
+        "StarBigLeftSlidingMario-0-0"
+      ],
+      "1": [
+        "StarBigLeftSlidingMario-0-1"
+      ],
+      "2": [
+        "StarBigLeftSlidingMario-0-2"
+      ]
     },
     "sizes": [
       {
@@ -1214,9 +1336,18 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarBigRightUpgradingMario-0-0", "StarBigRightUpgradingMario-1-0"],
-      "1": ["StarBigRightUpgradingMario-0-1", "StarBigRightUpgradingMario-1-1"],
-      "2": ["StarBigRightUpgradingMario-0-2", "StarBigRightUpgradingMario-1-2"]
+      "0": [
+        "StarBigRightUpgradingMario-0-0",
+        "StarBigRightUpgradingMario-1-0"
+      ],
+      "1": [
+        "StarBigRightUpgradingMario-0-1",
+        "StarBigRightUpgradingMario-1-1"
+      ],
+      "2": [
+        "StarBigRightUpgradingMario-0-2",
+        "StarBigRightUpgradingMario-1-2"
+      ]
     },
     "sizes": [
       {
@@ -1236,9 +1367,18 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarBigLeftUpgradingMario-0-0", "StarBigLeftUpgradingMario-1-0"],
-      "1": ["StarBigLeftUpgradingMario-0-1", "StarBigLeftUpgradingMario-1-1"],
-      "2": ["StarBigLeftUpgradingMario-0-2", "StarBigLeftUpgradingMario-1-2"]
+      "0": [
+        "StarBigLeftUpgradingMario-0-0",
+        "StarBigLeftUpgradingMario-1-0"
+      ],
+      "1": [
+        "StarBigLeftUpgradingMario-0-1",
+        "StarBigLeftUpgradingMario-1-1"
+      ],
+      "2": [
+        "StarBigLeftUpgradingMario-0-2",
+        "StarBigLeftUpgradingMario-1-2"
+      ]
     },
     "sizes": [
       {
@@ -1258,9 +1398,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarSmallRightJumpingMario-0-0"],
-      "1": ["StarSmallRightJumpingMario-0-1"],
-      "2": ["StarSmallRightJumpingMario-0-2"]
+      "0": [
+        "StarSmallRightJumpingMario-0-0"
+      ],
+      "1": [
+        "StarSmallRightJumpingMario-0-1"
+      ],
+      "2": [
+        "StarSmallRightJumpingMario-0-2"
+      ]
     },
     "sizes": [
       {
@@ -1276,9 +1422,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarSmallLeftJumpingMario-0-0"],
-      "1": ["StarSmallLeftJumpingMario-0-1"],
-      "2": ["StarSmallLeftJumpingMario-0-2"]
+      "0": [
+        "StarSmallLeftJumpingMario-0-0"
+      ],
+      "1": [
+        "StarSmallLeftJumpingMario-0-1"
+      ],
+      "2": [
+        "StarSmallLeftJumpingMario-0-2"
+      ]
     },
     "sizes": [
       {
@@ -1294,9 +1446,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarSmallRightStandingMario-0-0"],
-      "1": ["StarSmallRightStandingMario-0-1"],
-      "2": ["StarSmallRightStandingMario-0-2"]
+      "0": [
+        "StarSmallRightStandingMario-0-0"
+      ],
+      "1": [
+        "StarSmallRightStandingMario-0-1"
+      ],
+      "2": [
+        "StarSmallRightStandingMario-0-2"
+      ]
     },
     "sizes": [
       {
@@ -1312,9 +1470,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarSmallLeftStandingMario-0-0"],
-      "1": ["StarSmallLeftStandingMario-0-1"],
-      "2": ["StarSmallLeftStandingMario-0-2"]
+      "0": [
+        "StarSmallLeftStandingMario-0-0"
+      ],
+      "1": [
+        "StarSmallLeftStandingMario-0-1"
+      ],
+      "2": [
+        "StarSmallLeftStandingMario-0-2"
+      ]
     },
     "sizes": [
       {
@@ -1330,9 +1494,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarSmallRightSlidingMario-0-0"],
-      "1": ["StarSmallRightSlidingMario-0-1"],
-      "2": ["StarSmallRightSlidingMario-0-2"]
+      "0": [
+        "StarSmallRightSlidingMario-0-0"
+      ],
+      "1": [
+        "StarSmallRightSlidingMario-0-1"
+      ],
+      "2": [
+        "StarSmallRightSlidingMario-0-2"
+      ]
     },
     "sizes": [
       {
@@ -1348,9 +1518,15 @@
     "scale": 2,
     "textureName": "mario",
     "sourceFrames": {
-      "0": ["StarSmallLeftSlidingMario-0-0"],
-      "1": ["StarSmallLeftSlidingMario-0-1"],
-      "2": ["StarSmallLeftSlidingMario-0-2"]
+      "0": [
+        "StarSmallLeftSlidingMario-0-0"
+      ],
+      "1": [
+        "StarSmallLeftSlidingMario-0-1"
+      ],
+      "2": [
+        "StarSmallLeftSlidingMario-0-2"
+      ]
     },
     "sizes": [
       {
