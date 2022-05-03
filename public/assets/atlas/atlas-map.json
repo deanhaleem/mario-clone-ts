@@ -1,1690 +1,1690 @@
 {
-    "DeadMario": {
-        "layerDepth": 0.99,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "DeadMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 0,
-                "y": 0
-            }
-        ]
-    },
-    "BigRightCrouchingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigRightCrouchingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 22
-            }
-        ]
-    },
-    "BigLeftCrouchingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigLeftCrouchingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 22
-            }
-        ]
-    },
-    "BigRightJumpingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigRightJumpingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "BigLeftJumpingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigLeftJumpingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "BigRightStandingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigRightStandingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "BigLeftStandingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigLeftStandingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "BigRightSlidingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigRightSlidingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "BigLeftSlidingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigLeftSlidingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "BigRightWalkingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 5,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigRightWalkingMario-0-0",
-                "BigRightWalkingMario-1-0",
-                "BigRightWalkingMario-2-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 30
-            },
-            {
-                "x": 14,
-                "y": 31
-            },
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "BigLeftWalkingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 5,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigLeftWalkingMario-0-0",
-                "BigLeftWalkingMario-1-0",
-                "BigLeftWalkingMario-2-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 30
-            },
-            {
-                "x": 14,
-                "y": 31
-            },
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "BigRightRunningMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 3,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigRightRunningMario-0-0",
-                "BigRightRunningMario-1-0",
-                "BigRightRunningMario-2-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 30
-            },
-            {
-                "x": 14,
-                "y": 31
-            },
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "BigLeftRunningMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 3,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigLeftRunningMario-0-0",
-                "BigLeftRunningMario-1-0",
-                "BigLeftRunningMario-2-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 30
-            },
-            {
-                "x": 14,
-                "y": 31
-            },
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "BigRightUpgradingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 8,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigRightUpgradingMario-0-0",
-                "BigRightUpgradingMario-1-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 0,
-                "y": 0
-            },
-            {
-                "x": 0,
-                "y": 0
-            }
-        ]
-    },
-    "BigLeftUpgradingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 8,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigLeftUpgradingMario-0-0",
-                "BigLeftUpgradingMario-1-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 0,
-                "y": 0
-            },
-            {
-                "x": 0,
-                "y": 0
-            }
-        ]
-    },
-    "BigRightVictoryMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigRightVictoryMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 14,
-                "y": 27
-            }
-        ]
-    },
-    "BigLeftVictoryMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "BigLeftVictoryMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 14,
-                "y": 27
-            }
-        ]
-    },
-    "FireRightCrouchingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireRightCrouchingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 22
-            }
-        ]
-    },
-    "FireLeftCrouchingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireLeftCrouchingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 22
-            }
-        ]
-    },
-    "FireRightJumpingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireRightJumpingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "FireLeftJumpingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireLeftJumpingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "FireRightStandingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireRightStandingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "FireLeftStandingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireLeftStandingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "FireRightSlidingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireRightSlidingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "FireLeftSlidingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireLeftSlidingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "FireRightAttackingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireRightAttackingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "FireLeftAttackingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireLeftAttackingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "FireRightWalkingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 5,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireRightWalkingMario-0-0",
-                "FireRightWalkingMario-1-0",
-                "FireRightWalkingMario-2-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 30
-            },
-            {
-                "x": 14,
-                "y": 31
-            },
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "FireLeftWalkingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 5,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireLeftWalkingMario-0-0",
-                "FireLeftWalkingMario-1-0",
-                "FireLeftWalkingMario-2-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 30
-            },
-            {
-                "x": 14,
-                "y": 31
-            },
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "FireRightRunningMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 3,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireRightRunningMario-0-0",
-                "FireRightRunningMario-1-0",
-                "FireRightRunningMario-2-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 30
-            },
-            {
-                "x": 14,
-                "y": 31
-            },
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "FireLeftRunningMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 3,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireLeftRunningMario-0-0",
-                "FireLeftRunningMario-1-0",
-                "FireLeftRunningMario-2-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 30
-            },
-            {
-                "x": 14,
-                "y": 31
-            },
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "FireRightVictoryMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireRightVictoryMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 14,
-                "y": 27
-            }
-        ]
-    },
-    "FireLeftVictoryMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "FireLeftVictoryMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 14,
-                "y": 27
-            }
-        ]
-    },
-    "SmallRightJumpingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallRightJumpingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 16
-            }
-        ]
-    },
-    "SmallLeftJumpingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallLeftJumpingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 16
-            }
-        ]
-    },
-    "SmallRightStandingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallRightStandingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 16
-            }
-        ]
-    },
-    "SmallLeftStandingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallLeftStandingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 16
-            }
-        ]
-    },
-    "SmallRightSlidingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallRightSlidingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 13,
-                "y": 16
-            }
-        ]
-    },
-    "SmallLeftSlidingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallLeftSlidingMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 13,
-                "y": 16
-            }
-        ]
-    },
-    "SmallRightWalkingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 5,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallRightWalkingMario-0-0",
-                "SmallRightWalkingMario-1-0",
-                "SmallRightWalkingMario-2-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 15
-            },
-            {
-                "x": 11,
-                "y": 16
-            },
-            {
-                "x": 15,
-                "y": 16
-            }
-        ]
-    },
-    "SmallLeftWalkingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 5,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallLeftWalkingMario-0-0",
-                "SmallLeftWalkingMario-1-0",
-                "SmallLeftWalkingMario-2-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 15
-            },
-            {
-                "x": 11,
-                "y": 16
-            },
-            {
-                "x": 15,
-                "y": 16
-            }
-        ]
-    },
-    "SmallRightRunningMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 3,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallRightRunningMario-0-0",
-                "SmallRightRunningMario-1-0",
-                "SmallRightRunningMario-2-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 15
-            },
-            {
-                "x": 11,
-                "y": 16
-            },
-            {
-                "x": 15,
-                "y": 16
-            }
-        ]
-    },
-    "SmallLeftRunningMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 3,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallLeftRunningMario-0-0",
-                "SmallLeftRunningMario-1-0",
-                "SmallLeftRunningMario-2-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 15
-            },
-            {
-                "x": 11,
-                "y": 16
-            },
-            {
-                "x": 15,
-                "y": 16
-            }
-        ]
-    },
-    "SmallRightDowngradingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 8,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallRightDowngradingMario-0-0",
-                "SmallRightDowngradingMario-1-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 0,
-                "y": 0
-            },
-            {
-                "x": 0,
-                "y": 0
-            }
-        ]
-    },
-    "SmallLeftDowngradingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 8,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallLeftDowngradingMario-0-0",
-                "SmallLeftDowngradingMario-1-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 0,
-                "y": 0
-            },
-            {
-                "x": 0,
-                "y": 0
-            }
-        ]
-    },
-    "SmallRightVictoryMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallRightVictoryMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 15
-            }
-        ]
-    },
-    "SmallLeftVictoryMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 1,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "SmallLeftVictoryMario-0-0"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 15
-            }
-        ]
-    },
-    "StarBigRightCrouchingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigRightCrouchingMario-0-0"
-            ],
-            "1": [
-                "StarBigRightCrouchingMario-0-1"
-            ],
-            "2": [
-                "StarBigRightCrouchingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 22
-            }
-        ]
-    },
-    "StarBigLeftCrouchingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigLeftCrouchingMario-0-0"
-            ],
-            "1": [
-                "StarBigLeftCrouchingMario-0-1"
-            ],
-            "2": [
-                "StarBigLeftCrouchingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 22
-            }
-        ]
-    },
-    "StarBigRightJumpingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigRightJumpingMario-0-0"
-            ],
-            "1": [
-                "StarBigRightJumpingMario-0-1"
-            ],
-            "2": [
-                "StarBigRightJumpingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "StarBigLeftJumpingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigLeftJumpingMario-0-0"
-            ],
-            "1": [
-                "StarBigLeftJumpingMario-0-1"
-            ],
-            "2": [
-                "StarBigLeftJumpingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "StarBigRightStandingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigRightStandingMario-0-0"
-            ],
-            "1": [
-                "StarBigRightStandingMario-0-1"
-            ],
-            "2": [
-                "StarBigRightStandingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "StarBigLeftStandingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigLeftStandingMario-0-0"
-            ],
-            "1": [
-                "StarBigLeftStandingMario-0-1"
-            ],
-            "2": [
-                "StarBigLeftStandingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "StarBigRightSlidingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigRightSlidingMario-0-0"
-            ],
-            "1": [
-                "StarBigRightSlidingMario-0-1"
-            ],
-            "2": [
-                "StarBigRightSlidingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "StarBigLeftSlidingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigLeftSlidingMario-0-0"
-            ],
-            "1": [
-                "StarBigLeftSlidingMario-0-1"
-            ],
-            "2": [
-                "StarBigLeftSlidingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "StarBigRightWalkingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 5,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigRightWalkingMario-0-0",
-                "StarBigRightWalkingMario-1-0",
-                "StarBigRightWalkingMario-2-0"
-            ],
-            "1": [
-                "StarBigRightWalkingMario-0-1",
-                "StarBigRightWalkingMario-1-1",
-                "StarBigRightWalkingMario-2-1"
-            ],
-            "2": [
-                "StarBigRightWalkingMario-0-2",
-                "StarBigRightWalkingMario-1-2",
-                "StarBigRightWalkingMario-2-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 30
-            },
-            {
-                "x": 14,
-                "y": 31
-            },
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "StarBigLeftWalkingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 5,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigLeftWalkingMario-0-0",
-                "StarBigLeftWalkingMario-1-0",
-                "StarBigLeftWalkingMario-2-0"
-            ],
-            "1": [
-                "StarBigLeftWalkingMario-0-1",
-                "StarBigLeftWalkingMario-1-1",
-                "StarBigLeftWalkingMario-2-1"
-            ],
-            "2": [
-                "StarBigLeftWalkingMario-0-2",
-                "StarBigLeftWalkingMario-1-2",
-                "StarBigLeftWalkingMario-2-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 30
-            },
-            {
-                "x": 14,
-                "y": 31
-            },
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "StarBigRightRunningMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 3,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigRightRunningMario-0-0",
-                "StarBigRightRunningMario-1-0",
-                "StarBigRightRunningMario-2-0"
-            ],
-            "1": [
-                "StarBigRightRunningMario-0-1",
-                "StarBigRightRunningMario-1-1",
-                "StarBigRightRunningMario-2-1"
-            ],
-            "2": [
-                "StarBigRightRunningMario-0-2",
-                "StarBigRightRunningMario-1-2",
-                "StarBigRightRunningMario-2-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 30
-            },
-            {
-                "x": 14,
-                "y": 31
-            },
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "StarBigLeftRunningMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 3,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigLeftRunningMario-0-0",
-                "StarBigLeftRunningMario-1-0",
-                "StarBigLeftRunningMario-2-0"
-            ],
-            "1": [
-                "StarBigLeftRunningMario-0-1",
-                "StarBigLeftRunningMario-1-1",
-                "StarBigLeftRunningMario-2-1"
-            ],
-            "2": [
-                "StarBigLeftRunningMario-0-2",
-                "StarBigLeftRunningMario-1-2",
-                "StarBigLeftRunningMario-2-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 16,
-                "y": 30
-            },
-            {
-                "x": 14,
-                "y": 31
-            },
-            {
-                "x": 16,
-                "y": 32
-            }
-        ]
-    },
-    "StarBigRightUpgradingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 8,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigRightUpgradingMario-0-0",
-                "StarBigRightUpgradingMario-1-0"
-            ],
-            "1": [
-                "StarBigRightUpgradingMario-0-1",
-                "StarBigRightUpgradingMario-1-1"
-            ],
-            "2": [
-                "StarBigRightUpgradingMario-0-2",
-                "StarBigRightUpgradingMario-1-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 0,
-                "y": 0
-            },
-            {
-                "x": 0,
-                "y": 0
-            }
-        ]
-    },
-    "StarBigLeftUpgradingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 8,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarBigLeftUpgradingMario-0-0",
-                "StarBigLeftUpgradingMario-1-0"
-            ],
-            "1": [
-                "StarBigLeftUpgradingMario-0-1",
-                "StarBigLeftUpgradingMario-1-1"
-            ],
-            "2": [
-                "StarBigLeftUpgradingMario-0-2",
-                "StarBigLeftUpgradingMario-1-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 0,
-                "y": 0
-            },
-            {
-                "x": 0,
-                "y": 0
-            }
-        ]
-    },
-    "StarSmallRightJumpingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarSmallRightJumpingMario-0-0"
-            ],
-            "1": [
-                "StarSmallRightJumpingMario-0-1"
-            ],
-            "2": [
-                "StarSmallRightJumpingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 16
-            }
-        ]
-    },
-    "StarSmallLeftJumpingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarSmallLeftJumpingMario-0-0"
-            ],
-            "1": [
-                "StarSmallLeftJumpingMario-0-1"
-            ],
-            "2": [
-                "StarSmallLeftJumpingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 16
-            }
-        ]
-    },
-    "StarSmallRightStandingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarSmallRightStandingMario-0-0"
-            ],
-            "1": [
-                "StarSmallRightStandingMario-0-1"
-            ],
-            "2": [
-                "StarSmallRightStandingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 16
-            }
-        ]
-    },
-    "StarSmallLeftStandingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarSmallLeftStandingMario-0-0"
-            ],
-            "1": [
-                "StarSmallLeftStandingMario-0-1"
-            ],
-            "2": [
-                "StarSmallLeftStandingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 16
-            }
-        ]
-    },
-    "StarSmallRightSlidingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarSmallRightSlidingMario-0-0"
-            ],
-            "1": [
-                "StarSmallRightSlidingMario-0-1"
-            ],
-            "2": [
-                "StarSmallRightSlidingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 13,
-                "y": 16
-            }
-        ]
-    },
-    "StarSmallLeftSlidingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 1,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarSmallLeftSlidingMario-0-0"
-            ],
-            "1": [
-                "StarSmallLeftSlidingMario-0-1"
-            ],
-            "2": [
-                "StarSmallLeftSlidingMario-0-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 13,
-                "y": 16
-            }
-        ]
-    },
-    "StarSmallRightWalkingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 5,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarSmallRightWalkingMario-0-0",
-                "StarSmallRightWalkingMario-1-0",
-                "StarSmallRightWalkingMario-2-0"
-            ],
-            "1": [
-                "StarSmallRightWalkingMario-0-1",
-                "StarSmallRightWalkingMario-1-1",
-                "StarSmallRightWalkingMario-2-1"
-            ],
-            "2": [
-                "StarSmallRightWalkingMario-0-2",
-                "StarSmallRightWalkingMario-1-2",
-                "StarSmallRightWalkingMario-2-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 15
-            },
-            {
-                "x": 11,
-                "y": 16
-            },
-            {
-                "x": 15,
-                "y": 16
-            }
-        ]
-    },
-    "StarSmallLeftWalkingMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 5,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarSmallLeftWalkingMario-0-0",
-                "StarSmallLeftWalkingMario-1-0",
-                "StarSmallLeftWalkingMario-2-0"
-            ],
-            "1": [
-                "StarSmallLeftWalkingMario-0-1",
-                "StarSmallLeftWalkingMario-1-1",
-                "StarSmallLeftWalkingMario-2-1"
-            ],
-            "2": [
-                "StarSmallLeftWalkingMario-0-2",
-                "StarSmallLeftWalkingMario-1-2",
-                "StarSmallLeftWalkingMario-2-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 15
-            },
-            {
-                "x": 11,
-                "y": 16
-            },
-            {
-                "x": 15,
-                "y": 16
-            }
-        ]
-    },
-    "StarSmallRightRunningMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 3,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarSmallRightRunningMario-0-0",
-                "StarSmallRightRunningMario-1-0",
-                "StarSmallRightRunningMario-2-0"
-            ],
-            "1": [
-                "StarSmallRightRunningMario-0-1",
-                "StarSmallRightRunningMario-1-1",
-                "StarSmallRightRunningMario-2-1"
-            ],
-            "2": [
-                "StarSmallRightRunningMario-0-2",
-                "StarSmallRightRunningMario-1-2",
-                "StarSmallRightRunningMario-2-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 15
-            },
-            {
-                "x": 11,
-                "y": 16
-            },
-            {
-                "x": 15,
-                "y": 16
-            }
-        ]
-    },
-    "StarSmallLeftRunningMario": {
-        "layerDepth": 0.8,
-        "frameDelay": 3,
-        "colorTintDelay": 4,
-        "scale": 2,
-        "textureName": "mario",
-        "sourceFrames": {
-            "0": [
-                "StarSmallLeftRunningMario-0-0",
-                "StarSmallLeftRunningMario-1-0",
-                "StarSmallLeftRunningMario-2-0"
-            ],
-            "1": [
-                "StarSmallLeftRunningMario-0-1",
-                "StarSmallLeftRunningMario-1-1",
-                "StarSmallLeftRunningMario-2-1"
-            ],
-            "2": [
-                "StarSmallLeftRunningMario-0-2",
-                "StarSmallLeftRunningMario-1-2",
-                "StarSmallLeftRunningMario-2-2"
-            ]
-        },
-        "sizes": [
-            {
-                "x": 12,
-                "y": 15
-            },
-            {
-                "x": 11,
-                "y": 16
-            },
-            {
-                "x": 15,
-                "y": 16
-            }
-        ]
-    }
+  "DeadMario": {
+    "layerDepth": 0.99,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "DeadMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "BigRightCrouchingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigRightCrouchingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 22
+      }
+    ]
+  },
+  "BigLeftCrouchingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigLeftCrouchingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 22
+      }
+    ]
+  },
+  "BigRightJumpingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigRightJumpingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "BigLeftJumpingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigLeftJumpingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "BigRightStandingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigRightStandingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "BigLeftStandingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigLeftStandingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "BigRightSlidingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigRightSlidingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "BigLeftSlidingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigLeftSlidingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "BigRightWalkingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 5,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigRightWalkingMario-0-0",
+        "BigRightWalkingMario-1-0",
+        "BigRightWalkingMario-2-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 30
+      },
+      {
+        "x": 14,
+        "y": 31
+      },
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "BigLeftWalkingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 5,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigLeftWalkingMario-0-0",
+        "BigLeftWalkingMario-1-0",
+        "BigLeftWalkingMario-2-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 30
+      },
+      {
+        "x": 14,
+        "y": 31
+      },
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "BigRightRunningMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 3,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigRightRunningMario-0-0",
+        "BigRightRunningMario-1-0",
+        "BigRightRunningMario-2-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 30
+      },
+      {
+        "x": 14,
+        "y": 31
+      },
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "BigLeftRunningMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 3,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigLeftRunningMario-0-0",
+        "BigLeftRunningMario-1-0",
+        "BigLeftRunningMario-2-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 30
+      },
+      {
+        "x": 14,
+        "y": 31
+      },
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "BigRightUpgradingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 8,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigRightUpgradingMario-0-0",
+        "BigRightUpgradingMario-1-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "BigLeftUpgradingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 8,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigLeftUpgradingMario-0-0",
+        "BigLeftUpgradingMario-1-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "BigRightVictoryMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigRightVictoryMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 14,
+        "y": 27
+      }
+    ]
+  },
+  "BigLeftVictoryMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "BigLeftVictoryMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 14,
+        "y": 27
+      }
+    ]
+  },
+  "FireRightCrouchingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireRightCrouchingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 22
+      }
+    ]
+  },
+  "FireLeftCrouchingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireLeftCrouchingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 22
+      }
+    ]
+  },
+  "FireRightJumpingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireRightJumpingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "FireLeftJumpingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireLeftJumpingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "FireRightStandingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireRightStandingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "FireLeftStandingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireLeftStandingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "FireRightSlidingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireRightSlidingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "FireLeftSlidingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireLeftSlidingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "FireRightAttackingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireRightAttackingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "FireLeftAttackingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireLeftAttackingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "FireRightWalkingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 5,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireRightWalkingMario-0-0",
+        "FireRightWalkingMario-1-0",
+        "FireRightWalkingMario-2-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 30
+      },
+      {
+        "x": 14,
+        "y": 31
+      },
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "FireLeftWalkingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 5,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireLeftWalkingMario-0-0",
+        "FireLeftWalkingMario-1-0",
+        "FireLeftWalkingMario-2-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 30
+      },
+      {
+        "x": 14,
+        "y": 31
+      },
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "FireRightRunningMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 3,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireRightRunningMario-0-0",
+        "FireRightRunningMario-1-0",
+        "FireRightRunningMario-2-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 30
+      },
+      {
+        "x": 14,
+        "y": 31
+      },
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "FireLeftRunningMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 3,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireLeftRunningMario-0-0",
+        "FireLeftRunningMario-1-0",
+        "FireLeftRunningMario-2-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 30
+      },
+      {
+        "x": 14,
+        "y": 31
+      },
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "FireRightVictoryMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireRightVictoryMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 14,
+        "y": 27
+      }
+    ]
+  },
+  "FireLeftVictoryMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "FireLeftVictoryMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 14,
+        "y": 27
+      }
+    ]
+  },
+  "SmallRightJumpingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallRightJumpingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 16
+      }
+    ]
+  },
+  "SmallLeftJumpingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallLeftJumpingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 16
+      }
+    ]
+  },
+  "SmallRightStandingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallRightStandingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 16
+      }
+    ]
+  },
+  "SmallLeftStandingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallLeftStandingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 16
+      }
+    ]
+  },
+  "SmallRightSlidingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallRightSlidingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 13,
+        "y": 16
+      }
+    ]
+  },
+  "SmallLeftSlidingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallLeftSlidingMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 13,
+        "y": 16
+      }
+    ]
+  },
+  "SmallRightWalkingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 5,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallRightWalkingMario-0-0",
+        "SmallRightWalkingMario-1-0",
+        "SmallRightWalkingMario-2-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 15
+      },
+      {
+        "x": 11,
+        "y": 16
+      },
+      {
+        "x": 15,
+        "y": 16
+      }
+    ]
+  },
+  "SmallLeftWalkingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 5,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallLeftWalkingMario-0-0",
+        "SmallLeftWalkingMario-1-0",
+        "SmallLeftWalkingMario-2-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 15
+      },
+      {
+        "x": 11,
+        "y": 16
+      },
+      {
+        "x": 15,
+        "y": 16
+      }
+    ]
+  },
+  "SmallRightRunningMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 3,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallRightRunningMario-0-0",
+        "SmallRightRunningMario-1-0",
+        "SmallRightRunningMario-2-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 15
+      },
+      {
+        "x": 11,
+        "y": 16
+      },
+      {
+        "x": 15,
+        "y": 16
+      }
+    ]
+  },
+  "SmallLeftRunningMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 3,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallLeftRunningMario-0-0",
+        "SmallLeftRunningMario-1-0",
+        "SmallLeftRunningMario-2-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 15
+      },
+      {
+        "x": 11,
+        "y": 16
+      },
+      {
+        "x": 15,
+        "y": 16
+      }
+    ]
+  },
+  "SmallRightDowngradingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 8,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallRightDowngradingMario-0-0",
+        "SmallRightDowngradingMario-1-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "SmallLeftDowngradingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 8,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallLeftDowngradingMario-0-0",
+        "SmallLeftDowngradingMario-1-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "SmallRightVictoryMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallRightVictoryMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 15
+      }
+    ]
+  },
+  "SmallLeftVictoryMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 1,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "SmallLeftVictoryMario-0-0"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 15
+      }
+    ]
+  },
+  "StarBigRightCrouchingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigRightCrouchingMario-0-0"
+      ],
+      "1": [
+        "StarBigRightCrouchingMario-0-1"
+      ],
+      "2": [
+        "StarBigRightCrouchingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 22
+      }
+    ]
+  },
+  "StarBigLeftCrouchingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigLeftCrouchingMario-0-0"
+      ],
+      "1": [
+        "StarBigLeftCrouchingMario-0-1"
+      ],
+      "2": [
+        "StarBigLeftCrouchingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 22
+      }
+    ]
+  },
+  "StarBigRightJumpingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigRightJumpingMario-0-0"
+      ],
+      "1": [
+        "StarBigRightJumpingMario-0-1"
+      ],
+      "2": [
+        "StarBigRightJumpingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "StarBigLeftJumpingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigLeftJumpingMario-0-0"
+      ],
+      "1": [
+        "StarBigLeftJumpingMario-0-1"
+      ],
+      "2": [
+        "StarBigLeftJumpingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "StarBigRightStandingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigRightStandingMario-0-0"
+      ],
+      "1": [
+        "StarBigRightStandingMario-0-1"
+      ],
+      "2": [
+        "StarBigRightStandingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "StarBigLeftStandingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigLeftStandingMario-0-0"
+      ],
+      "1": [
+        "StarBigLeftStandingMario-0-1"
+      ],
+      "2": [
+        "StarBigLeftStandingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "StarBigRightSlidingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigRightSlidingMario-0-0"
+      ],
+      "1": [
+        "StarBigRightSlidingMario-0-1"
+      ],
+      "2": [
+        "StarBigRightSlidingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "StarBigLeftSlidingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigLeftSlidingMario-0-0"
+      ],
+      "1": [
+        "StarBigLeftSlidingMario-0-1"
+      ],
+      "2": [
+        "StarBigLeftSlidingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "StarBigRightWalkingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 5,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigRightWalkingMario-0-0",
+        "StarBigRightWalkingMario-1-0",
+        "StarBigRightWalkingMario-2-0"
+      ],
+      "1": [
+        "StarBigRightWalkingMario-0-1",
+        "StarBigRightWalkingMario-1-1",
+        "StarBigRightWalkingMario-2-1"
+      ],
+      "2": [
+        "StarBigRightWalkingMario-0-2",
+        "StarBigRightWalkingMario-1-2",
+        "StarBigRightWalkingMario-2-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 30
+      },
+      {
+        "x": 14,
+        "y": 31
+      },
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "StarBigLeftWalkingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 5,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigLeftWalkingMario-0-0",
+        "StarBigLeftWalkingMario-1-0",
+        "StarBigLeftWalkingMario-2-0"
+      ],
+      "1": [
+        "StarBigLeftWalkingMario-0-1",
+        "StarBigLeftWalkingMario-1-1",
+        "StarBigLeftWalkingMario-2-1"
+      ],
+      "2": [
+        "StarBigLeftWalkingMario-0-2",
+        "StarBigLeftWalkingMario-1-2",
+        "StarBigLeftWalkingMario-2-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 30
+      },
+      {
+        "x": 14,
+        "y": 31
+      },
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "StarBigRightRunningMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 3,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigRightRunningMario-0-0",
+        "StarBigRightRunningMario-1-0",
+        "StarBigRightRunningMario-2-0"
+      ],
+      "1": [
+        "StarBigRightRunningMario-0-1",
+        "StarBigRightRunningMario-1-1",
+        "StarBigRightRunningMario-2-1"
+      ],
+      "2": [
+        "StarBigRightRunningMario-0-2",
+        "StarBigRightRunningMario-1-2",
+        "StarBigRightRunningMario-2-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 30
+      },
+      {
+        "x": 14,
+        "y": 31
+      },
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "StarBigLeftRunningMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 3,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigLeftRunningMario-0-0",
+        "StarBigLeftRunningMario-1-0",
+        "StarBigLeftRunningMario-2-0"
+      ],
+      "1": [
+        "StarBigLeftRunningMario-0-1",
+        "StarBigLeftRunningMario-1-1",
+        "StarBigLeftRunningMario-2-1"
+      ],
+      "2": [
+        "StarBigLeftRunningMario-0-2",
+        "StarBigLeftRunningMario-1-2",
+        "StarBigLeftRunningMario-2-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 16,
+        "y": 30
+      },
+      {
+        "x": 14,
+        "y": 31
+      },
+      {
+        "x": 16,
+        "y": 32
+      }
+    ]
+  },
+  "StarBigRightUpgradingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 8,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigRightUpgradingMario-0-0",
+        "StarBigRightUpgradingMario-1-0"
+      ],
+      "1": [
+        "StarBigRightUpgradingMario-0-1",
+        "StarBigRightUpgradingMario-1-1"
+      ],
+      "2": [
+        "StarBigRightUpgradingMario-0-2",
+        "StarBigRightUpgradingMario-1-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "StarBigLeftUpgradingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 8,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarBigLeftUpgradingMario-0-0",
+        "StarBigLeftUpgradingMario-1-0"
+      ],
+      "1": [
+        "StarBigLeftUpgradingMario-0-1",
+        "StarBigLeftUpgradingMario-1-1"
+      ],
+      "2": [
+        "StarBigLeftUpgradingMario-0-2",
+        "StarBigLeftUpgradingMario-1-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "StarSmallRightJumpingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarSmallRightJumpingMario-0-0"
+      ],
+      "1": [
+        "StarSmallRightJumpingMario-0-1"
+      ],
+      "2": [
+        "StarSmallRightJumpingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 16
+      }
+    ]
+  },
+  "StarSmallLeftJumpingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarSmallLeftJumpingMario-0-0"
+      ],
+      "1": [
+        "StarSmallLeftJumpingMario-0-1"
+      ],
+      "2": [
+        "StarSmallLeftJumpingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 16
+      }
+    ]
+  },
+  "StarSmallRightStandingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarSmallRightStandingMario-0-0"
+      ],
+      "1": [
+        "StarSmallRightStandingMario-0-1"
+      ],
+      "2": [
+        "StarSmallRightStandingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 16
+      }
+    ]
+  },
+  "StarSmallLeftStandingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarSmallLeftStandingMario-0-0"
+      ],
+      "1": [
+        "StarSmallLeftStandingMario-0-1"
+      ],
+      "2": [
+        "StarSmallLeftStandingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 16
+      }
+    ]
+  },
+  "StarSmallRightSlidingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarSmallRightSlidingMario-0-0"
+      ],
+      "1": [
+        "StarSmallRightSlidingMario-0-1"
+      ],
+      "2": [
+        "StarSmallRightSlidingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 13,
+        "y": 16
+      }
+    ]
+  },
+  "StarSmallLeftSlidingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 1,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarSmallLeftSlidingMario-0-0"
+      ],
+      "1": [
+        "StarSmallLeftSlidingMario-0-1"
+      ],
+      "2": [
+        "StarSmallLeftSlidingMario-0-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 13,
+        "y": 16
+      }
+    ]
+  },
+  "StarSmallRightWalkingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 5,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarSmallRightWalkingMario-0-0",
+        "StarSmallRightWalkingMario-1-0",
+        "StarSmallRightWalkingMario-2-0"
+      ],
+      "1": [
+        "StarSmallRightWalkingMario-0-1",
+        "StarSmallRightWalkingMario-1-1",
+        "StarSmallRightWalkingMario-2-1"
+      ],
+      "2": [
+        "StarSmallRightWalkingMario-0-2",
+        "StarSmallRightWalkingMario-1-2",
+        "StarSmallRightWalkingMario-2-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 15
+      },
+      {
+        "x": 11,
+        "y": 16
+      },
+      {
+        "x": 15,
+        "y": 16
+      }
+    ]
+  },
+  "StarSmallLeftWalkingMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 5,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarSmallLeftWalkingMario-0-0",
+        "StarSmallLeftWalkingMario-1-0",
+        "StarSmallLeftWalkingMario-2-0"
+      ],
+      "1": [
+        "StarSmallLeftWalkingMario-0-1",
+        "StarSmallLeftWalkingMario-1-1",
+        "StarSmallLeftWalkingMario-2-1"
+      ],
+      "2": [
+        "StarSmallLeftWalkingMario-0-2",
+        "StarSmallLeftWalkingMario-1-2",
+        "StarSmallLeftWalkingMario-2-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 15
+      },
+      {
+        "x": 11,
+        "y": 16
+      },
+      {
+        "x": 15,
+        "y": 16
+      }
+    ]
+  },
+  "StarSmallRightRunningMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 3,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarSmallRightRunningMario-0-0",
+        "StarSmallRightRunningMario-1-0",
+        "StarSmallRightRunningMario-2-0"
+      ],
+      "1": [
+        "StarSmallRightRunningMario-0-1",
+        "StarSmallRightRunningMario-1-1",
+        "StarSmallRightRunningMario-2-1"
+      ],
+      "2": [
+        "StarSmallRightRunningMario-0-2",
+        "StarSmallRightRunningMario-1-2",
+        "StarSmallRightRunningMario-2-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 15
+      },
+      {
+        "x": 11,
+        "y": 16
+      },
+      {
+        "x": 15,
+        "y": 16
+      }
+    ]
+  },
+  "StarSmallLeftRunningMario": {
+    "layerDepth": 0.8,
+    "frameDelay": 3,
+    "colorTintDelay": 4,
+    "scale": 2,
+    "textureName": "mario",
+    "sourceFrames": {
+      "0": [
+        "StarSmallLeftRunningMario-0-0",
+        "StarSmallLeftRunningMario-1-0",
+        "StarSmallLeftRunningMario-2-0"
+      ],
+      "1": [
+        "StarSmallLeftRunningMario-0-1",
+        "StarSmallLeftRunningMario-1-1",
+        "StarSmallLeftRunningMario-2-1"
+      ],
+      "2": [
+        "StarSmallLeftRunningMario-0-2",
+        "StarSmallLeftRunningMario-1-2",
+        "StarSmallLeftRunningMario-2-2"
+      ]
+    },
+    "sizes": [
+      {
+        "x": 12,
+        "y": 15
+      },
+      {
+        "x": 11,
+        "y": 16
+      },
+      {
+        "x": 15,
+        "y": 16
+      }
+    ]
+  }
 }
