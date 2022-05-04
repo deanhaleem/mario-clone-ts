@@ -1,7 +1,7 @@
 ---
 name: Story
 about: Encapsulate tasks for building the project
-title: '[Story] Story Title'
+title: ''
 labels: story
 assignees: ''
 ---
