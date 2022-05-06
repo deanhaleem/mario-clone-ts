@@ -65,10 +65,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Roadmap
 
-- [ ] Import assets
-- [ ] Create test level
-
-See the [open issues](https://github.com/deanhaleem/mario-clone-ts/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/deanhaleem/mario-clone-ts/issues) for a list of proposed features (and known issues).
 
 <!-- LICENSE -->
 
