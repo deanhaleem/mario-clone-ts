@@ -1,9 +1,10 @@
 import Phaser from 'phaser';
+import Mario from '../game-objects/players/Mario';
+import { IPlayer } from '../game-objects/players/types';
 import SpriteFactory from '../graphics/SpriteFactory';
-import { ISprite } from '../graphics/types';
 
 export default class Demo extends Phaser.Scene {
-  private sprite: ISprite;
+  private gameObject: IPlayer;
 
   private rt: Phaser.GameObjects.RenderTexture;
 
@@ -19,9 +20,7 @@ export default class Demo extends Phaser.Scene {
 
   create() {
     this.rt = this.add.renderTexture(0, 0, 800, 480);
-    this.sprite = SpriteFactory.instance.createSprite(
-      'StarSmallLeftRunningMario'
-    );
+    this.gameObject = new Mario(new Phaser.Math.Vector2(525, 200));
 
     this.fpsText = this.add.text(10, 10, 'FPS: -- \n-- Particles', {
       font: 'bold 26px Arial',
@@ -31,7 +30,7 @@ export default class Demo extends Phaser.Scene {
   private addDelta = 0;
 
   update(time: number, delta: number): void {
-    this.sprite.update(time, delta);
+    this.gameObject.update(time, delta);
     this.addDelta += delta / 1000;
 
     this.rt.clear();
@@ -41,7 +40,7 @@ export default class Demo extends Phaser.Scene {
       )}\nTime: ${time / 1000}\nAdd Delta: ${this.addDelta}`
     );
     this.rt.beginDraw();
-    this.sprite.draw(this.rt, new Phaser.Math.Vector2(525, 200));
+    this.gameObject.draw(this.rt);
     this.rt.endDraw();
   }
 }

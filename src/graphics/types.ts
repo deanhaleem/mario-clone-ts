@@ -1,5 +1,14 @@
 import { IUpdatable } from '../types';
 
+export interface IDrawable {
+  /**
+   * Draws the Sprite to the screen using the scene with which the Sprite was created.
+   *
+   * @param renderTexture the RenderTexture used to draw to the screen.
+   */
+  draw(renderTexture: Phaser.GameObjects.RenderTexture): void;
+}
+
 export interface ISprite extends IUpdatable {
   /**
    * The hitbox of the Sprite.
