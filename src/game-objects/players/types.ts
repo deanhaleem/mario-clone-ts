@@ -1,0 +1,25 @@
+import { IGameObject } from '../types';
+
+export interface IPlayer extends IGameObject {
+  /**
+   * Move the player upwards by 2 units.
+   */
+  jump(): void;
+
+  /**
+   * Move the player right by 2 units.
+   */
+  walkRight(): void;
+
+  /**
+   * Move the player left by 2 units.
+   */
+  walkLeft(): void;
+
+  /**
+   * Move the player down by 2 units.
+   */
+  crouch(): void;
+
+  run(): void;
+}
