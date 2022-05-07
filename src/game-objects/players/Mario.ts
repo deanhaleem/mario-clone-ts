@@ -1,6 +1,6 @@
 import { Player } from './Player';
 
-export default class Mario extends Player {
+export class Mario extends Player {
   // TODO: need to have the states include a "name" field
   protected override spriteName = 'StarSmallLeftRunningMario';
 
