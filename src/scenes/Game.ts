@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import Mario from '../game-objects/players/Mario';
+import { Mario } from '../game-objects/players/Mario';
 import { IPlayer } from '../game-objects/players/types';
 import SpriteFactory from '../graphics/SpriteFactory';
 
