@@ -6,7 +6,6 @@ import { SpriteDetails } from './types';
 export default class SpriteFactory {
   public static readonly instance = new SpriteFactory();
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
   private constructor() {}
 
   public loadContent(scene: Phaser.Scene) {
