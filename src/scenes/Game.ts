@@ -2,9 +2,17 @@ import Phaser from 'phaser';
 import { Mario } from '../game-objects/players/Mario';
 import { IPlayer } from '../game-objects/players/types';
 import SpriteFactory from '../graphics/SpriteFactory';
+import { CrouchCommand } from '../input/commands/CrouchCommand';
+import { JumpCommand } from '../input/commands/JumpCommand';
+import { NullCommand } from '../input/commands/NullCommand';
+import { WalkLeftCommand } from '../input/commands/WalkLeftCommand';
+import { WalkRightCommand } from '../input/commands/WalkRightCommand';
+import { KeyboardController } from '../input/KeyboardController';
+import { IController } from '../input/types';
 
 export default class Demo extends Phaser.Scene {
   private gameObject: IPlayer;
+  private keyboardController: IController;
 
   private rt: Phaser.GameObjects.RenderTexture;
 
@@ -25,11 +33,45 @@ export default class Demo extends Phaser.Scene {
     this.fpsText = this.add.text(10, 10, 'FPS: -- \n-- Particles', {
       font: 'bold 26px Arial',
     });
+
+    this.input.keyboard.addKey('Z');
+    this.input.keyboard.addKey('RIGHT');
+    this.input.keyboard.addKey('LEFT');
+    this.input.keyboard.addKey('DOWN');
+
+    this.keyboardController = new KeyboardController(
+      this.input.keyboard,
+      {
+        key: Phaser.Input.Keyboard.KeyCodes.Z.toString(),
+        keyDownCommand: new JumpCommand(this.gameObject),
+        keyUpCommand: new NullCommand(),
+        canBeHeld: true, // TODO: remove once physics implemented
+      },
+      {
+        key: Phaser.Input.Keyboard.KeyCodes.RIGHT.toString(),
+        keyDownCommand: new WalkRightCommand(this.gameObject),
+        keyUpCommand: new NullCommand(),
+        canBeHeld: true,
+      },
+      {
+        key: Phaser.Input.Keyboard.KeyCodes.LEFT.toString(),
+        keyDownCommand: new WalkLeftCommand(this.gameObject),
+        keyUpCommand: new NullCommand(),
+        canBeHeld: true,
+      },
+      {
+        key: Phaser.Input.Keyboard.KeyCodes.DOWN.toString(),
+        keyDownCommand: new CrouchCommand(this.gameObject),
+        keyUpCommand: new NullCommand(),
+        canBeHeld: true,
+      }
+    );
   }
 
   private addDelta = 0;
 
   update(time: number, delta: number): void {
+    this.keyboardController.update();
     this.gameObject.update(time, delta);
     this.addDelta += delta / 1000;
 

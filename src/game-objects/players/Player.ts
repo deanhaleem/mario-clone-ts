@@ -7,7 +7,7 @@ export abstract class Player extends GameObject implements IPlayer {
   }
 
   public jump(): void {
-    this.location.add({ x: 0, y: 2 });
+    this.location.add({ x: 0, y: -2 });
   }
 
   public walkRight(): void {
@@ -19,7 +19,7 @@ export abstract class Player extends GameObject implements IPlayer {
   }
 
   public crouch(): void {
-    this.location.add({ x: 0, y: -2 });
+    this.location.add({ x: 0, y: 2 });
   }
 
   public run(): void {}
