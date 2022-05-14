@@ -3,10 +3,10 @@
     {
       "filename": "BrickBlock-0-0",
       "frame": {
-        "X": 80,
-        "Y": 195,
-        "Width": 16,
-        "Height": 16
+        "x": 80,
+        "y": 195,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -26,10 +26,10 @@
     {
       "filename": "QuestionBlock-0-0",
       "frame": {
-        "X": 80,
-        "Y": 112,
-        "Width": 16,
-        "Height": 16
+        "x": 80,
+        "y": 112,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -49,10 +49,10 @@
     {
       "filename": "QuestionBlock-1-0",
       "frame": {
-        "X": 96,
-        "Y": 112,
-        "Width": 16,
-        "Height": 16
+        "x": 96,
+        "y": 112,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -72,10 +72,10 @@
     {
       "filename": "QuestionBlock-2-0",
       "frame": {
-        "X": 112,
-        "Y": 112,
-        "Width": 16,
-        "Height": 16
+        "x": 112,
+        "y": 112,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -95,10 +95,10 @@
     {
       "filename": "QuestionBlock-3-0",
       "frame": {
-        "X": 96,
-        "Y": 112,
-        "Width": 16,
-        "Height": 16
+        "x": 96,
+        "y": 112,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -118,10 +118,10 @@
     {
       "filename": "QuestionBlock-4-0",
       "frame": {
-        "X": 80,
-        "Y": 112,
-        "Width": 16,
-        "Height": 16
+        "x": 80,
+        "y": 112,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -141,10 +141,10 @@
     {
       "filename": "StairBlock-0-0",
       "frame": {
-        "X": 80,
-        "Y": 290,
-        "Width": 16,
-        "Height": 16
+        "x": 80,
+        "y": 290,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -164,10 +164,10 @@
     {
       "filename": "FloorBlock-0-0",
       "frame": {
-        "X": 80,
-        "Y": 272,
-        "Width": 16,
-        "Height": 16
+        "x": 80,
+        "y": 272,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -187,10 +187,10 @@
     {
       "filename": "UsedBlock-0-0",
       "frame": {
-        "X": 80,
-        "Y": 232,
-        "Width": 16,
-        "Height": 16
+        "x": 80,
+        "y": 232,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -210,10 +210,10 @@
     {
       "filename": "HiddenBlock-0-0",
       "frame": {
-        "X": 0,
-        "Y": 0,
-        "Width": 16,
-        "Height": 16
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -233,10 +233,10 @@
     {
       "filename": "DestroyedBlock-0-0",
       "frame": {
-        "X": 304,
-        "Y": 112,
-        "Width": 16,
-        "Height": 16
+        "x": 304,
+        "y": 112,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -256,10 +256,10 @@
     {
       "filename": "DebrisBlock-0-0",
       "frame": {
-        "X": 312,
-        "Y": 112,
-        "Width": 8,
-        "Height": 8
+        "x": 312,
+        "y": 112,
+        "w": 8,
+        "h": 8
       },
       "spriteSourceSize": {
         "x": 0,
@@ -279,10 +279,10 @@
     {
       "filename": "DebrisBlock-1-0",
       "frame": {
-        "X": 304,
-        "Y": 112,
-        "Width": 8,
-        "Height": 8
+        "x": 304,
+        "y": 112,
+        "w": 8,
+        "h": 8
       },
       "spriteSourceSize": {
         "x": 0,
@@ -302,10 +302,10 @@
     {
       "filename": "DebrisBlock-2-0",
       "frame": {
-        "X": 304,
-        "Y": 120,
-        "Width": 8,
-        "Height": 8
+        "x": 304,
+        "y": 120,
+        "w": 8,
+        "h": 8
       },
       "spriteSourceSize": {
         "x": 0,
@@ -325,10 +325,10 @@
     {
       "filename": "DebrisBlock-3-0",
       "frame": {
-        "X": 312,
-        "Y": 120,
-        "Width": 8,
-        "Height": 8
+        "x": 312,
+        "y": 120,
+        "w": 8,
+        "h": 8
       },
       "spriteSourceSize": {
         "x": 0,
@@ -348,10 +348,10 @@
     {
       "filename": "SmallVerticalGreenPipe-0-0",
       "frame": {
-        "X": 757,
-        "Y": 417,
-        "Width": 32,
-        "Height": 32
+        "x": 757,
+        "y": 417,
+        "w": 32,
+        "h": 32
       },
       "spriteSourceSize": {
         "x": 0,
@@ -371,10 +371,10 @@
     {
       "filename": "MediumVerticalGreenPipe-0-0",
       "frame": {
-        "X": 719,
-        "Y": 401,
-        "Width": 32,
-        "Height": 48
+        "x": 719,
+        "y": 401,
+        "w": 32,
+        "h": 48
       },
       "spriteSourceSize": {
         "x": 0,
@@ -394,10 +394,10 @@
     {
       "filename": "LargeVerticalGreenPipe-0-0",
       "frame": {
-        "X": 678,
-        "Y": 385,
-        "Width": 32,
-        "Height": 64
+        "x": 678,
+        "y": 385,
+        "w": 32,
+        "h": 64
       },
       "spriteSourceSize": {
         "x": 0,
@@ -417,10 +417,10 @@
     {
       "filename": "HorizontalGreenPipe-0-0",
       "frame": {
-        "X": 532,
-        "Y": 417,
-        "Width": 64,
-        "Height": 32
+        "x": 532,
+        "y": 417,
+        "w": 64,
+        "h": 32
       },
       "spriteSourceSize": {
         "x": 0,
@@ -440,10 +440,10 @@
     {
       "filename": "LargeGreenPipeShaft-0-0",
       "frame": {
-        "X": 564,
-        "Y": 321,
-        "Width": 32,
-        "Height": 32
+        "x": 564,
+        "y": 321,
+        "w": 32,
+        "h": 32
       },
       "spriteSourceSize": {
         "x": 0,

@@ -3,7 +3,7 @@ import { Block } from './Block';
 export class QuestionBlock extends Block {
   // TODO: potentially get rid of instance variable and just pass in method call
   // directly
-  protected override spriteName = 'FireFlower';
+  protected override spriteName = 'QuestionBlock';
 
   public constructor(location: Phaser.Math.Vector2) {
     super(location);

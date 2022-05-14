@@ -3,10 +3,10 @@
     {
       "filename": "Flagpole-0-0",
       "frame": {
-        "X": 249,
-        "Y": 594,
-        "Width": 24,
-        "Height": 151
+        "x": 249,
+        "y": 594,
+        "w": 24,
+        "h": 151
       },
       "spriteSourceSize": {
         "x": 0,
@@ -26,10 +26,10 @@
     {
       "filename": "Flagpole-1-0",
       "frame": {
-        "X": 216,
-        "Y": 594,
-        "Width": 24,
-        "Height": 151
+        "x": 216,
+        "y": 594,
+        "w": 24,
+        "h": 151
       },
       "spriteSourceSize": {
         "x": 0,
@@ -49,10 +49,10 @@
     {
       "filename": "Flagpole-2-0",
       "frame": {
-        "X": 182,
-        "Y": 594,
-        "Width": 24,
-        "Height": 151
+        "x": 182,
+        "y": 594,
+        "w": 24,
+        "h": 151
       },
       "spriteSourceSize": {
         "x": 0,
@@ -72,10 +72,10 @@
     {
       "filename": "Flagpole-3-0",
       "frame": {
-        "X": 149,
-        "Y": 594,
-        "Width": 24,
-        "Height": 151
+        "x": 149,
+        "y": 594,
+        "w": 24,
+        "h": 151
       },
       "spriteSourceSize": {
         "x": 0,
@@ -95,10 +95,10 @@
     {
       "filename": "Flagpole-4-0",
       "frame": {
-        "X": 117,
-        "Y": 594,
-        "Width": 23,
-        "Height": 151
+        "x": 117,
+        "y": 594,
+        "w": 23,
+        "h": 151
       },
       "spriteSourceSize": {
         "x": 0,
@@ -118,10 +118,10 @@
     {
       "filename": "LargeHill-0-0",
       "frame": {
-        "X": 498,
-        "Y": 34,
-        "Width": 80,
-        "Height": 35
+        "x": 498,
+        "y": 34,
+        "w": 80,
+        "h": 35
       },
       "spriteSourceSize": {
         "x": 0,
@@ -141,10 +141,10 @@
     {
       "filename": "SmallHill-0-0",
       "frame": {
-        "X": 447,
-        "Y": 50,
-        "Width": 48,
-        "Height": 19
+        "x": 447,
+        "y": 50,
+        "w": 48,
+        "h": 19
       },
       "spriteSourceSize": {
         "x": 0,
@@ -164,10 +164,10 @@
     {
       "filename": "LargeBush-0-0",
       "frame": {
-        "X": 484,
-        "Y": 127,
-        "Width": 64,
-        "Height": 16
+        "x": 484,
+        "y": 127,
+        "w": 64,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -187,10 +187,10 @@
     {
       "filename": "MediumBush-0-0",
       "frame": {
-        "X": 550,
-        "Y": 127,
-        "Width": 48,
-        "Height": 16
+        "x": 550,
+        "y": 127,
+        "w": 48,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -210,10 +210,10 @@
     {
       "filename": "SmallBush-0-0",
       "frame": {
-        "X": 450,
-        "Y": 127,
-        "Width": 32,
-        "Height": 16
+        "x": 450,
+        "y": 127,
+        "w": 32,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -233,10 +233,10 @@
     {
       "filename": "LargeCloud-0-0",
       "frame": {
-        "X": 495,
-        "Y": 72,
-        "Width": 64,
-        "Height": 24
+        "x": 495,
+        "y": 72,
+        "w": 64,
+        "h": 24
       },
       "spriteSourceSize": {
         "x": 0,
@@ -256,10 +256,10 @@
     {
       "filename": "MediumCloud-0-0",
       "frame": {
-        "X": 445,
-        "Y": 72,
-        "Width": 48,
-        "Height": 24
+        "x": 445,
+        "y": 72,
+        "w": 48,
+        "h": 24
       },
       "spriteSourceSize": {
         "x": 0,
@@ -279,10 +279,10 @@
     {
       "filename": "SmallCloud-0-0",
       "frame": {
-        "X": 561,
-        "Y": 72,
-        "Width": 32,
-        "Height": 24
+        "x": 561,
+        "y": 72,
+        "w": 32,
+        "h": 24
       },
       "spriteSourceSize": {
         "x": 0,
@@ -302,10 +302,10 @@
     {
       "filename": "SmallCastle-0-0",
       "frame": {
-        "X": 247,
-        "Y": 863,
-        "Width": 80,
-        "Height": 80
+        "x": 247,
+        "y": 863,
+        "w": 80,
+        "h": 80
       },
       "spriteSourceSize": {
         "x": 0,

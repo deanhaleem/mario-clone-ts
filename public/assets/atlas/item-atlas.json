@@ -3,10 +3,10 @@
     {
       "filename": "FireFlower-0-0",
       "frame": {
-        "X": 0,
-        "Y": 32,
-        "Width": 16,
-        "Height": 16
+        "x": 0,
+        "y": 32,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -26,10 +26,10 @@
     {
       "filename": "FireFlower-1-0",
       "frame": {
-        "X": 16,
-        "Y": 32,
-        "Width": 16,
-        "Height": 16
+        "x": 16,
+        "y": 32,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -49,10 +49,10 @@
     {
       "filename": "FireFlower-2-0",
       "frame": {
-        "X": 32,
-        "Y": 32,
-        "Width": 16,
-        "Height": 16
+        "x": 32,
+        "y": 32,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -72,10 +72,10 @@
     {
       "filename": "FireFlower-3-0",
       "frame": {
-        "X": 48,
-        "Y": 32,
-        "Width": 16,
-        "Height": 16
+        "x": 48,
+        "y": 32,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -95,10 +95,10 @@
     {
       "filename": "FireFlower-4-0",
       "frame": {
-        "X": 32,
-        "Y": 32,
-        "Width": 16,
-        "Height": 16
+        "x": 32,
+        "y": 32,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -118,10 +118,10 @@
     {
       "filename": "FireFlower-5-0",
       "frame": {
-        "X": 16,
-        "Y": 32,
-        "Width": 16,
-        "Height": 16
+        "x": 16,
+        "y": 32,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -141,10 +141,10 @@
     {
       "filename": "FireFlower-6-0",
       "frame": {
-        "X": 0,
-        "Y": 32,
-        "Width": 16,
-        "Height": 16
+        "x": 0,
+        "y": 32,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -164,10 +164,10 @@
     {
       "filename": "NonSpinningCoin-0-0",
       "frame": {
-        "X": 0,
-        "Y": 80,
-        "Width": 16,
-        "Height": 16
+        "x": 0,
+        "y": 80,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -187,10 +187,10 @@
     {
       "filename": "NonSpinningCoin-1-0",
       "frame": {
-        "X": 16,
-        "Y": 80,
-        "Width": 16,
-        "Height": 16
+        "x": 16,
+        "y": 80,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -210,10 +210,10 @@
     {
       "filename": "NonSpinningCoin-2-0",
       "frame": {
-        "X": 32,
-        "Y": 80,
-        "Width": 16,
-        "Height": 16
+        "x": 32,
+        "y": 80,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -233,10 +233,10 @@
     {
       "filename": "NonSpinningCoin-3-0",
       "frame": {
-        "X": 48,
-        "Y": 80,
-        "Width": 16,
-        "Height": 16
+        "x": 48,
+        "y": 80,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -256,10 +256,10 @@
     {
       "filename": "NonSpinningCoin-4-0",
       "frame": {
-        "X": 32,
-        "Y": 80,
-        "Width": 16,
-        "Height": 16
+        "x": 32,
+        "y": 80,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -279,10 +279,10 @@
     {
       "filename": "NonSpinningCoin-5-0",
       "frame": {
-        "X": 16,
-        "Y": 80,
-        "Width": 16,
-        "Height": 16
+        "x": 16,
+        "y": 80,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -302,10 +302,10 @@
     {
       "filename": "NonSpinningCoin-6-0",
       "frame": {
-        "X": 0,
-        "Y": 80,
-        "Width": 16,
-        "Height": 16
+        "x": 0,
+        "y": 80,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -325,10 +325,10 @@
     {
       "filename": "SpinningCoin-0-0",
       "frame": {
-        "X": 0,
-        "Y": 96,
-        "Width": 16,
-        "Height": 16
+        "x": 0,
+        "y": 96,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -348,10 +348,10 @@
     {
       "filename": "SpinningCoin-1-0",
       "frame": {
-        "X": 16,
-        "Y": 96,
-        "Width": 16,
-        "Height": 16
+        "x": 16,
+        "y": 96,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -371,10 +371,10 @@
     {
       "filename": "SpinningCoin-2-0",
       "frame": {
-        "X": 32,
-        "Y": 96,
-        "Width": 16,
-        "Height": 16
+        "x": 32,
+        "y": 96,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -394,10 +394,10 @@
     {
       "filename": "SpinningCoin-3-0",
       "frame": {
-        "X": 48,
-        "Y": 96,
-        "Width": 16,
-        "Height": 16
+        "x": 48,
+        "y": 96,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -417,10 +417,10 @@
     {
       "filename": "Star-0-0",
       "frame": {
-        "X": 0,
-        "Y": 48,
-        "Width": 16,
-        "Height": 16
+        "x": 0,
+        "y": 48,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -440,10 +440,10 @@
     {
       "filename": "Star-1-0",
       "frame": {
-        "X": 16,
-        "Y": 48,
-        "Width": 16,
-        "Height": 16
+        "x": 16,
+        "y": 48,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -463,10 +463,10 @@
     {
       "filename": "Star-2-0",
       "frame": {
-        "X": 32,
-        "Y": 48,
-        "Width": 16,
-        "Height": 16
+        "x": 32,
+        "y": 48,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -486,10 +486,10 @@
     {
       "filename": "Star-3-0",
       "frame": {
-        "X": 48,
-        "Y": 48,
-        "Width": 16,
-        "Height": 16
+        "x": 48,
+        "y": 48,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -509,10 +509,10 @@
     {
       "filename": "Star-4-0",
       "frame": {
-        "X": 32,
-        "Y": 48,
-        "Width": 16,
-        "Height": 16
+        "x": 32,
+        "y": 48,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -532,10 +532,10 @@
     {
       "filename": "Star-5-0",
       "frame": {
-        "X": 16,
-        "Y": 48,
-        "Width": 16,
-        "Height": 16
+        "x": 16,
+        "y": 48,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -555,10 +555,10 @@
     {
       "filename": "Star-6-0",
       "frame": {
-        "X": 0,
-        "Y": 48,
-        "Width": 16,
-        "Height": 16
+        "x": 0,
+        "y": 48,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -578,10 +578,10 @@
     {
       "filename": "RedMushroom-0-0",
       "frame": {
-        "X": 0,
-        "Y": 0,
-        "Width": 16,
-        "Height": 16
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -601,10 +601,10 @@
     {
       "filename": "GreenMushroom-0-0",
       "frame": {
-        "X": 16,
-        "Y": 0,
-        "Width": 16,
-        "Height": 16
+        "x": 16,
+        "y": 0,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -624,10 +624,10 @@
     {
       "filename": "Fireball-0-0",
       "frame": {
-        "X": 96,
-        "Y": 144,
-        "Width": 8,
-        "Height": 8
+        "x": 96,
+        "y": 144,
+        "w": 8,
+        "h": 8
       },
       "spriteSourceSize": {
         "x": 0,
@@ -647,10 +647,10 @@
     {
       "filename": "Fireball-1-0",
       "frame": {
-        "X": 104,
-        "Y": 144,
-        "Width": 8,
-        "Height": 8
+        "x": 104,
+        "y": 144,
+        "w": 8,
+        "h": 8
       },
       "spriteSourceSize": {
         "x": 0,
@@ -670,10 +670,10 @@
     {
       "filename": "Fireball-2-0",
       "frame": {
-        "X": 96,
-        "Y": 152,
-        "Width": 8,
-        "Height": 8
+        "x": 96,
+        "y": 152,
+        "w": 8,
+        "h": 8
       },
       "spriteSourceSize": {
         "x": 0,
@@ -693,10 +693,10 @@
     {
       "filename": "Fireball-3-0",
       "frame": {
-        "X": 104,
-        "Y": 152,
-        "Width": 8,
-        "Height": 8
+        "x": 104,
+        "y": 152,
+        "w": 8,
+        "h": 8
       },
       "spriteSourceSize": {
         "x": 0,
@@ -716,10 +716,10 @@
     {
       "filename": "DestroyedFireball-0-0",
       "frame": {
-        "X": 116,
-        "Y": 148,
-        "Width": 8,
-        "Height": 8
+        "x": 116,
+        "y": 148,
+        "w": 8,
+        "h": 8
       },
       "spriteSourceSize": {
         "x": 0,
@@ -739,10 +739,10 @@
     {
       "filename": "DestroyedFireball-1-0",
       "frame": {
-        "X": 114,
-        "Y": 161,
-        "Width": 12,
-        "Height": 14
+        "x": 114,
+        "y": 161,
+        "w": 12,
+        "h": 14
       },
       "spriteSourceSize": {
         "x": 0,
@@ -762,10 +762,10 @@
     {
       "filename": "DestroyedFireball-2-0",
       "frame": {
-        "X": 112,
-        "Y": 176,
-        "Width": 16,
-        "Height": 16
+        "x": 112,
+        "y": 176,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,

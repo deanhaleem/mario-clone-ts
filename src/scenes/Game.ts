@@ -32,7 +32,7 @@ export default class Demo extends Phaser.Scene {
   create() {
     this.rt = this.add.renderTexture(0, 0, 800, 480);
     this.gameObject = new Mario(new Phaser.Math.Vector2(525, 200));
-    this.questionBlock = new QuestionBlock(new Phaser.Math.Vector2(500, 200));
+    this.questionBlock = new QuestionBlock(new Phaser.Math.Vector2(400, 200));
 
     this.fpsText = this.add.text(10, 10, 'FPS: -- \n-- Particles', {
       font: 'bold 26px Arial',

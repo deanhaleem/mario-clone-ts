@@ -3,10 +3,10 @@
     {
       "filename": "WalkingGoomba-0-0",
       "frame": {
-        "X": 296,
-        "Y": 187,
-        "Width": 16,
-        "Height": 16
+        "x": 296,
+        "y": 187,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -26,10 +26,10 @@
     {
       "filename": "WalkingGoomba-1-0",
       "frame": {
-        "X": 315,
-        "Y": 187,
-        "Width": 16,
-        "Height": 16
+        "x": 315,
+        "y": 187,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -49,10 +49,10 @@
     {
       "filename": "LeftWalkingKoopa-0-0",
       "frame": {
-        "X": 201,
-        "Y": 207,
-        "Width": 16,
-        "Height": 23
+        "x": 201,
+        "y": 207,
+        "w": 16,
+        "h": 23
       },
       "spriteSourceSize": {
         "x": 0,
@@ -72,10 +72,10 @@
     {
       "filename": "LeftWalkingKoopa-1-0",
       "frame": {
-        "X": 182,
-        "Y": 206,
-        "Width": 16,
-        "Height": 24
+        "x": 182,
+        "y": 206,
+        "w": 16,
+        "h": 24
       },
       "spriteSourceSize": {
         "x": 0,
@@ -95,10 +95,10 @@
     {
       "filename": "RightWalkingKoopa-0-0",
       "frame": {
-        "X": 297,
-        "Y": 207,
-        "Width": 16,
-        "Height": 23
+        "x": 297,
+        "y": 207,
+        "w": 16,
+        "h": 23
       },
       "spriteSourceSize": {
         "x": 0,
@@ -118,10 +118,10 @@
     {
       "filename": "RightWalkingKoopa-1-0",
       "frame": {
-        "X": 315,
-        "Y": 206,
-        "Width": 16,
-        "Height": 24
+        "x": 315,
+        "y": 206,
+        "w": 16,
+        "h": 24
       },
       "spriteSourceSize": {
         "x": 0,
@@ -141,10 +141,10 @@
     {
       "filename": "StompedGoomba-0-0",
       "frame": {
-        "X": 277,
-        "Y": 195,
-        "Width": 16,
-        "Height": 8
+        "x": 277,
+        "y": 195,
+        "w": 16,
+        "h": 8
       },
       "spriteSourceSize": {
         "x": 0,
@@ -164,10 +164,10 @@
     {
       "filename": "FlippedGoomba-0-0",
       "frame": {
-        "X": 809,
-        "Y": 198,
-        "Width": 16,
-        "Height": 16
+        "x": 809,
+        "y": 198,
+        "w": 16,
+        "h": 16
       },
       "spriteSourceSize": {
         "x": 0,
@@ -187,10 +187,10 @@
     {
       "filename": "StompedKoopa-0-0",
       "frame": {
-        "X": 144,
-        "Y": 216,
-        "Width": 16,
-        "Height": 14
+        "x": 144,
+        "y": 216,
+        "w": 16,
+        "h": 14
       },
       "spriteSourceSize": {
         "x": 0,
@@ -210,10 +210,10 @@
     {
       "filename": "FlippedKoopa-0-0",
       "frame": {
-        "X": 353,
-        "Y": 216,
-        "Width": 16,
-        "Height": 14
+        "x": 353,
+        "y": 216,
+        "w": 16,
+        "h": 14
       },
       "spriteSourceSize": {
         "x": 0,

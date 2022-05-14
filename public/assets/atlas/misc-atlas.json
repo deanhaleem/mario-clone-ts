@@ -3,10 +3,10 @@
     {
       "filename": "Cross-0-0",
       "frame": {
-        "X": 41,
-        "Y": 162,
-        "Width": 5,
-        "Height": 5
+        "x": 41,
+        "y": 162,
+        "w": 5,
+        "h": 5
       },
       "spriteSourceSize": {
         "x": 0,
@@ -26,10 +26,10 @@
     {
       "filename": "HudCoinSprite-0-0",
       "frame": {
-        "X": 9,
-        "Y": 160,
-        "Width": 5,
-        "Height": 8
+        "x": 9,
+        "y": 160,
+        "w": 5,
+        "h": 8
       },
       "spriteSourceSize": {
         "x": 0,
@@ -49,10 +49,10 @@
     {
       "filename": "HudCoinSprite-1-0",
       "frame": {
-        "X": 17,
-        "Y": 160,
-        "Width": 5,
-        "Height": 8
+        "x": 17,
+        "y": 160,
+        "w": 5,
+        "h": 8
       },
       "spriteSourceSize": {
         "x": 0,
@@ -72,10 +72,10 @@
     {
       "filename": "HudCoinSprite-2-0",
       "frame": {
-        "X": 1,
-        "Y": 160,
-        "Width": 5,
-        "Height": 8
+        "x": 1,
+        "y": 160,
+        "w": 5,
+        "h": 8
       },
       "spriteSourceSize": {
         "x": 0,
