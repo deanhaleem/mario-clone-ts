@@ -1,7 +1,3 @@
-/**
- * @jest-environment jsdom
- */
-
 import { Player } from '../Player';
 // TODO: mock unnecessary imports
 // TODO: set up Phaser stuff to be jest.fn
@@ -21,7 +17,7 @@ describe('Player.ts', () => {
   let player: Player;
 
   beforeEach(() => {
-    player = new MockPlayer(new Phaser.Math.Vector2(0, 0));
+    player = new MockPlayer(Phaser.Math.Vector2.ZERO);
   });
 
   describe('jump', () => {

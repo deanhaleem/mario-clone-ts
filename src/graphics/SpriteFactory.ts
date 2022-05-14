@@ -1,10 +1,11 @@
 import atlasMap from '../../public/assets/atlas/atlas-map.json';
-import getCurrentScene from '../scenes/Scene';
 import { Sprite } from './Sprite';
 import { SpriteDetails } from './types';
 
 export default class SpriteFactory {
   public static readonly instance = new SpriteFactory();
+
+  private scene!: Phaser.Scene;
 
   private constructor() {}
 
@@ -17,10 +18,13 @@ export default class SpriteFactory {
     );
   }
 
+  public setScene(scene: Phaser.Scene) {
+    this.scene = scene;
+  }
+
   public createSprite(objectName: string): Sprite {
-    const scene = getCurrentScene();
     // TODO: fix error by creating type equal to possible keys of atlasMap?
     const spriteDetails = atlasMap[objectName] as SpriteDetails;
-    return new Sprite(spriteDetails, scene);
+    return new Sprite(spriteDetails, this.scene);
   }
 }

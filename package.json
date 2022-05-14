@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "test": "jest",
+    "test": "jest --coverage --maxWorkers=1",
     "test:ci": "exit 0",
     "lint": "eslint '**/*.ts' --max-warnings 0",
     "lint-fix": "eslint --fix '**/*.ts' --max-warnings 0",
@@ -33,15 +33,16 @@
     "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
     "jest": "^28.1.0",
+    "jest-canvas-mock": "^2.4.0",
     "jest-environment-jsdom": "^28.1.0",
     "lint-staged": "^12.4.0",
+    "prettier": "^2.6.2",
     "ts-jest": "^28.0.2",
     "typescript": "^4.1.3",
-    "vite": "^2.0.0-beta.65",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.6.2"
+    "vite": "^2.0.0-beta.65"
   },
   "engines": {
     "node": ">=12.18"

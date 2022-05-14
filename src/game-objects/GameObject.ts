@@ -3,7 +3,7 @@ import { ISprite } from '../graphics/types';
 import { IGameObject } from './types';
 
 export abstract class GameObject implements IGameObject {
-  private gameObjectSprite: ISprite;
+  private gameObjectSprite!: ISprite;
 
   protected abstract spriteName: string;
 
