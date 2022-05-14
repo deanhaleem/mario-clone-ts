@@ -1,4 +1,6 @@
 import Phaser from 'phaser';
+import { QuestionBlock } from '../game-objects/blocks/QuestionBlock';
+import { IBlock } from '../game-objects/blocks/types';
 import { Mario } from '../game-objects/players/Mario';
 import { IPlayer } from '../game-objects/players/types';
 import SpriteFactory from '../graphics/SpriteFactory';
@@ -12,6 +14,7 @@ import { IController } from '../input/types';
 
 export default class Demo extends Phaser.Scene {
   private gameObject: IPlayer;
+  private questionBlock: IBlock;
   private keyboardController: IController;
 
   private rt: Phaser.GameObjects.RenderTexture;
@@ -29,6 +32,7 @@ export default class Demo extends Phaser.Scene {
   create() {
     this.rt = this.add.renderTexture(0, 0, 800, 480);
     this.gameObject = new Mario(new Phaser.Math.Vector2(525, 200));
+    this.questionBlock = new QuestionBlock(new Phaser.Math.Vector2(500, 200));
 
     this.fpsText = this.add.text(10, 10, 'FPS: -- \n-- Particles', {
       font: 'bold 26px Arial',
@@ -73,6 +77,7 @@ export default class Demo extends Phaser.Scene {
   update(time: number, delta: number): void {
     this.keyboardController.update();
     this.gameObject.update(time, delta);
+    this.questionBlock.update(time, delta);
     this.addDelta += delta / 1000;
 
     this.rt.clear();
@@ -83,6 +88,7 @@ export default class Demo extends Phaser.Scene {
     );
     this.rt.beginDraw();
     this.gameObject.draw(this.rt);
+    this.questionBlock.draw(this.rt);
     this.rt.endDraw();
   }
 }
