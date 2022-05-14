@@ -1,39 +1,16 @@
 {
   "frames": [
     {
-      "filename": "walking-goomba-1",
+      "filename": "WalkingGoomba-0-0",
       "frame": {
-        "x": 296,
-        "y": 187,
-        "w": 16,
-        "h": 16
+        "X": 296,
+        "Y": 187,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "walking-goomba-2",
-      "frame": {
-        "x": 315,
-        "y": 187,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -47,16 +24,39 @@
       }
     },
     {
-      "filename": "left-walking-koopa-1",
+      "filename": "WalkingGoomba-1-0",
       "frame": {
-        "x": 201,
-        "y": 207,
-        "w": 16,
-        "h": 23
+        "X": 315,
+        "Y": 187,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "LeftWalkingKoopa-0-0",
+      "frame": {
+        "X": 201,
+        "Y": 207,
+        "Width": 16,
+        "Height": 23
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
         "w": 16,
         "h": 23
       },
@@ -70,16 +70,16 @@
       }
     },
     {
-      "filename": "left-walking-koopa-2",
+      "filename": "LeftWalkingKoopa-1-0",
       "frame": {
-        "x": 182,
-        "y": 206,
-        "w": 16,
-        "h": 24
+        "X": 182,
+        "Y": 206,
+        "Width": 16,
+        "Height": 24
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 24
       },
@@ -93,16 +93,16 @@
       }
     },
     {
-      "filename": "right-walking-koopa-1",
+      "filename": "RightWalkingKoopa-0-0",
       "frame": {
-        "x": 297,
-        "y": 207,
-        "w": 16,
-        "h": 23
+        "X": 297,
+        "Y": 207,
+        "Width": 16,
+        "Height": 23
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 23
       },
@@ -116,16 +116,16 @@
       }
     },
     {
-      "filename": "right-walking-koopa-2",
+      "filename": "RightWalkingKoopa-1-0",
       "frame": {
-        "x": 315,
-        "y": 206,
-        "w": 16,
-        "h": 24
+        "X": 315,
+        "Y": 206,
+        "Width": 16,
+        "Height": 24
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 24
       },
@@ -139,19 +139,19 @@
       }
     },
     {
-      "filename": "stomped-goomba",
+      "filename": "StompedGoomba-0-0",
       "frame": {
-        "x": 277,
-        "y": 195,
+        "X": 277,
+        "Y": 195,
+        "Width": 16,
+        "Height": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
         "w": 16,
         "h": 8
       },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 8
-      },
       "sourceSize": {
         "w": 16,
         "h": 8
@@ -162,16 +162,16 @@
       }
     },
     {
-      "filename": "flipped-goomba",
+      "filename": "FlippedGoomba-0-0",
       "frame": {
-        "x": 809,
-        "y": 198,
-        "w": 16,
-        "h": 16
+        "X": 809,
+        "Y": 198,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -185,16 +185,16 @@
       }
     },
     {
-      "filename": "stomped-koopa",
+      "filename": "StompedKoopa-0-0",
       "frame": {
-        "x": 144,
-        "y": 216,
-        "w": 16,
-        "h": 14
+        "X": 144,
+        "Y": 216,
+        "Width": 16,
+        "Height": 14
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 14
       },
@@ -208,16 +208,16 @@
       }
     },
     {
-      "filename": "flipped-koopa",
+      "filename": "FlippedKoopa-0-0",
       "frame": {
-        "x": 353,
-        "y": 216,
-        "w": 16,
-        "h": 14
+        "X": 353,
+        "Y": 216,
+        "Width": 16,
+        "Height": 14
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 14
       },

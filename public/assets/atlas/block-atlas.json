@@ -1,246 +1,39 @@
 {
   "frames": [
     {
-      "filename": "small-vertical-green-pipe",
+      "filename": "BrickBlock-0-0",
       "frame": {
-        "x": 757,
-        "y": 417,
-        "w": 32,
-        "h": 32
+        "X": 80,
+        "Y": 195,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 32,
-        "h": 32
-      },
-      "sourceSize": {
-        "w": 32,
-        "h": 32
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "medium-vertical-green-pipe",
-      "frame": {
-        "x": 719,
-        "y": 401,
-        "w": 32,
-        "h": 48
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 32,
-        "h": 48
-      },
-      "sourceSize": {
-        "w": 32,
-        "h": 48
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "large-vertical-green-pipe",
-      "frame": {
-        "x": 678,
-        "y": 385,
-        "w": 32,
-        "h": 64
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 32,
-        "h": 64
-      },
-      "sourceSize": {
-        "w": 32,
-        "h": 64
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "horizontal-green-pipe",
-      "frame": {
-        "x": 532,
-        "y": 417,
-        "w": 64,
-        "h": 32
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 64,
-        "h": 32
-      },
-      "sourceSize": {
-        "w": 64,
-        "h": 32
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "large-green-pipe-shaft",
-      "frame": {
-        "x": 564,
-        "y": 321,
-        "w": 32,
-        "h": 32
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 32,
-        "h": 32
-      },
-      "sourceSize": {
-        "w": 32,
-        "h": 32
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "debris-block-1",
-      "frame": {
-        "x": 312,
-        "y": 112,
-        "w": 8,
-        "h": 8
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "debris-block-2",
-      "frame": {
-        "x": 304,
-        "y": 112,
-        "w": 8,
-        "h": 8
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "debris-block-3",
-      "frame": {
-        "x": 304,
-        "y": 120,
-        "w": 8,
-        "h": 8
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "debris-block-4",
-      "frame": {
-        "x": 312,
-        "y": 120,
-        "w": 8,
-        "h": 8
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "destroyed-block",
-      "frame": {
-        "x": 304,
-        "y": 112,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "hidden-block",
-      "frame": {
         "x": 0,
         "y": 0,
         "w": 16,
         "h": 16
       },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "QuestionBlock-0-0",
+      "frame": {
+        "X": 80,
+        "Y": 112,
+        "Width": 16,
+        "Height": 16
+      },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -254,16 +47,16 @@
       }
     },
     {
-      "filename": "used-block",
+      "filename": "QuestionBlock-1-0",
       "frame": {
-        "x": 80,
-        "y": 232,
-        "w": 16,
-        "h": 16
+        "X": 96,
+        "Y": 112,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -277,16 +70,16 @@
       }
     },
     {
-      "filename": "floor-block",
+      "filename": "QuestionBlock-2-0",
       "frame": {
-        "x": 80,
-        "y": 272,
-        "w": 16,
-        "h": 16
+        "X": 112,
+        "Y": 112,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -300,16 +93,16 @@
       }
     },
     {
-      "filename": "stair-block",
+      "filename": "QuestionBlock-3-0",
       "frame": {
-        "x": 80,
-        "y": 290,
-        "w": 16,
-        "h": 16
+        "X": 96,
+        "Y": 112,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -323,16 +116,16 @@
       }
     },
     {
-      "filename": "question-block-1",
+      "filename": "QuestionBlock-4-0",
       "frame": {
-        "x": 80,
-        "y": 112,
-        "w": 16,
-        "h": 16
+        "X": 80,
+        "Y": 112,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -346,16 +139,16 @@
       }
     },
     {
-      "filename": "question-block-2",
+      "filename": "StairBlock-0-0",
       "frame": {
-        "x": 96,
-        "y": 112,
-        "w": 16,
-        "h": 16
+        "X": 80,
+        "Y": 290,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -369,16 +162,16 @@
       }
     },
     {
-      "filename": "question-block-3",
+      "filename": "FloorBlock-0-0",
       "frame": {
-        "x": 112,
-        "y": 112,
-        "w": 16,
-        "h": 16
+        "X": 80,
+        "Y": 272,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -392,16 +185,16 @@
       }
     },
     {
-      "filename": "question-block-4",
+      "filename": "UsedBlock-0-0",
       "frame": {
-        "x": 96,
-        "y": 112,
-        "w": 16,
-        "h": 16
+        "X": 80,
+        "Y": 232,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -415,16 +208,16 @@
       }
     },
     {
-      "filename": "question-block-5",
+      "filename": "HiddenBlock-0-0",
       "frame": {
-        "x": 80,
-        "y": 112,
-        "w": 16,
-        "h": 16
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -438,22 +231,229 @@
       }
     },
     {
-      "filename": "brick-block",
+      "filename": "DestroyedBlock-0-0",
       "frame": {
-        "x": 80,
-        "y": 195,
-        "w": 16,
-        "h": 16
+        "X": 304,
+        "Y": 112,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
       "sourceSize": {
         "w": 16,
         "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "DebrisBlock-0-0",
+      "frame": {
+        "X": 312,
+        "Y": 112,
+        "Width": 8,
+        "Height": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "DebrisBlock-1-0",
+      "frame": {
+        "X": 304,
+        "Y": 112,
+        "Width": 8,
+        "Height": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "DebrisBlock-2-0",
+      "frame": {
+        "X": 304,
+        "Y": 120,
+        "Width": 8,
+        "Height": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "DebrisBlock-3-0",
+      "frame": {
+        "X": 312,
+        "Y": 120,
+        "Width": 8,
+        "Height": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "SmallVerticalGreenPipe-0-0",
+      "frame": {
+        "X": 757,
+        "Y": 417,
+        "Width": 32,
+        "Height": 32
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "MediumVerticalGreenPipe-0-0",
+      "frame": {
+        "X": 719,
+        "Y": 401,
+        "Width": 32,
+        "Height": 48
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "LargeVerticalGreenPipe-0-0",
+      "frame": {
+        "X": 678,
+        "Y": 385,
+        "Width": 32,
+        "Height": 64
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "HorizontalGreenPipe-0-0",
+      "frame": {
+        "X": 532,
+        "Y": 417,
+        "Width": 64,
+        "Height": 32
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 32
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "LargeGreenPipeShaft-0-0",
+      "frame": {
+        "X": 564,
+        "Y": 321,
+        "Width": 32,
+        "Height": 32
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
       },
       "pivot": {
         "x": 0.5,

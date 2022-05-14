@@ -1,200 +1,39 @@
 {
   "frames": [
     {
-      "filename": "fireball-1",
+      "filename": "FireFlower-0-0",
       "frame": {
-        "x": 96,
-        "y": 144,
-        "w": 8,
-        "h": 8
+        "X": 0,
+        "Y": 32,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "fireball-2",
-      "frame": {
-        "x": 104,
-        "y": 144,
-        "w": 8,
-        "h": 8
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "fireball-3",
-      "frame": {
-        "x": 96,
-        "y": 152,
-        "w": 8,
-        "h": 8
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "fireball-4",
-      "frame": {
-        "x": 104,
-        "y": 152,
-        "w": 8,
-        "h": 8
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "destroyed-fireball-1",
-      "frame": {
-        "x": 116,
-        "y": 148,
-        "w": 8,
-        "h": 8
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "destroyed-fireball-2",
-      "frame": {
-        "x": 114,
-        "y": 161,
-        "w": 12,
-        "h": 14
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 12,
-        "h": 14
-      },
-      "sourceSize": {
-        "w": 12,
-        "h": 14
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "destroyed-fireball-3",
-      "frame": {
-        "x": 112,
-        "y": 176,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "green-mushroom",
-      "frame": {
-        "x": 16,
-        "y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "red-mushroom",
-      "frame": {
         "x": 0,
         "y": 0,
         "w": 16,
         "h": 16
       },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "FireFlower-1-0",
+      "frame": {
+        "X": 16,
+        "Y": 32,
+        "Width": 16,
+        "Height": 16
+      },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -208,16 +47,16 @@
       }
     },
     {
-      "filename": "star-1",
+      "filename": "FireFlower-2-0",
       "frame": {
-        "x": 0,
-        "y": 48,
-        "w": 16,
-        "h": 16
+        "X": 32,
+        "Y": 32,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -231,16 +70,16 @@
       }
     },
     {
-      "filename": "star-2",
+      "filename": "FireFlower-3-0",
       "frame": {
-        "x": 16,
-        "y": 48,
-        "w": 16,
-        "h": 16
+        "X": 48,
+        "Y": 32,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -254,16 +93,16 @@
       }
     },
     {
-      "filename": "star-3",
+      "filename": "FireFlower-4-0",
       "frame": {
-        "x": 32,
-        "y": 48,
-        "w": 16,
-        "h": 16
+        "X": 32,
+        "Y": 32,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -277,16 +116,16 @@
       }
     },
     {
-      "filename": "star-4",
+      "filename": "FireFlower-5-0",
       "frame": {
-        "x": 48,
-        "y": 48,
-        "w": 16,
-        "h": 16
+        "X": 16,
+        "Y": 32,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -300,16 +139,16 @@
       }
     },
     {
-      "filename": "star-5",
+      "filename": "FireFlower-6-0",
       "frame": {
-        "x": 32,
-        "y": 48,
-        "w": 16,
-        "h": 16
+        "X": 0,
+        "Y": 32,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -323,16 +162,16 @@
       }
     },
     {
-      "filename": "star-6",
+      "filename": "NonSpinningCoin-0-0",
       "frame": {
-        "x": 16,
-        "y": 48,
-        "w": 16,
-        "h": 16
+        "X": 0,
+        "Y": 80,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -346,16 +185,16 @@
       }
     },
     {
-      "filename": "star-7",
+      "filename": "NonSpinningCoin-1-0",
       "frame": {
-        "x": 0,
-        "y": 48,
-        "w": 16,
-        "h": 16
+        "X": 16,
+        "Y": 80,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -369,16 +208,16 @@
       }
     },
     {
-      "filename": "spinning-coin-1",
+      "filename": "NonSpinningCoin-2-0",
       "frame": {
-        "x": 0,
-        "y": 96,
-        "w": 16,
-        "h": 16
+        "X": 32,
+        "Y": 80,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -392,16 +231,16 @@
       }
     },
     {
-      "filename": "spinning-coin-2",
+      "filename": "NonSpinningCoin-3-0",
       "frame": {
-        "x": 16,
-        "y": 96,
-        "w": 16,
-        "h": 16
+        "X": 48,
+        "Y": 80,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -415,16 +254,16 @@
       }
     },
     {
-      "filename": "spinning-coin-3",
+      "filename": "NonSpinningCoin-4-0",
       "frame": {
-        "x": 32,
-        "y": 96,
-        "w": 16,
-        "h": 16
+        "X": 32,
+        "Y": 80,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -438,16 +277,16 @@
       }
     },
     {
-      "filename": "spinning-coin-4",
+      "filename": "NonSpinningCoin-5-0",
       "frame": {
-        "x": 48,
-        "y": 96,
-        "w": 16,
-        "h": 16
+        "X": 16,
+        "Y": 80,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -461,16 +300,16 @@
       }
     },
     {
-      "filename": "non-spinning-coin-1",
+      "filename": "NonSpinningCoin-6-0",
       "frame": {
-        "x": 0,
-        "y": 80,
-        "w": 16,
-        "h": 16
+        "X": 0,
+        "Y": 80,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -484,16 +323,16 @@
       }
     },
     {
-      "filename": "non-spinning-coin-2",
+      "filename": "SpinningCoin-0-0",
       "frame": {
-        "x": 16,
-        "y": 80,
-        "w": 16,
-        "h": 16
+        "X": 0,
+        "Y": 96,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -507,16 +346,16 @@
       }
     },
     {
-      "filename": "non-spinning-coin-3",
+      "filename": "SpinningCoin-1-0",
       "frame": {
-        "x": 32,
-        "y": 80,
-        "w": 16,
-        "h": 16
+        "X": 16,
+        "Y": 96,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -530,16 +369,16 @@
       }
     },
     {
-      "filename": "non-spinning-coin-4",
+      "filename": "SpinningCoin-2-0",
       "frame": {
-        "x": 48,
-        "y": 80,
-        "w": 16,
-        "h": 16
+        "X": 32,
+        "Y": 96,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -553,16 +392,16 @@
       }
     },
     {
-      "filename": "non-spinning-coin-5",
+      "filename": "SpinningCoin-3-0",
       "frame": {
-        "x": 32,
-        "y": 80,
-        "w": 16,
-        "h": 16
+        "X": 48,
+        "Y": 96,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -576,16 +415,16 @@
       }
     },
     {
-      "filename": "non-spinning-coin-6",
+      "filename": "Star-0-0",
       "frame": {
-        "x": 16,
-        "y": 80,
-        "w": 16,
-        "h": 16
+        "X": 0,
+        "Y": 48,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -599,16 +438,16 @@
       }
     },
     {
-      "filename": "non-spinning-coin-7",
+      "filename": "Star-1-0",
       "frame": {
-        "x": 0,
-        "y": 80,
-        "w": 16,
-        "h": 16
+        "X": 16,
+        "Y": 48,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -622,16 +461,16 @@
       }
     },
     {
-      "filename": "fire-flower-1",
+      "filename": "Star-2-0",
       "frame": {
-        "x": 0,
-        "y": 32,
-        "w": 16,
-        "h": 16
+        "X": 32,
+        "Y": 48,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -645,16 +484,16 @@
       }
     },
     {
-      "filename": "fire-flower-2",
+      "filename": "Star-3-0",
       "frame": {
-        "x": 16,
-        "y": 32,
-        "w": 16,
-        "h": 16
+        "X": 48,
+        "Y": 48,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -668,16 +507,16 @@
       }
     },
     {
-      "filename": "fire-flower-3",
+      "filename": "Star-4-0",
       "frame": {
-        "x": 32,
-        "y": 32,
-        "w": 16,
-        "h": 16
+        "X": 32,
+        "Y": 48,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -691,16 +530,16 @@
       }
     },
     {
-      "filename": "fire-flower-4",
+      "filename": "Star-5-0",
       "frame": {
-        "x": 48,
-        "y": 32,
-        "w": 16,
-        "h": 16
+        "X": 16,
+        "Y": 48,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -714,16 +553,16 @@
       }
     },
     {
-      "filename": "fire-flower-5",
+      "filename": "Star-6-0",
       "frame": {
-        "x": 32,
-        "y": 32,
-        "w": 16,
-        "h": 16
+        "X": 0,
+        "Y": 48,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -737,16 +576,16 @@
       }
     },
     {
-      "filename": "fire-flower-6",
+      "filename": "RedMushroom-0-0",
       "frame": {
-        "x": 16,
-        "y": 32,
-        "w": 16,
-        "h": 16
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
@@ -760,16 +599,177 @@
       }
     },
     {
-      "filename": "fire-flower-7",
+      "filename": "GreenMushroom-0-0",
       "frame": {
-        "x": 0,
-        "y": 32,
-        "w": 16,
-        "h": 16
+        "X": 16,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "Fireball-0-0",
+      "frame": {
+        "X": 96,
+        "Y": 144,
+        "Width": 8,
+        "Height": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "Fireball-1-0",
+      "frame": {
+        "X": 104,
+        "Y": 144,
+        "Width": 8,
+        "Height": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "Fireball-2-0",
+      "frame": {
+        "X": 96,
+        "Y": 152,
+        "Width": 8,
+        "Height": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "Fireball-3-0",
+      "frame": {
+        "X": 104,
+        "Y": 152,
+        "Width": 8,
+        "Height": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "DestroyedFireball-0-0",
+      "frame": {
+        "X": 116,
+        "Y": 148,
+        "Width": 8,
+        "Height": 8
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "DestroyedFireball-1-0",
+      "frame": {
+        "X": 114,
+        "Y": 161,
+        "Width": 12,
+        "Height": 14
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 14
+      },
+      "sourceSize": {
+        "w": 12,
+        "h": 14
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "DestroyedFireball-2-0",
+      "frame": {
+        "X": 112,
+        "Y": 176,
+        "Width": 16,
+        "Height": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
         "w": 16,
         "h": 16
       },
