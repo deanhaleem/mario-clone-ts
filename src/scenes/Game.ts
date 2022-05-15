@@ -10,6 +10,8 @@ import { QuestionBlock } from '../game-objects/blocks/QuestionBlock';
 import { SmallVerticalGreenPipe } from '../game-objects/blocks/SmallVerticalGreenPipe';
 import { StairBlock } from '../game-objects/blocks/StairBlock';
 import { UsedBlock } from '../game-objects/blocks/UsedBlock';
+import { Goomba } from '../game-objects/enemy/Goomba';
+import { Koopa } from '../game-objects/enemy/Koopa';
 import { FireFlower } from '../game-objects/items/FireFlower';
 import { Flagpole } from '../game-objects/items/Flagpole';
 import { GreenMushroom } from '../game-objects/items/GreenMushroom';
@@ -92,6 +94,9 @@ export default class Demo extends Phaser.Scene {
       new LargeHill(new Phaser.Math.Vector2(100, 175)),
       new SmallHill(new Phaser.Math.Vector2(250, 175)),
       new SmallCastle(new Phaser.Math.Vector2(475, 375)),
+
+      new Goomba(new Phaser.Math.Vector2(425, 200)),
+      new Koopa(new Phaser.Math.Vector2(475, 200)),
     ];
 
     // this.fpsText = this.add.text(10, 10, 'FPS: -- \n-- Particles', {
