@@ -1,4 +1,4 @@
-import { IPlayer } from '../../game-objects/players/types';
+import { IPlayer } from '../../game-objects/player/types';
 import { Command } from './Command';
 
 export class WalkRightCommand extends Command<IPlayer> {
