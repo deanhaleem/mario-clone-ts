@@ -36,6 +36,10 @@ import SpriteFactory from '../graphics/SpriteFactory';
 import { CrouchCommand } from '../input/commands/CrouchCommand';
 import { JumpCommand } from '../input/commands/JumpCommand';
 import { NullCommand } from '../input/commands/NullCommand';
+import { StopCrouchingCommand } from '../input/commands/StopCrouchingCommand';
+import { StopJumpingCommand } from '../input/commands/StopJumpingCommand';
+import { StopMovingLeft } from '../input/commands/StopMovingLeftCommand';
+import { StopMovingRight } from '../input/commands/StopMovingRightCommand';
 import { WalkLeftCommand } from '../input/commands/WalkLeftCommand';
 import { WalkRightCommand } from '../input/commands/WalkRightCommand';
 import { KeyboardController } from '../input/KeyboardController';
@@ -116,25 +120,25 @@ export default class Demo extends Phaser.Scene {
       {
         key: Phaser.Input.Keyboard.KeyCodes.Z.toString(),
         keyDownCommand: new JumpCommand(this.gameObjects[0] as IPlayer),
-        keyUpCommand: new NullCommand(),
+        keyUpCommand: new StopJumpingCommand(this.gameObjects[0] as IPlayer),
         canBeHeld: true, // TODO: remove once physics implemented
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.RIGHT.toString(),
         keyDownCommand: new WalkRightCommand(this.gameObjects[0] as IPlayer),
-        keyUpCommand: new NullCommand(),
+        keyUpCommand: new StopMovingRight(this.gameObjects[0] as IPlayer),
         canBeHeld: true,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.LEFT.toString(),
         keyDownCommand: new WalkLeftCommand(this.gameObjects[0] as IPlayer),
-        keyUpCommand: new NullCommand(),
+        keyUpCommand: new StopMovingLeft(this.gameObjects[0] as IPlayer),
         canBeHeld: true,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.DOWN.toString(),
         keyDownCommand: new CrouchCommand(this.gameObjects[0] as IPlayer),
-        keyUpCommand: new NullCommand(),
+        keyUpCommand: new StopCrouchingCommand(this.gameObjects[0] as IPlayer),
         canBeHeld: true,
       }
     );

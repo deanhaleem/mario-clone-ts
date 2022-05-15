@@ -12,22 +12,40 @@ export abstract class Player extends GameObject implements IPlayer {
   }
 
   public jump(): void {
-    this.location.add({ x: 0, y: -2 });
+    this._playerActionState.jump();
   }
 
   public walkRight(): void {
-    this.location.add({ x: 2, y: 0 });
+    this._playerActionState.walkRight();
   }
 
   public walkLeft(): void {
-    this.location.add({ x: -2, y: 0 });
+    this._playerActionState.walkLeft();
   }
 
   public crouch(): void {
-    this.location.add({ x: 0, y: 2 });
+    if (!(this.powerUpState.spriteName === 'Small')) {
+      this._playerActionState.crouch();
+    }
   }
 
   public run(): void {}
+
+  public stopJumping(): void {
+    this._playerActionState.stopJumping();
+  }
+
+  public stopMovingRight(): void {
+    this._playerActionState.stopMovingRight();
+  }
+
+  public stopMovingLeft(): void {
+    this._playerActionState.stopMovingLeft();
+  }
+
+  public stopCrouching(): void {
+    this._playerActionState.stopCrouching();
+  }
 
   public get actionState() {
     return this._playerActionState;

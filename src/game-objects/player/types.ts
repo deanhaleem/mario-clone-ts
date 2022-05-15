@@ -26,4 +26,8 @@ export interface IPlayer extends IGameObject {
   crouch(): void;
 
   run(): void;
+  stopJumping(): void;
+  stopMovingRight(): void;
+  stopMovingLeft(): void;
+  stopCrouching(): void;
 }
