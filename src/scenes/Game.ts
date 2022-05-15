@@ -19,6 +19,15 @@ import { SpinningCoin } from '../game-objects/items/SpinningCoin';
 import { Star } from '../game-objects/items/Star';
 import { Mario } from '../game-objects/players/Mario';
 import { IPlayer } from '../game-objects/players/types';
+import { LargeBush } from '../game-objects/scenery/LargeBush';
+import { LargeCloud } from '../game-objects/scenery/LargeCloud';
+import { LargeHill } from '../game-objects/scenery/LargeHill';
+import { MediumBush } from '../game-objects/scenery/MediumBush';
+import { MediumCloud } from '../game-objects/scenery/MediumCloud';
+import { SmallBush } from '../game-objects/scenery/SmallBush';
+import { SmallCastle } from '../game-objects/scenery/SmallCastle';
+import { SmallCloud } from '../game-objects/scenery/SmallCloud';
+import { SmallHill } from '../game-objects/scenery/SmallHill';
 import { IGameObject } from '../game-objects/types';
 import SpriteFactory from '../graphics/SpriteFactory';
 import { CrouchCommand } from '../input/commands/CrouchCommand';
@@ -57,24 +66,37 @@ export default class Demo extends Phaser.Scene {
       new StairBlock(new Phaser.Math.Vector2(178, 300)),
       new UsedBlock(new Phaser.Math.Vector2(210, 300)),
 
-      new HorizontalGreenPipe(new Phaser.Math.Vector2(306, 300)),
-      new LargeGreenPipeShaft(new Phaser.Math.Vector2(402, 300)),
-      new LargeVerticalGreenPipe(new Phaser.Math.Vector2(466, 300)),
-      new MediumVerticalGreenPipe(new Phaser.Math.Vector2(498, 300)),
-      new SmallVerticalGreenPipe(new Phaser.Math.Vector2(530, 300)),
+      new HorizontalGreenPipe(new Phaser.Math.Vector2(100, 375)),
+      new LargeGreenPipeShaft(new Phaser.Math.Vector2(200, 375)),
+      new LargeVerticalGreenPipe(new Phaser.Math.Vector2(280, 375)),
+      new MediumVerticalGreenPipe(new Phaser.Math.Vector2(350, 375)),
+      new SmallVerticalGreenPipe(new Phaser.Math.Vector2(280, 245)),
+      // new LargeVerticalGreenPipe(new Phaser.Math.Vector2(466, 300)),
+      // new MediumVerticalGreenPipe(new Phaser.Math.Vector2(498, 300)),
+      // new SmallVerticalGreenPipe(new Phaser.Math.Vector2(530, 300)),
 
-      new FireFlower(new Phaser.Math.Vector2(50, 350)),
-      new GreenMushroom(new Phaser.Math.Vector2(82, 350)),
-      new RedMushroom(new Phaser.Math.Vector2(114, 350)),
-      new NonSpinningCoin(new Phaser.Math.Vector2(146, 350)),
-      new SpinningCoin(new Phaser.Math.Vector2(178, 350)),
-      new Star(new Phaser.Math.Vector2(210, 350)),
+      new FireFlower(new Phaser.Math.Vector2(50, 250)),
+      new GreenMushroom(new Phaser.Math.Vector2(82, 250)),
+      new RedMushroom(new Phaser.Math.Vector2(114, 250)),
+      new NonSpinningCoin(new Phaser.Math.Vector2(146, 250)),
+      new SpinningCoin(new Phaser.Math.Vector2(178, 250)),
+      new Star(new Phaser.Math.Vector2(210, 250)),
       new Flagpole(new Phaser.Math.Vector2(700, 350)),
+
+      new LargeBush(new Phaser.Math.Vector2(75, 50)),
+      new MediumBush(new Phaser.Math.Vector2(190, 50)),
+      new SmallBush(new Phaser.Math.Vector2(275, 50)),
+      new LargeCloud(new Phaser.Math.Vector2(75, 100)),
+      new MediumCloud(new Phaser.Math.Vector2(190, 100)),
+      new SmallCloud(new Phaser.Math.Vector2(275, 100)),
+      new LargeHill(new Phaser.Math.Vector2(100, 175)),
+      new SmallHill(new Phaser.Math.Vector2(250, 175)),
+      new SmallCastle(new Phaser.Math.Vector2(475, 375)),
     ];
 
-    this.fpsText = this.add.text(10, 10, 'FPS: -- \n-- Particles', {
-      font: 'bold 26px Arial',
-    });
+    // this.fpsText = this.add.text(10, 10, 'FPS: -- \n-- Particles', {
+    //   font: 'bold 26px Arial',
+    // });
 
     this.input.keyboard.addKey('Z');
     this.input.keyboard.addKey('RIGHT');
@@ -120,11 +142,11 @@ export default class Demo extends Phaser.Scene {
     this.addDelta += delta / 1000;
 
     this.rt.clear();
-    this.fpsText.setText(
-      `FPS: ${(1000 / delta).toFixed(3)}\nDelta: ${(delta / 1000).toFixed(
-        4
-      )}\nTime: ${time / 1000}\nAdd Delta: ${this.addDelta}`
-    );
+    // this.fpsText.setText(
+    //   `FPS: ${(1000 / delta).toFixed(3)}\nDelta: ${(delta / 1000).toFixed(
+    //     4
+    //   )}\nTime: ${time / 1000}\nAdd Delta: ${this.addDelta}`
+    // );
     this.rt.beginDraw();
     this.gameObjects.forEach((gameObject) => {
       gameObject.draw(this.rt);
