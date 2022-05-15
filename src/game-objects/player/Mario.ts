@@ -1,12 +1,14 @@
 import { Player } from './Player';
+import { SmallPowerUpState } from './state/SmallPowerUpState';
+import { StandingActionState } from './state/StandingActionState';
 
 export class Mario extends Player {
-  // TODO: need to have the states include a "name" field
-  protected override spriteName = 'StarSmallLeftRunningMario';
+  protected override spriteName = 'Mario';
 
   public constructor(location: Phaser.Math.Vector2) {
     super(location);
 
-    super.setSprite(this.spriteName);
+    super.powerUpState = new SmallPowerUpState(this);
+    super.actionState = new StandingActionState(this);
   }
 }

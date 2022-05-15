@@ -1,6 +1,10 @@
+import { IUpdatable } from '../../types';
 import { IGameObject } from '../types';
 
 export interface IPlayer extends IGameObject {
+  powerUpState: IPowerUpState;
+  actionState: IActionState;
+
   /**
    * Move the player upwards by 2 units.
    */

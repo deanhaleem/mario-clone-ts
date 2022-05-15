@@ -1,7 +1,12 @@
 import { GameObject } from '../GameObject';
 import { IPlayer } from './types';
+import { IActionState, IPowerUpState } from './state/types';
 
 export abstract class Player extends GameObject implements IPlayer {
+  private _playerActionState: IActionState;
+
+  public powerUpState: IPowerUpState;
+
   protected constructor(location: Phaser.Math.Vector2) {
     super(location);
   }
@@ -23,4 +28,16 @@ export abstract class Player extends GameObject implements IPlayer {
   }
 
   public run(): void {}
+
+  public get actionState() {
+    return this._playerActionState;
+  }
+
+  public set actionState(playerActionState: IActionState) {
+    this._playerActionState = playerActionState;
+    // TODO: Implement direction
+    this.setSprite(
+      `${this.powerUpState.spriteName}Left${this._playerActionState.spriteName}${this.spriteName}`
+    );
+  }
 }
