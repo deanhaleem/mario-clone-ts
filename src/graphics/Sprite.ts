@@ -60,7 +60,6 @@ export class Sprite implements ISprite {
     renderTexture: Phaser.GameObjects.RenderTexture,
     location: Phaser.Math.Vector2
   ) {
-    //if (this.spriteSheet === 'blocks') console.log(this.currentFrame);
     renderTexture.batchDraw(
       this.sourceFrames[this.currentColorTint.toString()][this.currentFrame],
       location.x,
