@@ -10,6 +10,12 @@
 
 <!-- Brief description of what this PR changes -->
 
+### Screenshots
+
+<!-- Screenshots of updated UI -->
+
+- [ ] N/A
+
 ### Testing Instructions
 
 <!-- A list of steps of what you did to test locally -->

@@ -1,7 +1,628 @@
 {
   "frames": [
     {
-      "filename": "fireball-1",
+      "filename": "FireFlower-0-0",
+      "frame": {
+        "x": 0,
+        "y": 32,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "FireFlower-1-0",
+      "frame": {
+        "x": 16,
+        "y": 32,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "FireFlower-2-0",
+      "frame": {
+        "x": 32,
+        "y": 32,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "FireFlower-3-0",
+      "frame": {
+        "x": 48,
+        "y": 32,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "FireFlower-4-0",
+      "frame": {
+        "x": 32,
+        "y": 32,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "FireFlower-5-0",
+      "frame": {
+        "x": 16,
+        "y": 32,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "FireFlower-6-0",
+      "frame": {
+        "x": 0,
+        "y": 32,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "NonSpinningCoin-0-0",
+      "frame": {
+        "x": 0,
+        "y": 80,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "NonSpinningCoin-1-0",
+      "frame": {
+        "x": 16,
+        "y": 80,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "NonSpinningCoin-2-0",
+      "frame": {
+        "x": 32,
+        "y": 80,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "NonSpinningCoin-3-0",
+      "frame": {
+        "x": 48,
+        "y": 80,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "NonSpinningCoin-4-0",
+      "frame": {
+        "x": 32,
+        "y": 80,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "NonSpinningCoin-5-0",
+      "frame": {
+        "x": 16,
+        "y": 80,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "NonSpinningCoin-6-0",
+      "frame": {
+        "x": 0,
+        "y": 80,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "SpinningCoin-0-0",
+      "frame": {
+        "x": 0,
+        "y": 96,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "SpinningCoin-1-0",
+      "frame": {
+        "x": 16,
+        "y": 96,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "SpinningCoin-2-0",
+      "frame": {
+        "x": 32,
+        "y": 96,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "SpinningCoin-3-0",
+      "frame": {
+        "x": 48,
+        "y": 96,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "Star-0-0",
+      "frame": {
+        "x": 0,
+        "y": 48,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "Star-1-0",
+      "frame": {
+        "x": 16,
+        "y": 48,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "Star-2-0",
+      "frame": {
+        "x": 32,
+        "y": 48,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "Star-3-0",
+      "frame": {
+        "x": 48,
+        "y": 48,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "Star-4-0",
+      "frame": {
+        "x": 32,
+        "y": 48,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "Star-5-0",
+      "frame": {
+        "x": 16,
+        "y": 48,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "Star-6-0",
+      "frame": {
+        "x": 0,
+        "y": 48,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "RedMushroom-0-0",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "GreenMushroom-0-0",
+      "frame": {
+        "x": 16,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 16
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "filename": "Fireball-0-0",
       "frame": {
         "x": 96,
         "y": 144,
@@ -10,7 +631,7 @@
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 8,
         "h": 8
       },
@@ -24,7 +645,7 @@
       }
     },
     {
-      "filename": "fireball-2",
+      "filename": "Fireball-1-0",
       "frame": {
         "x": 104,
         "y": 144,
@@ -33,7 +654,7 @@
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 8,
         "h": 8
       },
@@ -47,7 +668,7 @@
       }
     },
     {
-      "filename": "fireball-3",
+      "filename": "Fireball-2-0",
       "frame": {
         "x": 96,
         "y": 152,
@@ -56,7 +677,7 @@
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 8,
         "h": 8
       },
@@ -70,7 +691,7 @@
       }
     },
     {
-      "filename": "fireball-4",
+      "filename": "Fireball-3-0",
       "frame": {
         "x": 104,
         "y": 152,
@@ -79,7 +700,7 @@
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 8,
         "h": 8
       },
@@ -93,7 +714,7 @@
       }
     },
     {
-      "filename": "destroyed-fireball-1",
+      "filename": "DestroyedFireball-0-0",
       "frame": {
         "x": 116,
         "y": 148,
@@ -102,7 +723,7 @@
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 8,
         "h": 8
       },
@@ -116,7 +737,7 @@
       }
     },
     {
-      "filename": "destroyed-fireball-2",
+      "filename": "DestroyedFireball-1-0",
       "frame": {
         "x": 114,
         "y": 161,
@@ -125,7 +746,7 @@
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
+        "y": 0,
         "w": 12,
         "h": 14
       },
@@ -139,7 +760,7 @@
       }
     },
     {
-      "filename": "destroyed-fireball-3",
+      "filename": "DestroyedFireball-2-0",
       "frame": {
         "x": 112,
         "y": 176,
@@ -148,628 +769,7 @@
       },
       "spriteSourceSize": {
         "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "green-mushroom",
-      "frame": {
-        "x": 16,
         "y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "red-mushroom",
-      "frame": {
-        "x": 0,
-        "y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "star-1",
-      "frame": {
-        "x": 0,
-        "y": 48,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "star-2",
-      "frame": {
-        "x": 16,
-        "y": 48,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "star-3",
-      "frame": {
-        "x": 32,
-        "y": 48,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "star-4",
-      "frame": {
-        "x": 48,
-        "y": 48,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "star-5",
-      "frame": {
-        "x": 32,
-        "y": 48,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "star-6",
-      "frame": {
-        "x": 16,
-        "y": 48,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "star-7",
-      "frame": {
-        "x": 0,
-        "y": 48,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "spinning-coin-1",
-      "frame": {
-        "x": 0,
-        "y": 96,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "spinning-coin-2",
-      "frame": {
-        "x": 16,
-        "y": 96,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "spinning-coin-3",
-      "frame": {
-        "x": 32,
-        "y": 96,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "spinning-coin-4",
-      "frame": {
-        "x": 48,
-        "y": 96,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "non-spinning-coin-1",
-      "frame": {
-        "x": 0,
-        "y": 80,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "non-spinning-coin-2",
-      "frame": {
-        "x": 16,
-        "y": 80,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "non-spinning-coin-3",
-      "frame": {
-        "x": 32,
-        "y": 80,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "non-spinning-coin-4",
-      "frame": {
-        "x": 48,
-        "y": 80,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "non-spinning-coin-5",
-      "frame": {
-        "x": 32,
-        "y": 80,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "non-spinning-coin-6",
-      "frame": {
-        "x": 16,
-        "y": 80,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "non-spinning-coin-7",
-      "frame": {
-        "x": 0,
-        "y": 80,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "fire-flower-1",
-      "frame": {
-        "x": 0,
-        "y": 32,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "fire-flower-2",
-      "frame": {
-        "x": 16,
-        "y": 32,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "fire-flower-3",
-      "frame": {
-        "x": 32,
-        "y": 32,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "fire-flower-4",
-      "frame": {
-        "x": 48,
-        "y": 32,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "fire-flower-5",
-      "frame": {
-        "x": 32,
-        "y": 32,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "fire-flower-6",
-      "frame": {
-        "x": 16,
-        "y": 32,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
-        "w": 16,
-        "h": 16
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 16
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 1
-      }
-    },
-    {
-      "filename": "fire-flower-7",
-      "frame": {
-        "x": 0,
-        "y": 32,
-        "w": 16,
-        "h": 16
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        " y": 0,
         "w": 16,
         "h": 16
       },
