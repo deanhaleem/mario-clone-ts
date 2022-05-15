@@ -1,4 +1,3 @@
-import { IUpdatable } from '../../types';
 import { IGameObject } from '../types';
 
 export interface IPlayer extends IGameObject {

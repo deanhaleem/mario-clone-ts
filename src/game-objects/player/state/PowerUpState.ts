@@ -10,5 +10,6 @@ export abstract class PowerUpState implements IPowerUpState {
     this.player = player;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   update(time: number, delta: number): void {}
 }

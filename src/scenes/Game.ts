@@ -35,7 +35,6 @@ import { IGameObject } from '../game-objects/types';
 import SpriteFactory from '../graphics/SpriteFactory';
 import { CrouchCommand } from '../input/commands/CrouchCommand';
 import { JumpCommand } from '../input/commands/JumpCommand';
-import { NullCommand } from '../input/commands/NullCommand';
 import { StopCrouchingCommand } from '../input/commands/StopCrouchingCommand';
 import { StopJumpingCommand } from '../input/commands/StopJumpingCommand';
 import { StopMovingLeft } from '../input/commands/StopMovingLeftCommand';

@@ -10,6 +10,7 @@ export abstract class ActionState implements IActionState {
     this.player = player;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   public update(time: number, delta: number): void {}
   stand(): void {}
   jump(): void {}
