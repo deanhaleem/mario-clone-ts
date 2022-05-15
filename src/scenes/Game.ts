@@ -21,6 +21,7 @@ import { SpinningCoin } from '../game-objects/items/SpinningCoin';
 import { Star } from '../game-objects/items/Star';
 import { Mario } from '../game-objects/players/Mario';
 import { IPlayer } from '../game-objects/players/types';
+import { Fireball } from '../game-objects/projectile/Fireball';
 import { LargeBush } from '../game-objects/scenery/LargeBush';
 import { LargeCloud } from '../game-objects/scenery/LargeCloud';
 import { LargeHill } from '../game-objects/scenery/LargeHill';
@@ -97,6 +98,8 @@ export default class Demo extends Phaser.Scene {
 
       new Goomba(new Phaser.Math.Vector2(425, 200)),
       new Koopa(new Phaser.Math.Vector2(475, 200)),
+
+      new Fireball(new Phaser.Math.Vector2(390, 200)),
     ];
 
     // this.fpsText = this.add.text(10, 10, 'FPS: -- \n-- Particles', {
