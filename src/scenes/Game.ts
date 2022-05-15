@@ -10,6 +10,13 @@ import { QuestionBlock } from '../game-objects/blocks/QuestionBlock';
 import { SmallVerticalGreenPipe } from '../game-objects/blocks/SmallVerticalGreenPipe';
 import { StairBlock } from '../game-objects/blocks/StairBlock';
 import { UsedBlock } from '../game-objects/blocks/UsedBlock';
+import { FireFlower } from '../game-objects/items/FireFlower';
+import { Flagpole } from '../game-objects/items/Flagpole';
+import { GreenMushroom } from '../game-objects/items/GreenMushroom';
+import { NonSpinningCoin } from '../game-objects/items/NonSpinningCoin';
+import { RedMushroom } from '../game-objects/items/RedMushroom';
+import { SpinningCoin } from '../game-objects/items/SpinningCoin';
+import { Star } from '../game-objects/items/Star';
 import { Mario } from '../game-objects/players/Mario';
 import { IPlayer } from '../game-objects/players/types';
 import { IGameObject } from '../game-objects/types';
@@ -55,6 +62,14 @@ export default class Demo extends Phaser.Scene {
       new LargeVerticalGreenPipe(new Phaser.Math.Vector2(466, 300)),
       new MediumVerticalGreenPipe(new Phaser.Math.Vector2(498, 300)),
       new SmallVerticalGreenPipe(new Phaser.Math.Vector2(530, 300)),
+
+      new FireFlower(new Phaser.Math.Vector2(50, 350)),
+      new GreenMushroom(new Phaser.Math.Vector2(82, 350)),
+      new RedMushroom(new Phaser.Math.Vector2(114, 350)),
+      new NonSpinningCoin(new Phaser.Math.Vector2(146, 350)),
+      new SpinningCoin(new Phaser.Math.Vector2(178, 350)),
+      new Star(new Phaser.Math.Vector2(210, 350)),
+      new Flagpole(new Phaser.Math.Vector2(700, 350)),
     ];
 
     this.fpsText = this.add.text(10, 10, 'FPS: -- \n-- Particles', {
