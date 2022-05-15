@@ -3,5 +3,6 @@ module.exports = {
   tabWidth: 2,
   semi: true,
   singleQuote: true,
-  bracketSameLine: true
+  bracketSameLine: true,
+  endOfLine: 'auto'
 }
