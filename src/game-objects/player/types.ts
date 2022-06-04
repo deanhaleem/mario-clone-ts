@@ -1,6 +1,9 @@
 import { IGameObject } from '../types';
 
 export interface IPlayer extends IGameObject {
+  powerUpState: IPowerUpState;
+  actionState: IActionState;
+
   /**
    * Move the player upwards by 2 units.
    */
@@ -22,4 +25,8 @@ export interface IPlayer extends IGameObject {
   crouch(): void;
 
   run(): void;
+  stopJumping(): void;
+  stopMovingRight(): void;
+  stopMovingLeft(): void;
+  stopCrouching(): void;
 }
