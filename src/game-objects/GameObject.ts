@@ -24,4 +24,13 @@ export abstract class GameObject implements IGameObject {
   public setSprite(spriteName: string): void {
     this.gameObjectSprite = SpriteFactory.instance.createSprite(spriteName);
   }
+
+  public get hitbox(): Phaser.Geom.Rectangle {
+    return new Phaser.Geom.Rectangle(
+      this.location.x - this.gameObjectSprite.size.x / 2,
+      this.location.y - this.gameObjectSprite.size.y,
+      this.gameObjectSprite.size.x,
+      this.gameObjectSprite.size.y
+    );
+  }
 }
