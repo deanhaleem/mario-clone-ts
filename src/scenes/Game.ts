@@ -6,7 +6,7 @@ import { HorizontalGreenPipe } from '../game-objects/block/HorizontalGreenPipe';
 import { LargeGreenPipeShaft } from '../game-objects/block/LargeGreenPipeShaft';
 import { LargeVerticalGreenPipe } from '../game-objects/block/LargeVerticalGreenPipe';
 import { MediumVerticalGreenPipe } from '../game-objects/block/MediumVerticalGreenPipe';
-import { QuestionBlock } from '../game-objects/block/QuestionBlock';
+import { PowerUpQuestionBlock } from '../game-objects/block/PowerUpQuestionBlock';
 import { SmallVerticalGreenPipe } from '../game-objects/block/SmallVerticalGreenPipe';
 import { StairBlock } from '../game-objects/block/StairBlock';
 import { UsedBlock } from '../game-objects/block/UsedBlock';
@@ -65,7 +65,7 @@ export default class Demo extends Phaser.Scene {
     this.gameObjects = [
       new Mario(new Phaser.Math.Vector2(525, 200)),
 
-      new QuestionBlock(new Phaser.Math.Vector2(50, 300)),
+      new PowerUpQuestionBlock(new Phaser.Math.Vector2(50, 300)),
       new BrickBlock(new Phaser.Math.Vector2(82, 300)),
       new FloorBlock(new Phaser.Math.Vector2(114, 300)),
       new HiddenBlock(new Phaser.Math.Vector2(146, 300)),

@@ -1,4 +1,5 @@
 import { IGameObject } from '../types';
+import { IPowerUpState, IActionState } from './state/types';
 
 export interface IPlayer extends IGameObject {
   powerUpState: IPowerUpState;

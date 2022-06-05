@@ -1,6 +1,6 @@
-import { Block } from './Block';
+import { DestroyableBlock } from './DestroyableBlock';
 
-export class BrickBlock extends Block {
+export class BrickBlock extends DestroyableBlock {
   protected override spriteName = 'BrickBlock';
 
   public constructor(location: Phaser.Math.Vector2) {
