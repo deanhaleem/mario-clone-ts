@@ -1,6 +1,6 @@
-import { Block } from './Block';
+import { Pipe } from './Pipe';
 
-export class LargeVerticalGreenPipe extends Block {
+export class LargeVerticalGreenPipe extends Pipe {
   protected override spriteName = 'LargeVerticalGreenPipe';
 
   public constructor(location: Phaser.Math.Vector2) {
