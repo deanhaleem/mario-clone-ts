@@ -18,14 +18,22 @@ export abstract class KinematicGameObject
 
     this.maxVelocity = maxVelocity;
     this.direction = Directions.Right;
+    this.velocity = new Phaser.Math.Vector2();
+    this.acceleration = new Phaser.Math.Vector2();
   }
 
   public override update(time: number, delta: number): void {
     // TODO: can I override the += operator?
-    this.velocity = new Phaser.Math.Vector2(
-      this.velocity.x + this.acceleration.x * (delta - physics.deltaTime),
-      this.velocity.y + this.acceleration.y * (delta - physics.deltaTime)
+    // TODO: test the set accessor still applies with this
+    this.velocity.add(
+      this.acceleration.multiply(
+        new Phaser.Math.Vector2(delta - physics.deltaTime)
+      )
     );
+    // this.velocity = new Phaser.Math.Vector2(
+    //   this.velocity.x + this.acceleration.x * (delta - physics.deltaTime),
+    //   this.velocity.y + this.acceleration.y * (delta - physics.deltaTime)
+    // );
 
     this.location = new Phaser.Math.Vector2(
       this.location.x + this.velocity.x,
@@ -77,7 +85,7 @@ export abstract class KinematicGameObject
     this.maxVelocity = velocity;
   }
 
-  public override get hitbox() {
+  public get extendedHitbox() {
     return new Phaser.Geom.Rectangle(
       super.hitbox.x,
       super.hitbox.y,
@@ -92,7 +100,9 @@ export abstract class KinematicGameObject
 
   public set direction(direction: Directions) {
     this._direction = direction;
-    super.setSprite(this.spriteName);
+    if (this.spriteName) {
+      super.setSprite(this.spriteName);
+    }
   }
 
   public get velocity(): Phaser.Math.Vector2 {

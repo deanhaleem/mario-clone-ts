@@ -1,6 +1,6 @@
-import { Item } from './Item';
+import { SpawningItem } from './SpawningItem';
 
-export class RedMushroom extends Item {
+export class RedMushroom extends SpawningItem {
   protected override spriteName = 'RedMushroom';
 
   public constructor(location: Phaser.Math.Vector2) {
