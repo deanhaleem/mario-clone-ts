@@ -1,6 +1,6 @@
-import { Item } from './Item';
+import { SpawningItem } from './SpawningItem';
 
-export class FireFlower extends Item {
+export class FireFlower extends SpawningItem {
   protected override spriteName = 'FireFlower';
 
   public constructor(location: Phaser.Math.Vector2) {

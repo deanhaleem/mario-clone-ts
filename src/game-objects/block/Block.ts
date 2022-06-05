@@ -10,8 +10,6 @@ export abstract class Block extends GameObject implements IBlock {
   }
 
   public override update(time: number, delta: number): void {
-    console.log(this.spriteName);
-    console.log(this.blockState);
     this.blockState.update(time, delta);
 
     super.update(time, delta);
