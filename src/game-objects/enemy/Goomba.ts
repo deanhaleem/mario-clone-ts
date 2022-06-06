@@ -1,7 +1,7 @@
 import { Enemy } from './Enemy';
 
 export class Goomba extends Enemy {
-  protected override spriteName = 'WalkingGoomba';
+  protected override spriteName = 'Goomba';
 
   public constructor(location: Phaser.Math.Vector2) {
     super(location);
