@@ -9,7 +9,7 @@ export class SleepingEnemyState extends EnemyState {
   constructor(enemy: IEnemy) {
     super(enemy);
 
-    super.enemy.cutYVelocity();
+    this.enemy.cutYVelocity();
   }
 
   public override wakeUp(): void {

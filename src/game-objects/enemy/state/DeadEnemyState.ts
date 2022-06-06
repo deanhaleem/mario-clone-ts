@@ -1,9 +1,7 @@
 import { IEnemy } from '../types';
 import { EnemyState } from './EnemyState';
 
-export class DeadEnemyState extends EnemyState {
-  public override spriteName = 'Dead';
-
+export abstract class DeadEnemyState extends EnemyState {
   constructor(enemy: IEnemy) {
     super(enemy);
 

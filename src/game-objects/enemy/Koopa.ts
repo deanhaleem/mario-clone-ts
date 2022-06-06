@@ -1,4 +1,5 @@
 import { Enemy } from './Enemy';
+import { SleepingEnemyState } from './state/SleepingEnemyState';
 
 export class Koopa extends Enemy {
   protected override spriteName = 'Koopa';
@@ -6,6 +7,6 @@ export class Koopa extends Enemy {
   public constructor(location: Phaser.Math.Vector2) {
     super(location);
 
-    super.setSprite(this.spriteName);
+    super.enemyState = new SleepingEnemyState(this);
   }
 }

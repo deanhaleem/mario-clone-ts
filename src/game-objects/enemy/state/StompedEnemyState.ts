@@ -1,14 +1,14 @@
 import { IEnemy } from '../types';
-import { EnemyState } from './EnemyState';
+import { DeadEnemyState } from './DeadEnemyState';
 
-export class StompedEnemyState extends EnemyState {
+export class StompedEnemyState extends DeadEnemyState {
   public override spriteName = 'Stomped';
 
   constructor(enemy: IEnemy) {
     super(enemy);
 
-    super.enemy.cutXVelocity();
-    super.enemy.cutYVelocity();
+    this.enemy.cutXVelocity();
+    this.enemy.cutYVelocity();
 
     // TimedActionManager.instance.registerTimedAction(null, disposeOfEnemy, timers.stompedEnemy);
   }

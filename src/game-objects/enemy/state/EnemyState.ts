@@ -13,15 +13,16 @@ export abstract class EnemyState implements IEnemyState {
   }
 
   public stomp(): void {
-    this.enemy.enemyState = new FlippedEnemyState(this.enemy);
+    // TODO: figure out the error here. Problem is circular dependency with EnemyState
+    // this.enemy.enemyState = new FlippedEnemyState(this.enemy);
   }
 
   public flip(): void {
-    this.enemy.enemyState = new FlippedEnemyState(this.enemy);
+    // this.enemy.enemyState = new FlippedEnemyState(this.enemy);
   }
 
   public disarm(): void {
-    this.enemy.enemyState = new ShellEnemyState(this.enemy);
+    //this.enemy.enemyState = new ShellEnemyState(this.enemy);
   }
 
   public update(time: number, delta: number): void {}

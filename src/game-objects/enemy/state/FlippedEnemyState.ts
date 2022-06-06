@@ -1,15 +1,15 @@
 import { physics } from '../../../utils/constants/Physics';
 import { IEnemy } from '../types';
-import { EnemyState } from './EnemyState';
+import { DeadEnemyState } from './DeadEnemyState';
 
-export class FlippedEnemyState extends EnemyState {
+export class FlippedEnemyState extends DeadEnemyState {
   public override spriteName = 'Flipped';
 
   constructor(enemy: IEnemy) {
     super(enemy);
 
-    super.enemy.applyImpulse(physics.flippedEnemyImpulse);
-    super.enemy.applyForce(physics.gravitationalForce);
-    super.enemy.setMaxVelocity(physics.flippedEnemyMaxVelocity);
+    this.enemy.applyImpulse(physics.flippedEnemyImpulse);
+    this.enemy.applyForce(physics.gravitationalForce);
+    this.enemy.setMaxVelocity(physics.flippedEnemyMaxVelocity);
   }
 }

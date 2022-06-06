@@ -9,9 +9,9 @@ export class ShellEnemyState extends EnemyState {
   constructor(enemy: IEnemy) {
     super(enemy);
 
-    super.enemy.cutXVelocity();
-    super.enemy.cutYVelocity();
-    super.enemy.setMaxVelocity(physics.shellMaxVelocity);
+    this.enemy.cutXVelocity();
+    this.enemy.cutYVelocity();
+    this.enemy.setMaxVelocity(physics.shellMaxVelocity);
   }
 
   public override stomp(): void {

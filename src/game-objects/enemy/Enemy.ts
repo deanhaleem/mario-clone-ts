@@ -12,7 +12,6 @@ export abstract class Enemy extends KinematicGameObject implements IEnemy {
     super(location, physics.maxEnemyVelocity);
 
     super.direction = Directions.Left;
-    this._enemyState = new SleepingEnemyState(this);
   }
 
   public update(time: number, delta: number): void {
@@ -69,7 +68,9 @@ export abstract class Enemy extends KinematicGameObject implements IEnemy {
     if (this.spriteName) {
       this.setSprite(
         spriteDict[
-          `${this.direction}${this._enemyState.spriteName}${this.spriteName}`
+          `${Directions[this.direction]}${this._enemyState.spriteName}${
+            this.spriteName
+          }`
         ]
       );
     }
