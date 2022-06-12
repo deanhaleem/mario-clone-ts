@@ -43,6 +43,7 @@ import { WalkLeftCommand } from '../input/commands/WalkLeftCommand';
 import { WalkRightCommand } from '../input/commands/WalkRightCommand';
 import { KeyboardController } from '../input/KeyboardController';
 import { IController } from '../input/types';
+import { physics } from '../utils/constants/Physics';
 
 export default class Demo extends Phaser.Scene {
   private gameObjects: IGameObject[];
@@ -102,7 +103,10 @@ export default class Demo extends Phaser.Scene {
       new Goomba(new Phaser.Math.Vector2(425, 200)),
       new Koopa(new Phaser.Math.Vector2(475, 200)),
 
-      new Fireball(new Phaser.Math.Vector2(390, 200)),
+      new Fireball(
+        new Phaser.Math.Vector2(390, 200),
+        physics.rightProjectileVelocity
+      ),
     ];
 
     // this.fpsText = this.add.text(10, 10, 'FPS: -- \n-- Particles', {
