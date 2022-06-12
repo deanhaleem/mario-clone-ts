@@ -8,10 +8,9 @@ export abstract class KinematicGameObject
   implements IRigidBody
 {
   private _velocity: Phaser.Math.Vector2;
+  private _acceleration: Phaser.Math.Vector2;
   private maxVelocity: Phaser.Math.Vector2;
   private _direction: Directions;
-
-  public acceleration: Phaser.Math.Vector2;
 
   constructor(location: Phaser.Math.Vector2, maxVelocity: Phaser.Math.Vector2) {
     super(location);
@@ -25,7 +24,7 @@ export abstract class KinematicGameObject
   public override update(time: number, delta: number): void {
     // TODO: can I override the += operator?
     // TODO: test the set accessor still applies with this
-    this.velocity.add(
+    this.velocity = this.velocity.add(
       this.acceleration.multiply(
         new Phaser.Math.Vector2(delta - physics.deltaTime)
       )
@@ -121,5 +120,13 @@ export abstract class KinematicGameObject
     if (this._velocity.y > this.maxVelocity.y) {
       this._velocity.y = this.maxVelocity.y;
     }
+  }
+
+  public get acceleration() {
+    return this._acceleration;
+  }
+
+  public set acceleration(acceleration: Phaser.Math.Vector2) {
+    this._acceleration = acceleration;
   }
 }

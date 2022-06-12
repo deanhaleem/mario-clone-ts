@@ -1,33 +1,32 @@
+import { IRigidBody } from '../../physics/types';
 import { IGameObject } from '../types';
 import { IPowerUpState, IActionState } from './state/types';
 
-export interface IPlayer extends IGameObject {
+export interface IPlayer extends IGameObject, IRigidBody, ITransformable {
+  canWarp: boolean;
+
   powerUpState: IPowerUpState;
   actionState: IActionState;
 
-  /**
-   * Move the player upwards by 2 units.
-   */
+  stand(): void;
   jump(): void;
-
-  /**
-   * Move the player right by 2 units.
-   */
   walkRight(): void;
-
-  /**
-   * Move the player left by 2 units.
-   */
   walkLeft(): void;
-
-  /**
-   * Move the player down by 2 units.
-   */
   crouch(): void;
-
   run(): void;
+  attack(): void;
   stopJumping(): void;
   stopMovingRight(): void;
   stopMovingLeft(): void;
   stopCrouching(): void;
+  stopRunning(): void;
+  warp(location: Phaser.Math.Vector2, velocity: Phaser.Math.Vector2): void;
+  winLevel(): void;
+}
+
+export interface ITransformable {
+  upgrade(): void;
+  takeDamage(): void;
+  decorate(): void;
+  turnDead(): void;
 }
