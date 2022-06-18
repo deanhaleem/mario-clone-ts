@@ -116,17 +116,21 @@ export abstract class Player extends KinematicGameObject implements IPlayer {
     this.actionState.winLevel();
   }
 
+  protected override get spriteName() {
+    return `${this.powerUpState.spriteName}${Directions[this.direction]}${
+      this._playerActionState.spriteName
+    }${this.constructor.name}`;
+  }
+
   public get actionState() {
     return this._playerActionState;
   }
 
   public set actionState(playerActionState: IActionState) {
     this._playerActionState = playerActionState;
-    this.setSprite(
-      `${this.powerUpState.spriteName}${Directions[this.direction]}${
-        this._playerActionState.spriteName
-      }${this.spriteName}`
-    );
+    if (this.powerUpState && this.actionState) {
+      this.setSprite(this.spriteName);
+    }
   }
 
   public get canWarp() {

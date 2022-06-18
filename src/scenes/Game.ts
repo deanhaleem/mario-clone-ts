@@ -22,15 +22,7 @@ import { Star } from '../game-objects/item/Star';
 import { Mario } from '../game-objects/player/Mario';
 import { IPlayer } from '../game-objects/player/types';
 import { Fireball } from '../game-objects/projectile/Fireball';
-import { LargeBush } from '../game-objects/scenery/LargeBush';
-import { LargeCloud } from '../game-objects/scenery/LargeCloud';
-import { LargeHill } from '../game-objects/scenery/LargeHill';
-import { MediumBush } from '../game-objects/scenery/MediumBush';
-import { MediumCloud } from '../game-objects/scenery/MediumCloud';
-import { SmallBush } from '../game-objects/scenery/SmallBush';
-import { SmallCastle } from '../game-objects/scenery/SmallCastle';
-import { SmallCloud } from '../game-objects/scenery/SmallCloud';
-import { SmallHill } from '../game-objects/scenery/SmallHill';
+import { Scenery } from '../game-objects/scenery/Scenery';
 import { IGameObject } from '../game-objects/types';
 import SpriteFactory from '../graphics/SpriteFactory';
 import { CrouchCommand } from '../input/commands/CrouchCommand';
@@ -66,18 +58,39 @@ export default class Demo extends Phaser.Scene {
     this.gameObjects = [
       new Mario(new Phaser.Math.Vector2(525, 200)),
 
-      new PowerUpQuestionBlock(new Phaser.Math.Vector2(50, 300)),
+      new PowerUpQuestionBlock(new Phaser.Math.Vector2(50, 300), SpinningCoin),
       new BrickBlock(new Phaser.Math.Vector2(82, 300)),
-      new FloorBlock(new Phaser.Math.Vector2(114, 300)),
-      new HiddenBlock(new Phaser.Math.Vector2(146, 300)),
-      new StairBlock(new Phaser.Math.Vector2(178, 300)),
+      new FloorBlock(
+        new Phaser.Math.Vector2(114, 300),
+        Phaser.Math.Vector2.ZERO
+      ),
+      new HiddenBlock(new Phaser.Math.Vector2(146, 300), SpinningCoin),
+      new StairBlock(
+        new Phaser.Math.Vector2(178, 300),
+        Phaser.Math.Vector2.ZERO
+      ),
       new UsedBlock(new Phaser.Math.Vector2(210, 300)),
 
-      new HorizontalGreenPipe(new Phaser.Math.Vector2(100, 375)),
-      new LargeGreenPipeShaft(new Phaser.Math.Vector2(200, 375)),
-      new LargeVerticalGreenPipe(new Phaser.Math.Vector2(280, 375)),
-      new MediumVerticalGreenPipe(new Phaser.Math.Vector2(350, 375)),
-      new SmallVerticalGreenPipe(new Phaser.Math.Vector2(280, 245)),
+      new HorizontalGreenPipe(
+        new Phaser.Math.Vector2(100, 375),
+        Phaser.Math.Vector2.ZERO
+      ),
+      new LargeGreenPipeShaft(
+        new Phaser.Math.Vector2(200, 375),
+        Phaser.Math.Vector2.ZERO
+      ),
+      new LargeVerticalGreenPipe(
+        new Phaser.Math.Vector2(280, 375),
+        Phaser.Math.Vector2.ZERO
+      ),
+      new MediumVerticalGreenPipe(
+        new Phaser.Math.Vector2(350, 375),
+        Phaser.Math.Vector2.ZERO
+      ),
+      new SmallVerticalGreenPipe(
+        new Phaser.Math.Vector2(280, 245),
+        Phaser.Math.Vector2.ZERO
+      ),
       // new LargeVerticalGreenPipe(new Phaser.Math.Vector2(466, 300)),
       // new MediumVerticalGreenPipe(new Phaser.Math.Vector2(498, 300)),
       // new SmallVerticalGreenPipe(new Phaser.Math.Vector2(530, 300)),
@@ -90,15 +103,15 @@ export default class Demo extends Phaser.Scene {
       new Star(new Phaser.Math.Vector2(210, 250)),
       new Flagpole(new Phaser.Math.Vector2(700, 350)),
 
-      new LargeBush(new Phaser.Math.Vector2(75, 50)),
-      new MediumBush(new Phaser.Math.Vector2(190, 50)),
-      new SmallBush(new Phaser.Math.Vector2(275, 50)),
-      new LargeCloud(new Phaser.Math.Vector2(75, 100)),
-      new MediumCloud(new Phaser.Math.Vector2(190, 100)),
-      new SmallCloud(new Phaser.Math.Vector2(275, 100)),
-      new LargeHill(new Phaser.Math.Vector2(100, 175)),
-      new SmallHill(new Phaser.Math.Vector2(250, 175)),
-      new SmallCastle(new Phaser.Math.Vector2(475, 375)),
+      new Scenery(new Phaser.Math.Vector2(75, 50), 'LargeBush'),
+      new Scenery(new Phaser.Math.Vector2(190, 50), 'MediumBush'),
+      new Scenery(new Phaser.Math.Vector2(275, 50), 'SmallBush'),
+      new Scenery(new Phaser.Math.Vector2(75, 100), 'LargeCloud'),
+      new Scenery(new Phaser.Math.Vector2(190, 100), 'MediumCloud'),
+      new Scenery(new Phaser.Math.Vector2(275, 100), 'SmallCloud'),
+      new Scenery(new Phaser.Math.Vector2(100, 175), 'LargeHill'),
+      new Scenery(new Phaser.Math.Vector2(250, 175), 'SmallHill'),
+      new Scenery(new Phaser.Math.Vector2(475, 375), 'SmallCastle'),
 
       new Goomba(new Phaser.Math.Vector2(425, 200)),
       new Koopa(new Phaser.Math.Vector2(475, 200)),

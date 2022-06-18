@@ -12,13 +12,16 @@ export abstract class KinematicGameObject
   private maxVelocity: Phaser.Math.Vector2;
   private _direction: Directions;
 
-  constructor(location: Phaser.Math.Vector2, maxVelocity: Phaser.Math.Vector2) {
+  protected constructor(
+    location: Phaser.Math.Vector2,
+    maxVelocity: Phaser.Math.Vector2
+  ) {
     super(location);
 
     this.maxVelocity = maxVelocity;
-    this.direction = Directions.Right;
-    this.velocity = new Phaser.Math.Vector2();
-    this.acceleration = new Phaser.Math.Vector2();
+    this._direction = Directions.Right;
+    this.velocity = Phaser.Math.Vector2.ZERO;
+    this.acceleration = Phaser.Math.Vector2.ZERO;
   }
 
   public override update(time: number, delta: number): void {
@@ -26,7 +29,7 @@ export abstract class KinematicGameObject
     // TODO: test the set accessor still applies with this
     this.velocity = this.velocity.add(
       this.acceleration.multiply(
-        new Phaser.Math.Vector2(delta - physics.deltaTime)
+        new Phaser.Math.Vector2(delta * 1000 - physics.deltaTime)
       )
     );
     // this.velocity = new Phaser.Math.Vector2(
@@ -34,6 +37,7 @@ export abstract class KinematicGameObject
     //   this.velocity.y + this.acceleration.y * (delta - physics.deltaTime)
     // );
 
+    // TODO: Update to use add method
     this.location = new Phaser.Math.Vector2(
       this.location.x + this.velocity.x,
       this.location.y + this.velocity.y
@@ -50,10 +54,7 @@ export abstract class KinematicGameObject
   }
 
   public applyForce(force: Phaser.Math.Vector2): void {
-    this.acceleration = new Phaser.Math.Vector2(
-      this.acceleration.x + force.x,
-      this.acceleration.y + force.y
-    );
+    this.acceleration = force;
   }
 
   public cutXVelocity(): void {

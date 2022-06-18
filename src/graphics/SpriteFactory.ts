@@ -51,6 +51,7 @@ export default class SpriteFactory {
     const scene = getCurrentScene();
     // TODO: fix error by creating type equal to possible keys of atlasMap?
 
+    console.log(objectName);
     const spriteDetails = atlasMap[objectName] as SpriteDetails;
     return new Sprite(spriteDetails, scene);
   }

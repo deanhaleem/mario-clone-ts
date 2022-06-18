@@ -2,7 +2,6 @@ import { physics } from '../../../utils/constants/Physics';
 import { IPlayer } from '../types';
 import { AerialActionState } from './AerialActionState';
 import { FallingActionState } from './FallingActionState';
-import { StandingActionState } from './StandingActionState';
 
 export class JumpingActionState extends AerialActionState {
   public override spriteName = 'Jumping';

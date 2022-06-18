@@ -1,12 +1,15 @@
+import { Constructor } from '../../types';
+import { IItem } from '../item/types';
 import { ItemContainingBlock } from './ItemContainingBlock';
 
 export class ItemBrickBlock extends ItemContainingBlock {
-  protected override spriteName = 'BrickBlock';
+  constructor(location: Phaser.Math.Vector2, itemType: Constructor<IItem>) {
+    super(location, itemType);
 
-  constructor(
-    location: Phaser.Math.Vector2 /* itemType: ConstructorFunction */
-  ) {
-    super(location);
     super.setSprite(this.spriteName);
+  }
+
+  protected override get spriteName() {
+    return 'BrickBlock';
   }
 }

@@ -6,8 +6,6 @@ export abstract class GameObject implements IGameObject {
   private gameObjectSprite: ISprite;
   private _location: Phaser.Math.Vector2;
 
-  protected abstract spriteName: string;
-
   protected constructor(location: Phaser.Math.Vector2) {
     this.location = location;
   }
@@ -22,6 +20,10 @@ export abstract class GameObject implements IGameObject {
 
   public setSprite(spriteName: string): void {
     this.gameObjectSprite = SpriteFactory.instance.createSprite(spriteName);
+  }
+
+  protected get spriteName() {
+    return this.constructor.name;
   }
 
   public get hitbox(): Phaser.Geom.Rectangle {

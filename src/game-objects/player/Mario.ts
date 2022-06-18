@@ -4,8 +4,6 @@ import { SmallPowerUpState } from './state/SmallPowerUpState';
 import { StandingActionState } from './state/StandingActionState';
 
 export class Mario extends Player {
-  protected override spriteName = 'Mario';
-
   public constructor(location: Phaser.Math.Vector2) {
     super(location);
 

@@ -7,3 +7,5 @@ export interface IUpdatable {
    */
   update(time: number, delta: number): void;
 }
+
+export type Constructor<T> = { new (...args: any[]): T };
