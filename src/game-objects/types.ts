@@ -4,7 +4,7 @@ import { IUpdatable } from '../types';
 
 export interface IGameObject extends IUpdatable, IDrawable, ICollidable {
   /**
-   * The location of the Game Object on the screen.
+   * The location at which the Game Object appears on then screen.
    */
   location: Phaser.Math.Vector2;
 

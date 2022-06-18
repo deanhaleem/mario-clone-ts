@@ -2,8 +2,6 @@ import { physics } from '../../utils/constants/Physics';
 import { Projectile } from './Projectile';
 
 export class Fireball extends Projectile {
-  protected override spriteName = 'Fireball';
-
   public constructor(
     location: Phaser.Math.Vector2,
     velocity: Phaser.Math.Vector2
@@ -15,6 +13,10 @@ export class Fireball extends Projectile {
 
   public override land(): void {
     this.projectileState.land();
+  }
+
+  protected override get spriteName() {
+    return 'Fireball';
   }
 
   public override fall(): void {}

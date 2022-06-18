@@ -1,15 +1,17 @@
+import { Constructor } from '../../types';
+import { IBlock } from './types';
 import { UsedBlock } from './UsedBlock';
 
 export class BlockFactory {
   public static instance: BlockFactory = new BlockFactory();
 
-  private readonly blockCreators = {
+  private readonly blockCreators: Record<string, Constructor<IBlock>> = {
     HiddenBlock: UsedBlock,
   };
 
   private constructor() {}
 
-  public CreateBlock(blockType: string, location: Phaser.Math.Vector2): void {
+  public createBlock(blockType: string, location: Phaser.Math.Vector2): void {
     // Game1.instance.registerGameObject(blockCreators[blockType](location));
   }
 

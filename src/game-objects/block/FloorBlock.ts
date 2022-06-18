@@ -1,11 +1,13 @@
 import { CollectionBlock } from './CollectionBlock';
 
 export class FloorBlock extends CollectionBlock {
-  protected override spriteName = 'FloorBlock';
-
-  public constructor(location: Phaser.Math.Vector2) {
-    super(location, new Phaser.Math.Vector2(0, 0));
+  public constructor(location: Phaser.Math.Vector2, size: Phaser.Math.Vector2) {
+    super(location, size);
 
     super.setSprite(this.spriteName);
+  }
+
+  protected override get spriteName() {
+    return 'FloorBlock';
   }
 }

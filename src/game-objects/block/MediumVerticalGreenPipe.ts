@@ -1,11 +1,16 @@
 import { Pipe } from './Pipe';
 
 export class MediumVerticalGreenPipe extends Pipe {
-  protected override spriteName = 'MediumVerticalGreenPipe';
-
-  public constructor(location: Phaser.Math.Vector2) {
-    super(location);
+  public constructor(
+    location: Phaser.Math.Vector2,
+    warpLocation: Phaser.Math.Vector2
+  ) {
+    super(location, warpLocation);
 
     super.setSprite(this.spriteName);
+  }
+
+  protected override get spriteName() {
+    return 'MediumVerticalGreenPipe';
   }
 }

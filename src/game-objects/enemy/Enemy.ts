@@ -1,7 +1,6 @@
 import { Directions } from '../../physics/types';
 import { physics } from '../../utils/constants/Physics';
 import { KinematicGameObject } from '../KinematicGameObject';
-import { SleepingEnemyState } from './state/SleepingEnemyState';
 import { IEnemyState } from './state/types';
 import { IEnemy } from './types';
 
@@ -11,7 +10,9 @@ export abstract class Enemy extends KinematicGameObject implements IEnemy {
   protected constructor(location: Phaser.Math.Vector2) {
     super(location, physics.maxEnemyVelocity);
 
-    super.direction = Directions.Left;
+    // TODO: Figure out how to have sleeping enemy state here
+
+    // super.direction = Directions.Left;
   }
 
   public update(time: number, delta: number): void {
@@ -36,13 +37,8 @@ export abstract class Enemy extends KinematicGameObject implements IEnemy {
     this.enemyState.wakeUp();
   }
 
-  public get enemyState() {
-    return this._enemyState;
-  }
-
-  public set enemyState(enemyState: IEnemyState) {
-    this._enemyState = enemyState;
-    // TODO: clean this up
+  protected override get spriteName() {
+    // TODO: Clean up
     const spriteDict: Record<string, string> = {
       LeftSleepingGoomba: 'WalkingGoomba',
       RightSleepingGoomba: 'WalkingGoomba',
@@ -65,14 +61,19 @@ export abstract class Enemy extends KinematicGameObject implements IEnemy {
       RightFlippedKoopa: 'FlippedKoopa',
     };
 
-    if (this.spriteName) {
-      this.setSprite(
-        spriteDict[
-          `${Directions[this.direction]}${this._enemyState.spriteName}${
-            this.spriteName
-          }`
-        ]
-      );
-    }
+    return spriteDict[
+      `${Directions[this.direction]}${this._enemyState.spriteName}${
+        this.constructor.name
+      }`
+    ];
+  }
+
+  public get enemyState() {
+    return this._enemyState;
+  }
+
+  public set enemyState(enemyState: IEnemyState) {
+    this._enemyState = enemyState;
+    this.setSprite(this.spriteName);
   }
 }

@@ -3,8 +3,6 @@ import { Item } from './Item';
 import { IdleItemState } from './state/IdleItemState';
 
 export class Flagpole extends Item {
-  protected override spriteName = 'Flagpole';
-
   private canUpdate: boolean;
 
   public constructor(location: Phaser.Math.Vector2) {
@@ -27,6 +25,10 @@ export class Flagpole extends Item {
       // TimedActionManager.instance.registerTimedAction(null, stopFlagFall, timers.flagFall);
     }
     this.canUpdate = true;
+  }
+
+  protected override get spriteName() {
+    return 'Flagpole';
   }
 
   public override get hitbox(): Phaser.Geom.Rectangle {

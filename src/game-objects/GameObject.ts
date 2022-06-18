@@ -4,10 +4,7 @@ import { IGameObject } from './types';
 
 export abstract class GameObject implements IGameObject {
   private gameObjectSprite: ISprite;
-
-  protected abstract spriteName: string;
-
-  public location: Phaser.Math.Vector2;
+  private _location: Phaser.Math.Vector2;
 
   protected constructor(location: Phaser.Math.Vector2) {
     this.location = location;
@@ -25,6 +22,10 @@ export abstract class GameObject implements IGameObject {
     this.gameObjectSprite = SpriteFactory.instance.createSprite(spriteName);
   }
 
+  protected get spriteName() {
+    return this.constructor.name;
+  }
+
   public get hitbox(): Phaser.Geom.Rectangle {
     return new Phaser.Geom.Rectangle(
       this.location.x - this.gameObjectSprite.size.x / 2,
@@ -32,5 +33,13 @@ export abstract class GameObject implements IGameObject {
       this.gameObjectSprite.size.x,
       this.gameObjectSprite.size.y
     );
+  }
+
+  public get location() {
+    return this._location;
+  }
+
+  public set location(location: Phaser.Math.Vector2) {
+    this._location = location;
   }
 }

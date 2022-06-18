@@ -8,26 +8,28 @@ export abstract class KinematicGameObject
   implements IRigidBody
 {
   private _velocity: Phaser.Math.Vector2;
+  private _acceleration: Phaser.Math.Vector2;
   private maxVelocity: Phaser.Math.Vector2;
   private _direction: Directions;
 
-  public acceleration: Phaser.Math.Vector2;
-
-  constructor(location: Phaser.Math.Vector2, maxVelocity: Phaser.Math.Vector2) {
+  protected constructor(
+    location: Phaser.Math.Vector2,
+    maxVelocity: Phaser.Math.Vector2
+  ) {
     super(location);
 
     this.maxVelocity = maxVelocity;
-    this.direction = Directions.Right;
-    this.velocity = new Phaser.Math.Vector2();
-    this.acceleration = new Phaser.Math.Vector2();
+    this._direction = Directions.Right;
+    this.velocity = Phaser.Math.Vector2.ZERO;
+    this.acceleration = Phaser.Math.Vector2.ZERO;
   }
 
   public override update(time: number, delta: number): void {
     // TODO: can I override the += operator?
     // TODO: test the set accessor still applies with this
-    this.velocity.add(
+    this.velocity = this.velocity.add(
       this.acceleration.multiply(
-        new Phaser.Math.Vector2(delta - physics.deltaTime)
+        new Phaser.Math.Vector2(delta * 1000 - physics.deltaTime)
       )
     );
     // this.velocity = new Phaser.Math.Vector2(
@@ -35,6 +37,7 @@ export abstract class KinematicGameObject
     //   this.velocity.y + this.acceleration.y * (delta - physics.deltaTime)
     // );
 
+    // TODO: Update to use add method
     this.location = new Phaser.Math.Vector2(
       this.location.x + this.velocity.x,
       this.location.y + this.velocity.y
@@ -51,10 +54,7 @@ export abstract class KinematicGameObject
   }
 
   public applyForce(force: Phaser.Math.Vector2): void {
-    this.acceleration = new Phaser.Math.Vector2(
-      this.acceleration.x + force.x,
-      this.acceleration.y + force.y
-    );
+    this.acceleration = force;
   }
 
   public cutXVelocity(): void {
@@ -121,5 +121,13 @@ export abstract class KinematicGameObject
     if (this._velocity.y > this.maxVelocity.y) {
       this._velocity.y = this.maxVelocity.y;
     }
+  }
+
+  public get acceleration() {
+    return this._acceleration;
+  }
+
+  public set acceleration(acceleration: Phaser.Math.Vector2) {
+    this._acceleration = acceleration;
   }
 }

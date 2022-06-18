@@ -9,6 +9,7 @@ export abstract class Item extends KinematicGameObject implements IItem {
 
   protected constructor(location: Phaser.Math.Vector2) {
     super(location, physics.maxItemVelocity);
+
     super.direction = Directions.Right;
   }
 

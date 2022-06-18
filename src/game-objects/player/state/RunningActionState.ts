@@ -5,33 +5,25 @@ import { ActionState } from './ActionState';
 import { CrouchingActionState } from './CrouchingActionState';
 import { FallingActionState } from './FallingActionState';
 import { JumpingActionState } from './JumpingActionState';
-import { RunningActionState } from './RunningActionState';
 import { SlidingActionState } from './SlidingActionState';
-import { StandingActionState } from './StandingActionState';
+import { WalkingActionState } from './WalkingActionState';
 
-export class WalkingActionState extends ActionState {
-  public override spriteName = 'Walking';
+export class RunningActionState extends ActionState {
+  public override spriteName = 'Running';
 
   constructor(player: IPlayer) {
     super(player);
 
-    super.player.cutYVelocity();
-    super.player.applyForce(
+    this.player.applyForce(
       physics.playerHorizontalAcceleration.multiply(
         new Phaser.Math.Vector2(this.player.direction)
       )
     );
-    super.player.setMaxVelocity(physics.maxPlayerVelocity);
+    this.player.setMaxVelocity(physics.playerMaxRunningVelocity);
   }
 
-  public override jump() {
+  public override jump(): void {
     this.player.actionState = new JumpingActionState(this.player);
-  }
-
-  public override walkLeft(): void {
-    if (this.player.direction === Directions.Right) {
-      this.player.actionState = new SlidingActionState(this.player);
-    }
   }
 
   public override walkRight(): void {
@@ -40,7 +32,13 @@ export class WalkingActionState extends ActionState {
     }
   }
 
-  public override crouch() {
+  public override walkLeft(): void {
+    if (this.player.direction === Directions.Right) {
+      this.player.actionState = new SlidingActionState(this.player);
+    }
+  }
+
+  public override crouch(): void {
     this.player.actionState = new CrouchingActionState(this.player);
   }
 
@@ -48,8 +46,10 @@ export class WalkingActionState extends ActionState {
     this.player.actionState = new FallingActionState(this.player);
   }
 
-  public override run(): void {
-    this.player.actionState = new RunningActionState(this.player);
+  public override stopMovingRight(): void {
+    if (this.player.direction === Directions.Right) {
+      this.player.actionState = new SlidingActionState(this.player);
+    }
   }
 
   public override stopMovingLeft(): void {
@@ -58,9 +58,7 @@ export class WalkingActionState extends ActionState {
     }
   }
 
-  public override stopMovingRight(): void {
-    if (this.player.direction === Directions.Right) {
-      this.player.actionState = new SlidingActionState(this.player);
-    }
+  public override stopRunning(): void {
+    this.player.actionState = new WalkingActionState(this.player);
   }
 }

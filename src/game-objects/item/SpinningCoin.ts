@@ -3,8 +3,6 @@ import { Item } from './Item';
 import { IdleItemState } from './state/IdleItemState';
 
 export class SpinningCoin extends Item {
-  protected override spriteName = 'SpinningCoin';
-
   public constructor(location: Phaser.Math.Vector2) {
     super(location);
 
@@ -25,5 +23,9 @@ export class SpinningCoin extends Item {
       // Game1.instance.dispostOfObject(this);
     }
     super.update(time, delta);
+  }
+
+  protected override get spriteName() {
+    return 'SpinningCoin';
   }
 }

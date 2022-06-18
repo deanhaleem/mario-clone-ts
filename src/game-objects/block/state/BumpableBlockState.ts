@@ -1,21 +1,23 @@
-import { IBlock } from '../types';
+import { ItemFactory } from '../../item/ItemFactory';
+import { IItemContainer } from '../types';
 import { BlockState } from './BlockState';
 import { BumpedBlockState } from './BumpedBlockState';
 import { UsedBlockState } from './UsedBlockState';
 
 export class BumpableBlockState extends BlockState {
-  // private readonly itemContainer: IItemContainer;
+  private readonly itemContainer: IItemContainer;
 
-  constructor(block: IBlock) {
+  constructor(block: IItemContainer) {
     super(block);
 
-    // this.itemContainer = block;
+    this.itemContainer = block;
   }
 
   public override bump(): void {
-    console.log('item created');
-    this.block.blockState = new BumpedBlockState(
-      this.block /* UsedBlockState */
+    ItemFactory.instance.createItem(
+      typeof this.itemContainer.itemType,
+      this.block.location
     );
+    this.block.blockState = new BumpedBlockState(this.block, UsedBlockState);
   }
 }

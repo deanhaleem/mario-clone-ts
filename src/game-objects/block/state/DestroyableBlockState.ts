@@ -10,7 +10,8 @@ export class DestroyableBlockState extends BlockState {
 
   public override bump(): void {
     this.block.blockState = new BumpedBlockState(
-      this.block /* DestroyableBlockState */
+      this.block,
+      DestroyableBlockState
     );
   }
 

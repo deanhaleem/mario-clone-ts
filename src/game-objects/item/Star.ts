@@ -1,8 +1,6 @@
 import { SpawningItem } from './SpawningItem';
 
 export class Star extends SpawningItem {
-  protected override spriteName = 'Star';
-
   public constructor(location: Phaser.Math.Vector2) {
     super(location);
 
@@ -11,6 +9,10 @@ export class Star extends SpawningItem {
 
   public override land(): void {
     this.itemState.land();
+  }
+
+  protected override get spriteName() {
+    return 'Star';
   }
 
   public override fall(): void {}
