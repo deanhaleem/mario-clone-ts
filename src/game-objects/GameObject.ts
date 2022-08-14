@@ -1,4 +1,4 @@
-import SpriteFactory from '../graphics/SpriteFactory';
+import { createSprite } from '../graphics/sprite';
 import { ISprite } from '../graphics/types';
 import { IGameObject } from './types';
 
@@ -19,7 +19,7 @@ export abstract class GameObject implements IGameObject {
   }
 
   public setSprite(spriteName: string): void {
-    this.gameObjectSprite = SpriteFactory.instance.createSprite(spriteName);
+    this.gameObjectSprite = createSprite(spriteName);
   }
 
   public abstract get collisionDetails(): {

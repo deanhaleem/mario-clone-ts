@@ -1,28 +1,14 @@
 import Phaser from 'phaser';
-import { CollisionManager } from '../collisions/CollisionManager';
-import { ICollisionManager } from '../collisions/types';
+import { manageCollisions } from '../collisions/collisions';
 import { Camera } from '../display/Camera';
 import { CameraController } from '../display/CameraController';
 import { ICamera, ICameraController } from '../display/types';
 import { IPlayer } from '../game-objects/player/types';
-import SpriteFactory from '../graphics/SpriteFactory';
-import { AttackCommand } from '../input/commands/AttackCommand';
-import { CrouchCommand } from '../input/commands/CrouchCommand';
-import { JumpCommand } from '../input/commands/JumpCommand';
-import { NullCommand } from '../input/commands/NullCommand';
-import { RunCommand } from '../input/commands/RunCommand';
-import { StopCrouchingCommand } from '../input/commands/StopCrouchingCommand';
-import { StopJumpingCommand } from '../input/commands/StopJumpingCommand';
-import { StopMovingLeft } from '../input/commands/StopMovingLeftCommand';
-import { StopMovingRight } from '../input/commands/StopMovingRightCommand';
-import { StopRunningCommand } from '../input/commands/StopRunningCommand';
-import { WalkLeftCommand } from '../input/commands/WalkLeftCommand';
-import { WalkRightCommand } from '../input/commands/WalkRightCommand';
 import { KeyboardController } from '../input/KeyboardController';
 import { IController } from '../input/types';
 import { Level } from '../level/Level';
 import { ILevel } from '../level/types';
-import { TimedActionManager } from '../TimedActionManager';
+import { progressTimedActions } from '../TimedActionManager';
 
 export default class Demo extends Phaser.Scene {
   private keyboardController: IController;
@@ -31,7 +17,6 @@ export default class Demo extends Phaser.Scene {
   private rt: Phaser.GameObjects.RenderTexture;
 
   private level: ILevel;
-  private collisionManager: ICollisionManager;
   public camera: ICamera;
   public cameraController: ICameraController;
 
@@ -48,7 +33,41 @@ export default class Demo extends Phaser.Scene {
   }
 
   preload() {
-    SpriteFactory.instance.loadContent(this);
+    this.load.atlas(
+      'mario',
+      'assets/sprite-sheets/mario.png',
+      'assets/atlas/mario-atlas.json'
+    );
+
+    this.load.atlas(
+      'blocks',
+      'assets/sprite-sheets/blocksp-pipes.png',
+      'assets/atlas/block-atlas.json'
+    );
+
+    this.load.atlas(
+      'enemies',
+      'assets/sprite-sheets/enemies.png',
+      'assets/atlas/enemy-atlas.json'
+    );
+
+    this.load.atlas(
+      'items',
+      'assets/sprite-sheets/Items-Projectiles.png',
+      'assets/atlas/item-atlas.json'
+    );
+
+    this.load.atlas(
+      'misc',
+      'assets/sprite-sheets/Items-Extras.png',
+      'assets/atlas/misc-atlas.json'
+    );
+
+    this.load.atlas(
+      'scenery',
+      'assets/sprite-sheets/background-pipes.png',
+      'assets/atlas/scenery-atlas.json'
+    );
     this.level = new Level();
     this.level.loadContent();
   }
@@ -71,38 +90,38 @@ export default class Demo extends Phaser.Scene {
       this.input.keyboard,
       {
         key: Phaser.Input.Keyboard.KeyCodes.Z.toString(),
-        keyDownCommand: new JumpCommand(this.player),
-        keyUpCommand: new StopJumpingCommand(this.player),
+        keyDownCommand: () => this.player.jump,
+        keyUpCommand: () => this.player.stopJumping,
         canBeHeld: false,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.RIGHT.toString(),
-        keyDownCommand: new WalkRightCommand(this.player),
-        keyUpCommand: new StopMovingRight(this.player),
+        keyDownCommand: () => this.player.walkRight,
+        keyUpCommand: () => this.player.stopMovingRight,
         canBeHeld: true,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.LEFT.toString(),
-        keyDownCommand: new WalkLeftCommand(this.player),
-        keyUpCommand: new StopMovingLeft(this.player),
+        keyDownCommand: () => this.player.walkLeft,
+        keyUpCommand: () => this.player.stopMovingLeft,
         canBeHeld: true,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.DOWN.toString(),
-        keyDownCommand: new CrouchCommand(this.player),
-        keyUpCommand: new StopCrouchingCommand(this.player),
+        keyDownCommand: () => this.player.crouch,
+        keyUpCommand: () => this.player.stopCrouching,
         canBeHeld: true,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.X.toString(),
-        keyDownCommand: new RunCommand(this.player),
-        keyUpCommand: new StopRunningCommand(this.player),
+        keyDownCommand: () => this.player.run,
+        keyUpCommand: () => this.player.stopRunning,
         canBeHeld: true,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.C.toString(),
-        keyDownCommand: new AttackCommand(this.player),
-        keyUpCommand: new NullCommand(),
+        keyDownCommand: () => this.player.attack,
+        keyUpCommand: () => {},
         canBeHeld: false,
       }
     );
@@ -111,11 +130,11 @@ export default class Demo extends Phaser.Scene {
   update(time: number, delta: number): void {
     this.keyboardController.update();
     this.level.update(time, delta);
-    TimedActionManager.instance.update(time, delta);
+    progressTimedActions(time, delta);
     // this.cameraController.update(time, delta);
     this.addDelta += delta / 1000;
 
-    this.collisionManager.update(this.camera);
+    manageCollisions(this.camera, this.level);
 
     // this.level.cleanUp(this.camera.hitbox);
 
@@ -132,7 +151,6 @@ export default class Demo extends Phaser.Scene {
 
   hardReset() {
     this.level.reset();
-    this.collisionManager = new CollisionManager(this.level);
     this.camera = new Camera(
       new Phaser.Math.Vector2(),
       new Phaser.Math.Vector2(800, 480)

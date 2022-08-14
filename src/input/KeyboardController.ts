@@ -1,9 +1,9 @@
-import { ICommand, IController, KeyboardParam } from './types';
+import { IController, KeyboardParam } from './types';
 
 export class KeyboardController implements IController {
   private readonly keyboard: Phaser.Input.Keyboard.KeyboardPlugin;
-  private readonly keyDownCommands: Record<string, ICommand> = {};
-  private readonly keyUpCommands: Record<string, ICommand> = {};
+  private readonly keyDownCommands: Record<string, () => void> = {};
+  private readonly keyUpCommands: Record<string, () => void> = {};
   private readonly nonHoldableKeys: string[] = [];
   private previouslyPressedKeys: string[] = [];
 
@@ -29,7 +29,7 @@ export class KeyboardController implements IController {
 
     Object.keys(this.keyUpCommands).forEach((key) => {
       if (!currentlyPressedKeys.includes(key)) {
-        this.keyUpCommands[key].execute();
+        this.keyUpCommands[key]();
       }
     });
 
@@ -39,7 +39,7 @@ export class KeyboardController implements IController {
           !this.nonHoldableKeys.includes(key) ||
           !this.previouslyPressedKeys.includes(key)
         ) {
-          this.keyDownCommands[key].execute();
+          this.keyDownCommands[key]();
         }
       }
     });

@@ -4,45 +4,39 @@ type TimedAction = {
   time: number;
 };
 
-export class TimedActionManager {
-  private timedActions: TimedAction[] = [];
+let timedActions: TimedAction[] = [];
 
-  public static instance = new TimedActionManager();
+export function registerTimedAction(
+  timedAction: (() => void) | null,
+  postTimedAction: () => void,
+  time: number
+) {
+  timedActions.push({ timedAction, postTimedAction, time });
+}
 
-  private constructor() {}
+export function reset() {
+  timedActions = [];
+}
 
-  public update(timeSince: number, delta: number) {
-    const count = this.timedActions.length;
+export function progressTimedActions(timeSince: number, delta: number) {
+  const count = timedActions.length;
 
-    for (let i = 0; i < count && this.timedActions.length > 0; i++) {
-      const { timedAction, postTimedAction, time } =
-        this.timedActions.pop() as TimedAction;
+  for (let i = 0; i < count && timedActions.length > 0; i++) {
+    const { timedAction, postTimedAction, time } =
+      timedActions.pop() as TimedAction;
 
-      const updatedTime = time - delta / 1000;
-      if (updatedTime <= 0) {
-        postTimedAction();
-      } else {
-        if (timedAction) {
-          timedAction();
-        }
-        this.timedActions.push({
-          timedAction,
-          postTimedAction,
-          time: updatedTime,
-        });
+    const updatedTime = time - delta / 1000;
+    if (updatedTime <= 0) {
+      postTimedAction();
+    } else {
+      if (timedAction) {
+        timedAction();
       }
+      timedActions.push({
+        timedAction,
+        postTimedAction,
+        time: updatedTime,
+      });
     }
-  }
-
-  public registerTimedAction(
-    timedAction: (() => void) | null,
-    postTimedAction: () => void,
-    time: number
-  ) {
-    this.timedActions.push({ timedAction, postTimedAction, time });
-  }
-
-  public reset() {
-    this.timedActions = [];
   }
 }

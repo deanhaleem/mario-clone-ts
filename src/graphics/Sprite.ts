@@ -1,4 +1,13 @@
 import { ISprite, SpriteDetails } from './types';
+import atlasMap from '../../public/assets/atlas/atlas-map.json';
+import getCurrentScene from '../scenes/Scene';
+
+export function createSprite(objectName: string): Sprite {
+  const scene = getCurrentScene();
+  // TODO: fix error by creating type equal to possible keys of atlasMap?
+  const spriteDetails = atlasMap[objectName] as SpriteDetails;
+  return new Sprite(spriteDetails, scene);
+}
 
 export class Sprite implements ISprite {
   private readonly sourceFrames: Record<string, Phaser.GameObjects.Image[]> =

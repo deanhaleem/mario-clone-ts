@@ -1,29 +1,23 @@
-import { ICommand } from '../../input/types';
+import { IEnemy } from '../../game-objects/enemy/types';
 import { ICollidable } from '../../physics/types';
-import { Constructor } from '../../types';
-import { RightEnemyCameraCollisionCommand } from '../command/enemy/RightEnemyCameraCollisionCommand';
-import { ICollision, ICollisionResponder } from '../types';
+import { ICollision } from '../types';
 
-export class EnemyCameraCollisionResponder implements ICollisionResponder {
-  private readonly enemyCameraCollisionCommands: {
-    [key: string]: Constructor<ICommand>;
-  };
-
-  public respondToCollision(
-    enemy: ICollidable,
-    camera: ICollidable,
-    collision: ICollision
-  ): void {
-    if (this.enemyCameraCollisionCommands[`${collision.direction}`]) {
-      new this.enemyCameraCollisionCommands[`${collision.direction}`](
-        enemy
-      ).execute();
-    }
-  }
-
-  constructor() {
-    this.enemyCameraCollisionCommands = {
-      RightCollision: RightEnemyCameraCollisionCommand,
-    };
+export function respondToEnemyCameraCollision(
+  enemy: ICollidable,
+  camera: ICollidable,
+  collision: ICollision
+): void {
+  if (enemyCameraCollisionCommands[`${collision.direction}`]) {
+    enemyCameraCollisionCommands[`${collision.direction}`](enemy as IEnemy);
   }
 }
+
+function handleRightEnemyCameraCollision(enemy: IEnemy) {
+  enemy.wakeUp();
+}
+
+const enemyCameraCollisionCommands: {
+  [key: string]: (enemy: IEnemy) => void;
+} = {
+  RightCollision: handleRightEnemyCameraCollision,
+};

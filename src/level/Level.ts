@@ -2,11 +2,11 @@ import { IPlayer } from '../game-objects/player/types';
 import { IGameObject } from '../game-objects/types';
 import { locations } from '../utils/constants/Locations';
 import { offsets } from '../utils/constants/Offsets';
-import { LevelGenerator } from './LevelGenerator';
-import { ILevel, ILevelGenerator } from './types';
+import { generateGameObjects } from './LevelGenerator';
+import { ILevel } from './types';
+import levelFile from '../../public/assets/1-1.json';
 
 export class Level implements ILevel {
-  private readonly levelGenerator: ILevelGenerator;
   private nonCollidableGameObjects: IGameObject[];
   private gameObjects: IGameObject[];
 
@@ -15,12 +15,10 @@ export class Level implements ILevel {
   constructor() {
     this.nonCollidableGameObjects = [];
     this.gameObjects = [];
-    this.levelGenerator = new LevelGenerator(this);
+    this.name = '';
   }
 
   public loadContent(): void {
-    this.levelGenerator.loadContent();
-
     this.name = '1-1'; // TODO: Don't hardcode
   }
 
@@ -120,7 +118,7 @@ export class Level implements ILevel {
   public reset(): void {
     this.gameObjects = [];
     this.nonCollidableGameObjects = [];
-    this.levelGenerator.generateLevel();
+    generateGameObjects(levelFile, this);
   }
 
   public get player() {

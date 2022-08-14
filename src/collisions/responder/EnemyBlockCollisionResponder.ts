@@ -1,84 +1,129 @@
-import { ICommand } from '../../input/types';
+import { IBlock } from '../../game-objects/block/types';
+import { IEnemy } from '../../game-objects/enemy/types';
 import { ICollidable } from '../../physics/types';
-import { Constructor } from '../../types';
-import { PushEnemyDownCommand } from '../command/enemy/PushEnemyDownCommand';
-import { PushEnemyLeftCommand } from '../command/enemy/PushEnemyLeftCommand';
-import { PushEnemyRightCommand } from '../command/enemy/PushEnemyRightCommand';
-import { PushEnemyUpCommand } from '../command/enemy/PushEnemyUpCommand';
-import { ICollision, ICollisionResponder } from '../types';
+import { ICollision } from '../types';
 
-export class EnemyBlockCollisionResponder implements ICollisionResponder {
-  private readonly enemyBlockCollisionCommands: {
-    [key: string]: Constructor<ICommand>;
-  };
-
-  public respondToCollision(
-    enemy: ICollidable,
-    block: ICollidable,
-    collision: ICollision
-  ): void {
-    if (
-      this.enemyBlockCollisionCommands[
-        `${enemy.collisionDetails.interface},${block.collisionDetails.class},${collision.direction}`
-      ]
-    ) {
-      new this.enemyBlockCollisionCommands[
-        `${enemy.collisionDetails.interface},${block.collisionDetails.class},${collision.direction}`
-      ](enemy, block, collision).execute();
-    }
-  }
-
-  constructor() {
-    this.enemyBlockCollisionCommands = {
-      'IEnemy,ItemBrickBlock,TopCollison': PushEnemyUpCommand,
-      'IEnemy,ItemBrickBlock,BottomCollison': PushEnemyDownCommand,
-      'IEnemy,ItemBrickBlock,LeftCollison': PushEnemyRightCommand,
-      'IEnemy,ItemBrickBlock,RightCollison': PushEnemyLeftCommand,
-
-      'IEnemy,BrickBlock,TopCollison': PushEnemyUpCommand,
-      'IEnemy,BrickBlock,BottomCollison': PushEnemyDownCommand,
-      'IEnemy,BrickBlock,LeftCollison': PushEnemyRightCommand,
-      'IEnemy,BrickBlock,RightCollison': PushEnemyLeftCommand,
-
-      'IEnemy,NonPowerUpQuestionBlock,TopCollison': PushEnemyUpCommand,
-      'IEnemy,NonPowerUpQuestionBlock,BottomCollison': PushEnemyDownCommand,
-      'IEnemy,NonPowerUpQuestionBlock,LeftCollison': PushEnemyRightCommand,
-      'IEnemy,NonPowerUpQuestionBlock,RightCollison': PushEnemyLeftCommand,
-
-      'IEnemy,PowerUpQuestionBlock,TopCollison': PushEnemyUpCommand,
-      'IEnemy,PowerUpQuestionBlock,BottomCollison': PushEnemyDownCommand,
-      'IEnemy,PowerUpQuestionBlock,LeftCollison': PushEnemyRightCommand,
-      'IEnemy,PowerUpQuestionBlock,RightCollison': PushEnemyLeftCommand,
-
-      'IEnemy,FloorBlock,TopCollison': PushEnemyUpCommand,
-      'IEnemy,FloorBlock,BottomCollison': PushEnemyDownCommand,
-      'IEnemy,FloorBlock,LeftCollison': PushEnemyRightCommand,
-      'IEnemy,FloorBlock,RightCollison': PushEnemyLeftCommand,
-
-      'IEnemy,StairBlock,TopCollison': PushEnemyUpCommand,
-      'IEnemy,StairBlock,BottomCollison': PushEnemyDownCommand,
-      'IEnemy,StairBlock,LeftCollison': PushEnemyRightCommand,
-      'IEnemy,StairBlock,RightCollison': PushEnemyLeftCommand,
-
-      'IEnemy,UsedBlock,TopCollison': PushEnemyUpCommand,
-      'IEnemy,UsedBlock,BottomCollison': PushEnemyDownCommand,
-      'IEnemy,UsedBlock,LeftCollison': PushEnemyRightCommand,
-      'IEnemy,UsedBlock,RightCollison': PushEnemyLeftCommand,
-
-      'IEnemy,SmallVerticalGreenPipe,TopCollison': PushEnemyUpCommand,
-      'IEnemy,SmallVerticalGreenPipe,BottomCollison': PushEnemyDownCommand,
-      'IEnemy,SmallVerticalGreenPipe,LeftCollison': PushEnemyRightCommand,
-      'IEnemy,SmallVerticalGreenPipe,RightCollison': PushEnemyLeftCommand,
-
-      'IEnemy,MediumVerticalGreenPipe,TopCollison': PushEnemyUpCommand,
-      'IEnemy,MediumVerticalGreenPipe,BottomCollison': PushEnemyDownCommand,
-      'IEnemy,MediumVerticalGreenPipe,LeftCollison': PushEnemyRightCommand,
-      'IEnemy,MediumVerticalGreenPipe,RightCollison': PushEnemyLeftCommand,
-
-      'IEnemy,LargeVerticalGreenPipe,TopCollison': PushEnemyUpCommand,
-      'IEnemy,LargeVerticalGreenPipe,BottomCollison': PushEnemyDownCommand,
-      'IEnemy,LargeVerticalGreenPipe,LeftCollison': PushEnemyRightCommand,
-      'IEnemy,LargeVerticalGreenPipe,RightCollison': PushEnemyLeftCommand,
-    };
+export function respondToEnemyBlockCollision(
+  enemy: ICollidable,
+  block: ICollidable,
+  collision: ICollision
+): void {
+  if (
+    enemyBlockCollisionCommands[
+      `${enemy.collisionDetails.interface},${block.collisionDetails.class},${collision.direction}`
+    ]
+  ) {
+    enemyBlockCollisionCommands[
+      `${enemy.collisionDetails.interface},${block.collisionDetails.class},${collision.direction}`
+    ](enemy as IEnemy, block as IBlock, collision);
   }
 }
+
+function handleTopEnemyBlockCollision(
+  enemy: IEnemy,
+  block: IBlock,
+  collision: ICollision
+) {
+  enemy.location.subtract(
+    new Phaser.Math.Vector2(0, collision.intersection.height)
+  );
+  enemy.land();
+
+  if (
+    block.blockState.constructor.name === 'BumpedBlockState' ||
+    block.blockState.constructor.name === 'DestroyedBlockState'
+  ) {
+    enemy.flip();
+
+    // StatManager.instance.gainPoints(collison.intersection, 'handleTopEnemyBlockCollision');
+    // SoundManager.instance.playSoundEffect('handleTopEnemyBlockCollision');
+  }
+}
+
+function handleBottomEnemyBlockCollision(
+  enemy: IEnemy,
+  block: IBlock,
+  collision: ICollision
+) {
+  enemy.location.add(new Phaser.Math.Vector2(0, collision.intersection.height));
+}
+
+function handleLeftEnemyBlockCollision(
+  enemy: IEnemy,
+  block: IBlock,
+  collision: ICollision
+) {
+  enemy.location.add(new Phaser.Math.Vector2(collision.intersection.width, 0));
+  enemy.changeDirection();
+}
+
+function handleRightEnemyBlockCollision(
+  enemy: IEnemy,
+  block: IBlock,
+  collision: ICollision
+) {
+  enemy.location.subtract(
+    new Phaser.Math.Vector2(collision.intersection.width, 0)
+  );
+  enemy.changeDirection();
+}
+
+const enemyBlockCollisionCommands: {
+  [key: string]: (enemy: IEnemy, block: IBlock, collision: ICollision) => void;
+} = {
+  'IEnemy,ItemBrickBlock,TopCollison': handleTopEnemyBlockCollision,
+  'IEnemy,ItemBrickBlock,BottomCollison': handleBottomEnemyBlockCollision,
+  'IEnemy,ItemBrickBlock,LeftCollison': handleLeftEnemyBlockCollision,
+  'IEnemy,ItemBrickBlock,RightCollison': handleRightEnemyBlockCollision,
+
+  'IEnemy,BrickBlock,TopCollison': handleTopEnemyBlockCollision,
+  'IEnemy,BrickBlock,BottomCollison': handleBottomEnemyBlockCollision,
+  'IEnemy,BrickBlock,LeftCollison': handleLeftEnemyBlockCollision,
+  'IEnemy,BrickBlock,RightCollison': handleRightEnemyBlockCollision,
+
+  'IEnemy,NonPowerUpQuestionBlock,TopCollison': handleTopEnemyBlockCollision,
+  'IEnemy,NonPowerUpQuestionBlock,BottomCollison':
+    handleBottomEnemyBlockCollision,
+  'IEnemy,NonPowerUpQuestionBlock,LeftCollison': handleLeftEnemyBlockCollision,
+  'IEnemy,NonPowerUpQuestionBlock,RightCollison':
+    handleRightEnemyBlockCollision,
+
+  'IEnemy,PowerUpQuestionBlock,TopCollison': handleTopEnemyBlockCollision,
+  'IEnemy,PowerUpQuestionBlock,BottomCollison': handleBottomEnemyBlockCollision,
+  'IEnemy,PowerUpQuestionBlock,LeftCollison': handleLeftEnemyBlockCollision,
+  'IEnemy,PowerUpQuestionBlock,RightCollison': handleRightEnemyBlockCollision,
+
+  'IEnemy,FloorBlock,TopCollison': handleTopEnemyBlockCollision,
+  'IEnemy,FloorBlock,BottomCollison': handleBottomEnemyBlockCollision,
+  'IEnemy,FloorBlock,LeftCollison': handleLeftEnemyBlockCollision,
+  'IEnemy,FloorBlock,RightCollison': handleRightEnemyBlockCollision,
+
+  'IEnemy,StairBlock,TopCollison': handleTopEnemyBlockCollision,
+  'IEnemy,StairBlock,BottomCollison': handleBottomEnemyBlockCollision,
+  'IEnemy,StairBlock,LeftCollison': handleLeftEnemyBlockCollision,
+  'IEnemy,StairBlock,RightCollison': handleRightEnemyBlockCollision,
+
+  'IEnemy,UsedBlock,TopCollison': handleTopEnemyBlockCollision,
+  'IEnemy,UsedBlock,BottomCollison': handleBottomEnemyBlockCollision,
+  'IEnemy,UsedBlock,LeftCollison': handleLeftEnemyBlockCollision,
+  'IEnemy,UsedBlock,RightCollison': handleRightEnemyBlockCollision,
+
+  'IEnemy,SmallVerticalGreenPipe,TopCollison': handleTopEnemyBlockCollision,
+  'IEnemy,SmallVerticalGreenPipe,BottomCollison':
+    handleBottomEnemyBlockCollision,
+  'IEnemy,SmallVerticalGreenPipe,LeftCollison': handleLeftEnemyBlockCollision,
+  'IEnemy,SmallVerticalGreenPipe,RightCollison': handleRightEnemyBlockCollision,
+
+  'IEnemy,MediumVerticalGreenPipe,TopCollison': handleTopEnemyBlockCollision,
+  'IEnemy,MediumVerticalGreenPipe,BottomCollison':
+    handleBottomEnemyBlockCollision,
+  'IEnemy,MediumVerticalGreenPipe,LeftCollison': handleLeftEnemyBlockCollision,
+  'IEnemy,MediumVerticalGreenPipe,RightCollison':
+    handleRightEnemyBlockCollision,
+
+  'IEnemy,LargeVerticalGreenPipe,TopCollison': handleTopEnemyBlockCollision,
+  'IEnemy,LargeVerticalGreenPipe,BottomCollison':
+    handleBottomEnemyBlockCollision,
+  'IEnemy,LargeVerticalGreenPipe,LeftCollison': handleLeftEnemyBlockCollision,
+  'IEnemy,LargeVerticalGreenPipe,RightCollison': handleRightEnemyBlockCollision,
+};

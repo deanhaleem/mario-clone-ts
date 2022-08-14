@@ -1,67 +1,160 @@
 import { IEnemy } from '../../game-objects/enemy/types';
-import { ICommand } from '../../input/types';
 import { ICollidable } from '../../physics/types';
-import { Constructor } from '../../types';
-import { PushEnemyDownOtherUpCommand } from '../command/enemy/PushEnemyDownOtherUpCommand';
-import { PushEnemyLeftOtherRightCommand } from '../command/enemy/PushEnemyLeftOtherRightCommand';
-import { PushEnemyRightOtherLeftCommand } from '../command/enemy/PushEnemyRightOtherLeftCommand';
-import { PushEnemyUpOtherDownCommand } from '../command/enemy/PushEnemyUpOtherDownCommand';
-import { PushLeftOrKillEnemyCommand } from '../command/enemy/PushLeftOrKillEnemyCommand';
-import { PushRightOrKillEnemyCommand } from '../command/enemy/PushRightOrKillEnemyCommand';
-import { ICollision, ICollisionResponder } from '../types';
+import { ICollision } from '../types';
+import { physics } from '../../utils/constants/Physics';
 
-export class EnemyEnemyCollisionResponder implements ICollisionResponder {
-  private readonly enemyEnemyCollisionCommands: {
-    [key: string]: Constructor<ICommand>;
-  };
-
-  public respondToCollision(
-    instigatingEnemy: ICollidable,
-    receivingEnemy: ICollidable,
-    collision: ICollision
-  ): void {
-    const collisionType = `${
-      (instigatingEnemy as IEnemy).enemyState.constructor.name
-    },${(receivingEnemy as IEnemy).enemyState.constructor.name},${
-      collision.direction
-    }`;
-    if (this.enemyEnemyCollisionCommands[collisionType]) {
-      new this.enemyEnemyCollisionCommands[collisionType](
-        instigatingEnemy,
-        receivingEnemy,
-        collision
-      ).execute();
-    }
-  }
-
-  constructor() {
-    this.enemyEnemyCollisionCommands = {
-      'WalkingEnemyState,WalkingEnemyState,TopCollision':
-        PushEnemyDownOtherUpCommand,
-      'WalkingEnemyState,WalkingEnemyState,BottomCollision':
-        PushEnemyUpOtherDownCommand,
-      'WalkingEnemyState,WalkingEnemyState,LeftCollision':
-        PushEnemyRightOtherLeftCommand,
-      'WalkingEnemyState,WalkingEnemyState,RightCollision':
-        PushEnemyLeftOtherRightCommand,
-
-      'WalkingEnemyState,ShellEnemyState,TopCollision':
-        PushEnemyDownOtherUpCommand,
-      'WalkingEnemyState,ShellEnemyState,BottomCollision':
-        PushEnemyUpOtherDownCommand,
-      'WalkingEnemyState,ShellEnemyState,LeftCollision':
-        PushRightOrKillEnemyCommand,
-      'WalkingEnemyState,ShellEnemyState,RightCollision':
-        PushLeftOrKillEnemyCommand,
-
-      'SleepingEnemyState,ShellEnemyState,TopCollision':
-        PushEnemyDownOtherUpCommand,
-      'SleepingEnemyState,ShellEnemyState,BottomCollision':
-        PushEnemyUpOtherDownCommand,
-      'SleepingEnemyState,ShellEnemyState,LeftCollision':
-        PushRightOrKillEnemyCommand,
-      'SleepingEnemyState,ShellEnemyState,RightCollision':
-        PushLeftOrKillEnemyCommand,
-    };
+export function respondToEnemyEnemyCollision(
+  instigatingEnemy: ICollidable,
+  receivingEnemy: ICollidable,
+  collision: ICollision
+): void {
+  const collisionType = `${
+    (instigatingEnemy as IEnemy).enemyState.constructor.name
+  },${(receivingEnemy as IEnemy).enemyState.constructor.name},${
+    collision.direction
+  }`;
+  if (enemyEnemyCollisionCommands[collisionType]) {
+    enemyEnemyCollisionCommands[collisionType](
+      instigatingEnemy as IEnemy,
+      receivingEnemy as IEnemy,
+      collision
+    );
   }
 }
+
+function handleTopEnemyEnemyCollision(
+  instigatingEnemy: IEnemy,
+  receivingEnemy: IEnemy,
+  collision: ICollision
+) {
+  instigatingEnemy.location.subtract({
+    x: 0,
+    y: collision.intersection.height,
+  });
+  receivingEnemy.location.add({
+    x: 0,
+    y: collision.intersection.height,
+  });
+}
+
+function handleBottomEnemyEnemyCollision(
+  instigatingEnemy: IEnemy,
+  receivingEnemy: IEnemy,
+  collision: ICollision
+) {
+  instigatingEnemy.location.add({
+    x: 0,
+    y: collision.intersection.height,
+  });
+  receivingEnemy.location.subtract({
+    x: 0,
+    y: collision.intersection.height,
+  });
+}
+
+function handleLeftEnemyEnemyCollision(
+  instigatingEnemy: IEnemy,
+  receivingEnemy: IEnemy,
+  collision: ICollision
+) {
+  instigatingEnemy.location.add({
+    x: collision.intersection.width,
+    y: 0,
+  });
+  receivingEnemy.location.subtract({
+    x: collision.intersection.width,
+    y: 0,
+  });
+  instigatingEnemy.changeDirection();
+  receivingEnemy.changeDirection();
+}
+
+function handleRightEnemyEnemyCollision(
+  instigatingEnemy: IEnemy,
+  receivingEnemy: IEnemy,
+  collision: ICollision
+) {
+  instigatingEnemy.location.subtract({
+    x: collision.intersection.width,
+    y: 0,
+  });
+  receivingEnemy.location.add({
+    x: collision.intersection.width,
+    y: 0,
+  });
+  instigatingEnemy.changeDirection();
+  receivingEnemy.changeDirection();
+}
+
+function handleLeftEnemyShellCollision(
+  instigatingEnemy: IEnemy,
+  receivingEnemy: IEnemy,
+  collision: ICollision
+) {
+  if (Math.abs(receivingEnemy.velocity.x) >= physics.shellSpeed) {
+    instigatingEnemy.flip();
+
+    // StatManager.instance.gainPoints(collision.intersection, 'handleLeftEnemyShellCollision');
+    // SoundManager.instance.playSoundEffect('handleLeftEnemyShellCollision')
+  } else {
+    instigatingEnemy.location.add({
+      x: collision.intersection.width,
+      y: 0,
+    });
+    instigatingEnemy.changeDirection();
+  }
+}
+
+function handleRightEnemyShellCollision(
+  instigatingEnemy: IEnemy,
+  receivingEnemy: IEnemy,
+  collision: ICollision
+) {
+  if (Math.abs(receivingEnemy.velocity.x) >= physics.shellSpeed) {
+    instigatingEnemy.flip();
+
+    // StatManager.instance.gainPoints(collision.intersection, 'handleLeftEnemyShellCollision');
+    // SoundManager.instance.playSoundEffect('handleLeftEnemyShellCollision')
+  } else {
+    instigatingEnemy.location.subtract({
+      x: collision.intersection.width,
+      y: 0,
+    });
+    instigatingEnemy.changeDirection();
+  }
+}
+
+const enemyEnemyCollisionCommands: {
+  [key: string]: (
+    instigatingEnemy: IEnemy,
+    receivingEnemy: IEnemy,
+    collision: ICollision
+  ) => void;
+} = {
+  'WalkingEnemyState,WalkingEnemyState,TopCollision':
+    handleTopEnemyEnemyCollision,
+  'WalkingEnemyState,WalkingEnemyState,BottomCollision':
+    handleBottomEnemyEnemyCollision,
+  'WalkingEnemyState,WalkingEnemyState,LeftCollision':
+    handleLeftEnemyEnemyCollision,
+  'WalkingEnemyState,WalkingEnemyState,RightCollision':
+    handleRightEnemyEnemyCollision,
+
+  'WalkingEnemyState,ShellEnemyState,TopCollision':
+    handleTopEnemyEnemyCollision,
+  'WalkingEnemyState,ShellEnemyState,BottomCollision':
+    handleBottomEnemyEnemyCollision,
+  'WalkingEnemyState,ShellEnemyState,LeftCollision':
+    handleLeftEnemyShellCollision,
+  'WalkingEnemyState,ShellEnemyState,RightCollision':
+    handleRightEnemyShellCollision,
+
+  'SleepingEnemyState,ShellEnemyState,TopCollision':
+    handleTopEnemyEnemyCollision,
+  'SleepingEnemyState,ShellEnemyState,BottomCollision':
+    handleBottomEnemyEnemyCollision,
+  'SleepingEnemyState,ShellEnemyState,LeftCollision':
+    handleLeftEnemyShellCollision,
+  'SleepingEnemyState,ShellEnemyState,RightCollision':
+    handleRightEnemyShellCollision,
+};

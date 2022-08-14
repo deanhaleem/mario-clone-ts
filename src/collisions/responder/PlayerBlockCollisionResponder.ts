@@ -1,353 +1,563 @@
+import { IBlock, IItemContainer } from '../../game-objects/block/types';
+import { FireFlower } from '../../game-objects/item/FireFlower';
 import { IPlayer } from '../../game-objects/player/types';
-import { ICommand } from '../../input/types';
 import { ICollidable } from '../../physics/types';
-import { Constructor } from '../../types';
-import { PushPlayerDownBumpBlockCommand } from '../command/player/PushPlayerDownBumpBlockCommand';
-import { PushPlayerDownBumpRevealedBlockCommand } from '../command/player/PushPlayerDownBumpRevealedBlockCommand';
-import { PushPlayerDownDestroyBlockCommand } from '../command/player/PushPlayerDownDestroyBlockCommand';
-import { PushPlayerDownNotWarpingCommand } from '../command/player/PushPlayerDownNotWarpingCommand';
-import { PushPlayerDownSpawnFireFlowerCommand } from '../command/player/PushPlayerDownSpawnFireFlowerCommand';
-import { PushPlayerLeftCommand } from '../command/player/PushPlayerLeftCommand';
-import { PushPlayerLeftNotWarpingCommand } from '../command/player/PushPlayerLeftNotWarpingCommand';
-import { PushPlayerRightCommand } from '../command/player/PushPlayerRightCommand';
-import { PushPlayerRightNotWarpingCommand } from '../command/player/PushPlayerRightNotWarpingCommand';
-import { PushPlayerUpCommand } from '../command/player/PushPlayerUpCommand';
-import { PushPlayerUpNotWarpingCommand } from '../command/player/PushPlayerUpNotWarpingCommand';
-import { ICollision, ICollisionResponder } from '../types';
+import { physics } from '../../utils/constants/Physics';
+import { ICollision } from '../types';
 
-export class PlayerBlockCollisionResponder implements ICollisionResponder {
-  private readonly playerBlockCollisionCommands: {
-    [key: string]: Constructor<ICommand>;
-  };
-
-  public respondToCollision(
-    player: ICollidable,
-    block: ICollidable,
-    collision: ICollision
-  ): void {
-    const collisionType = `${
-      (player as IPlayer).powerUpState.constructor.name
-    },${block.constructor.name},${collision.direction}`;
-    // console.log(collisionType);
-    if (this.playerBlockCollisionCommands[collisionType]) {
-      new this.playerBlockCollisionCommands[collisionType](
-        player,
-        block,
-        collision
-      ).execute();
-    }
-  }
-
-  constructor() {
-    this.playerBlockCollisionCommands = {
-      'SmallPowerUpState,ItemBrickBlock,TopCollision': PushPlayerUpCommand,
-      'SmallPowerUpState,ItemBrickBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'SmallPowerUpState,ItemBrickBlock,LeftCollision': PushPlayerRightCommand,
-      'SmallPowerUpState,ItemBrickBlock,RightCollision': PushPlayerLeftCommand,
-
-      'SmallPowerUpState,BrickBlock,TopCollision': PushPlayerUpCommand,
-      'SmallPowerUpState,BrickBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'SmallPowerUpState,BrickBlock,LeftCollision': PushPlayerRightCommand,
-      'SmallPowerUpState,BrickBlock,RightCollision': PushPlayerLeftCommand,
-
-      'SmallPowerUpState,BrickCollectionBlock,TopCollision':
-        PushPlayerUpCommand,
-      'SmallPowerUpState,BrickCollectionBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'SmallPowerUpState,BrickCollectionBlock,LeftCollision':
-        PushPlayerRightCommand,
-      'SmallPowerUpState,BrickCollectionBlock,RightCollision':
-        PushPlayerLeftCommand,
-
-      'SmallPowerUpState,HiddenBlock,BottomCollision':
-        PushPlayerDownBumpRevealedBlockCommand,
-
-      'SmallPowerUpState,NonPowerUpQuestionBlock,TopCollision':
-        PushPlayerUpCommand,
-      'SmallPowerUpState,NonPowerUpQuestionBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'SmallPowerUpState,NonPowerUpQuestionBlock,LeftCollision':
-        PushPlayerRightCommand,
-      'SmallPowerUpState,NonPowerUpQuestionBlock,RightCollision':
-        PushPlayerLeftCommand,
-
-      'SmallPowerUpState,PowerUpQuestionBlock,TopCollision':
-        PushPlayerUpCommand,
-      'SmallPowerUpState,PowerUpQuestionBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'SmallPowerUpState,PowerUpQuestionBlock,LeftCollision':
-        PushPlayerRightCommand,
-      'SmallPowerUpState,PowerUpQuestionBlock,RightCollision':
-        PushPlayerLeftCommand,
-
-      'SmallPowerUpState,FloorBlock,TopCollision': PushPlayerUpCommand,
-      'SmallPowerUpState,FloorBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'SmallPowerUpState,FloorBlock,LeftCollision': PushPlayerRightCommand,
-      'SmallPowerUpState,FloorBlock,RightCollision': PushPlayerLeftCommand,
-
-      'SmallPowerUpState,StairBlock,TopCollision': PushPlayerUpCommand,
-      'SmallPowerUpState,StairBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'SmallPowerUpState,StairBlock,LeftCollision': PushPlayerRightCommand,
-      'SmallPowerUpState,StairBlock,RightCollision': PushPlayerLeftCommand,
-
-      'SmallPowerUpState,UsedBlock,TopCollision': PushPlayerUpCommand,
-      'SmallPowerUpState,UsedBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'SmallPowerUpState,UsedBlock,LeftCollision': PushPlayerRightCommand,
-      'SmallPowerUpState,UsedBlock,RightCollision': PushPlayerLeftCommand,
-
-      'SmallPowerUpState,SmallVerticalGreenPipe,TopCollision':
-        PushPlayerUpNotWarpingCommand,
-      'SmallPowerUpState,SmallVerticalGreenPipe,BottomCollision':
-        PushPlayerDownNotWarpingCommand,
-      'SmallPowerUpState,SmallVerticalGreenPipe,LeftCollision':
-        PushPlayerRightNotWarpingCommand,
-      'SmallPowerUpState,SmallVerticalGreenPipe,RightCollision':
-        PushPlayerLeftNotWarpingCommand,
-
-      'SmallPowerUpState,MediumVerticalGreenPipe,TopCollision':
-        PushPlayerUpNotWarpingCommand,
-      'SmallPowerUpState,MediumVerticalGreenPipe,BottomCollision':
-        PushPlayerDownNotWarpingCommand,
-      'SmallPowerUpState,MediumVerticalGreenPipe,LeftCollision':
-        PushPlayerRightNotWarpingCommand,
-      'SmallPowerUpState,MediumVerticalGreenPipe,RightCollision':
-        PushPlayerLeftNotWarpingCommand,
-
-      'SmallPowerUpState,LargeVerticalGreenPipe,TopCollision':
-        PushPlayerUpNotWarpingCommand,
-      'SmallPowerUpState,LargeVerticalGreenPipe,BottomCollision':
-        PushPlayerDownNotWarpingCommand,
-      'SmallPowerUpState,LargeVerticalGreenPipe,LeftCollision':
-        PushPlayerRightNotWarpingCommand,
-      'SmallPowerUpState,LargeVerticalGreenPipe,RightCollision':
-        PushPlayerLeftNotWarpingCommand,
-
-      'SmallPowerUpState,HorizontalGreenPipe,TopCollision':
-        PushPlayerUpNotWarpingCommand,
-      'SmallPowerUpState,HorizontalGreenPipe,BottomCollision':
-        PushPlayerDownNotWarpingCommand,
-      'SmallPowerUpState,HorizontalGreenPipe,LeftCollision':
-        PushPlayerRightNotWarpingCommand,
-      'SmallPowerUpState,HorizontalGreenPipe,RightCollision':
-        PushPlayerLeftNotWarpingCommand,
-
-      'SmallPowerUpState,LargeGreenPipeShaft,TopCollision': PushPlayerUpCommand,
-      'SmallPowerUpState,LargeGreenPipeShaft,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'SmallPowerUpState,LargeGreenPipeShaft,LeftCollision':
-        PushPlayerRightCommand,
-      'SmallPowerUpState,LargeGreenPipeShaft,RightCollision':
-        PushPlayerLeftCommand,
-
-      'BigPowerUpState,ItemBrickBlock,TopCollision': PushPlayerUpCommand,
-      'BigPowerUpState,ItemBrickBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'BigPowerUpState,ItemBrickBlock,LeftCollision': PushPlayerRightCommand,
-      'BigPowerUpState,ItemBrickBlock,RightCollision': PushPlayerLeftCommand,
-
-      'BigPowerUpState,BrickBlock,TopCollision': PushPlayerUpCommand,
-      'BigPowerUpState,BrickBlock,BottomCollision':
-        PushPlayerDownDestroyBlockCommand,
-      'BigPowerUpState,BrickBlock,LeftCollision': PushPlayerRightCommand,
-      'BigPowerUpState,BrickBlock,RightCollision': PushPlayerLeftCommand,
-
-      'BigPowerUpState,BrickCollectionBlock,TopCollision': PushPlayerUpCommand,
-      'BigPowerUpState,BrickCollectionBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand, // TODO: Bug? should be destroy
-      'BigPowerUpState,BrickCollectionBlock,LeftCollision':
-        PushPlayerRightCommand,
-      'BigPowerUpState,BrickCollectionBlock,RightCollision':
-        PushPlayerLeftCommand,
-
-      'BigPowerUpState,HiddenBlock,BottomCollision':
-        PushPlayerDownBumpRevealedBlockCommand,
-
-      'BigPowerUpState,NonPowerUpQuestionBlock,TopCollision':
-        PushPlayerUpCommand,
-      'BigPowerUpState,NonPowerUpQuestionBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'BigPowerUpState,NonPowerUpQuestionBlock,LeftCollision':
-        PushPlayerRightCommand,
-      'BigPowerUpState,NonPowerUpQuestionBlock,RightCollision':
-        PushPlayerLeftCommand,
-
-      'BigPowerUpState,PowerUpQuestionBlock,TopCollision': PushPlayerUpCommand,
-      'BigPowerUpState,PowerUpQuestionBlock,BottomCollision':
-        PushPlayerDownSpawnFireFlowerCommand,
-      'BigPowerUpState,PowerUpQuestionBlock,LeftCollision':
-        PushPlayerRightCommand,
-      'BigPowerUpState,PowerUpQuestionBlock,RightCollision':
-        PushPlayerLeftCommand,
-
-      'BigPowerUpState,FloorBlock,TopCollision': PushPlayerUpCommand,
-      'BigPowerUpState,FloorBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'BigPowerUpState,FloorBlock,LeftCollision': PushPlayerRightCommand,
-      'BigPowerUpState,FloorBlock,RightCollision': PushPlayerLeftCommand,
-
-      'BigPowerUpState,StairBlock,TopCollision': PushPlayerUpCommand,
-      'BigPowerUpState,StairBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'BigPowerUpState,StairBlock,LeftCollision': PushPlayerRightCommand,
-      'BigPowerUpState,StairBlock,RightCollision': PushPlayerLeftCommand,
-
-      'BigPowerUpState,UsedBlock,TopCollision': PushPlayerUpCommand,
-      'BigPowerUpState,UsedBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'BigPowerUpState,UsedBlock,LeftCollision': PushPlayerRightCommand,
-      'BigPowerUpState,UsedBlock,RightCollision': PushPlayerLeftCommand,
-
-      'BigPowerUpState,SmallVerticalGreenPipe,TopCollision':
-        PushPlayerUpNotWarpingCommand,
-      'BigPowerUpState,SmallVerticalGreenPipe,BottomCollision':
-        PushPlayerDownNotWarpingCommand,
-      'BigPowerUpState,SmallVerticalGreenPipe,LeftCollision':
-        PushPlayerRightNotWarpingCommand,
-      'BigPowerUpState,SmallVerticalGreenPipe,RightCollision':
-        PushPlayerLeftNotWarpingCommand,
-
-      'BigPowerUpState,MediumVerticalGreenPipe,TopCollision':
-        PushPlayerUpNotWarpingCommand,
-      'BigPowerUpState,MediumVerticalGreenPipe,BottomCollision':
-        PushPlayerDownNotWarpingCommand,
-      'BigPowerUpState,MediumVerticalGreenPipe,LeftCollision':
-        PushPlayerRightNotWarpingCommand,
-      'BigPowerUpState,MediumVerticalGreenPipe,RightCollision':
-        PushPlayerLeftNotWarpingCommand,
-
-      'BigPowerUpState,LargeVerticalGreenPipe,TopCollision':
-        PushPlayerUpNotWarpingCommand,
-      'BigPowerUpState,LargeVerticalGreenPipe,BottomCollision':
-        PushPlayerDownNotWarpingCommand,
-      'BigPowerUpState,LargeVerticalGreenPipe,LeftCollision':
-        PushPlayerRightNotWarpingCommand,
-      'BigPowerUpState,LargeVerticalGreenPipe,RightCollision':
-        PushPlayerLeftNotWarpingCommand,
-
-      'BigPowerUpState,HorizontalGreenPipe,TopCollision':
-        PushPlayerUpNotWarpingCommand,
-      'BigPowerUpState,HorizontalGreenPipe,BottomCollision':
-        PushPlayerDownNotWarpingCommand,
-      'BigPowerUpState,HorizontalGreenPipe,LeftCollision':
-        PushPlayerRightNotWarpingCommand,
-      'BigPowerUpState,HorizontalGreenPipe,RightCollision':
-        PushPlayerLeftNotWarpingCommand,
-
-      'BigPowerUpState,LargeGreenPipeShaft,TopCollision': PushPlayerUpCommand,
-      'BigPowerUpState,LargeGreenPipeShaft,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'BigPowerUpState,LargeGreenPipeShaft,LeftCollision':
-        PushPlayerRightCommand,
-      'BigPowerUpState,LargeGreenPipeShaft,RightCollision':
-        PushPlayerLeftCommand,
-
-      'FirePowerUpState,ItemBrickBlock,TopCollision': PushPlayerUpCommand,
-      'FirePowerUpState,ItemBrickBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'FirePowerUpState,ItemBrickBlock,LeftCollision': PushPlayerRightCommand,
-      'FirePowerUpState,ItemBrickBlock,RightCollision': PushPlayerLeftCommand,
-
-      'FirePowerUpState,BrickBlock,TopCollision': PushPlayerUpCommand,
-      'FirePowerUpState,BrickBlock,BottomCollision':
-        PushPlayerDownDestroyBlockCommand,
-      'FirePowerUpState,BrickBlock,LeftCollision': PushPlayerRightCommand,
-      'FirePowerUpState,BrickBlock,RightCollision': PushPlayerLeftCommand,
-
-      'FirePowerUpState,BrickCollectionBlock,TopCollision': PushPlayerUpCommand,
-      'FirePowerUpState,BrickCollectionBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'FirePowerUpState,BrickCollectionBlock,LeftCollision':
-        PushPlayerRightCommand,
-      'FirePowerUpState,BrickCollectionBlock,RightCollision':
-        PushPlayerLeftCommand,
-
-      'FirePowerUpState,HiddenBlock,BottomCollision':
-        PushPlayerDownBumpRevealedBlockCommand,
-
-      'FirePowerUpState,NonPowerUpQuestionBlock,TopCollision':
-        PushPlayerUpCommand,
-      'FirePowerUpState,NonPowerUpQuestionBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'FirePowerUpState,NonPowerUpQuestionBlock,LeftCollision':
-        PushPlayerRightCommand,
-      'FirePowerUpState,NonPowerUpQuestionBlock,RightCollision':
-        PushPlayerLeftCommand,
-
-      'FirePowerUpState,PowerUpQuestionBlock,TopCollision': PushPlayerUpCommand,
-      'FirePowerUpState,PowerUpQuestionBlock,BottomCollision':
-        PushPlayerDownSpawnFireFlowerCommand,
-      'FirePowerUpState,PowerUpQuestionBlock,LeftCollision':
-        PushPlayerRightCommand,
-      'FirePowerUpState,PowerUpQuestionBlock,RightCollision':
-        PushPlayerLeftCommand,
-
-      'FirePowerUpState,FloorBlock,TopCollision': PushPlayerUpCommand,
-      'FirePowerUpState,FloorBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'FirePowerUpState,FloorBlock,LeftCollision': PushPlayerRightCommand,
-      'FirePowerUpState,FloorBlock,RightCollision': PushPlayerLeftCommand,
-
-      'FirePowerUpState,StairBlock,TopCollision': PushPlayerUpCommand,
-      'FirePowerUpState,StairBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'FirePowerUpState,StairBlock,LeftCollision': PushPlayerRightCommand,
-      'FirePowerUpState,StairBlock,RightCollision': PushPlayerLeftCommand,
-
-      'FirePowerUpState,UsedBlock,TopCollision': PushPlayerUpCommand,
-      'FirePowerUpState,UsedBlock,BottomCollision':
-        PushPlayerDownBumpBlockCommand,
-      'FirePowerUpState,UsedBlock,LeftCollision': PushPlayerRightCommand,
-      'FirePowerUpState,UsedBlock,RightCollision': PushPlayerLeftCommand,
-
-      'FirePowerUpState,SmallVerticalGreenPipe,TopCollision':
-        PushPlayerUpNotWarpingCommand,
-      'FirePowerUpState,SmallVerticalGreenPipe,BottomCollision':
-        PushPlayerDownNotWarpingCommand,
-      'FirePowerUpState,SmallVerticalGreenPipe,LeftCollision':
-        PushPlayerRightNotWarpingCommand,
-      'FirePowerUpState,SmallVerticalGreenPipe,RightCollision':
-        PushPlayerLeftNotWarpingCommand,
-
-      'FirePowerUpState,MediumVerticalGreenPipe,TopCollision':
-        PushPlayerUpNotWarpingCommand,
-      'FirePowerUpState,MediumVerticalGreenPipe,BottomCollision':
-        PushPlayerDownNotWarpingCommand,
-      'FirePowerUpState,MediumVerticalGreenPipe,LeftCollision':
-        PushPlayerRightNotWarpingCommand,
-      'FirePowerUpState,MediumVerticalGreenPipe,RightCollision':
-        PushPlayerLeftNotWarpingCommand,
-
-      'FirePowerUpState,LargeVerticalGreenPipe,TopCollision':
-        PushPlayerUpNotWarpingCommand,
-      'FirePowerUpState,LargeVerticalGreenPipe,BottomCollision':
-        PushPlayerDownNotWarpingCommand,
-      'FirePowerUpState,LargeVerticalGreenPipe,LeftCollision':
-        PushPlayerRightNotWarpingCommand,
-      'FirePowerUpState,LargeVerticalGreenPipe,RightCollision':
-        PushPlayerLeftNotWarpingCommand,
-
-      'FirePowerUpState,HorizontalGreenPipe,TopCollision':
-        PushPlayerUpNotWarpingCommand,
-      'FirePowerUpState,HorizontalGreenPipe,BottomCollision':
-        PushPlayerDownNotWarpingCommand,
-      'FirePowerUpState,HorizontalGreenPipe,LeftCollision':
-        PushPlayerRightNotWarpingCommand,
-      'FirePowerUpState,HorizontalGreenPipe,RightCollision':
-        PushPlayerLeftNotWarpingCommand,
-
-      'FirePowerUpState,LargeGreenPipeShaft,TopCollision':
-        PushPlayerUpNotWarpingCommand,
-      'FirePowerUpState,LargeGreenPipeShaft,BottomCollision':
-        PushPlayerDownNotWarpingCommand,
-      'FirePowerUpState,LargeGreenPipeShaft,LeftCollision':
-        PushPlayerRightNotWarpingCommand,
-      'FirePowerUpState,LargeGreenPipeShaft,RightCollision':
-        PushPlayerLeftNotWarpingCommand,
-    };
+export function respondToPlayerBlockCollision(
+  player: ICollidable,
+  block: ICollidable,
+  collision: ICollision
+): void {
+  const collisionType = `${(player as IPlayer).powerUpState.constructor.name},${
+    block.constructor.name
+  },${collision.direction}`;
+  if (playerBlockCollisionCommands[collisionType]) {
+    playerBlockCollisionCommands[collisionType](
+      player as IPlayer,
+      block as IBlock,
+      collision
+    );
   }
 }
+
+function handleTopPlayerBlockCollison(
+  player: IPlayer,
+  block: IBlock,
+  collison: ICollision
+) {
+  player.location.subtract({
+    x: 0,
+    y: collison.intersection.height,
+  });
+
+  if (player.actionState.constructor.name === 'FallingActionState') {
+    player.land();
+    player.cutYVelocity();
+
+    // StatManager.instance.resetConsecutivePoints();
+  }
+}
+
+function handleBottomPlayerBlockCollision(
+  player: IPlayer,
+  block: IBlock,
+  collison: ICollision
+) {
+  player.location.add({
+    x: 0,
+    y: collison.intersection.height,
+  });
+
+  if (player.actionState.constructor.name === 'JumpingActionState') {
+    player.location.add({
+      x: 0,
+      y: collison.intersection.height,
+    });
+    player.applyImpulse(
+      physics.blockBumpForce.subtract({ x: 0, y: player.velocity.y })
+    );
+    block.bump();
+
+    // StatManager.instance.playSoundEffect('handleBottomPlayerBlockCollision');
+  }
+}
+
+function handleLeftPlayerBlockCollision(
+  player: IPlayer,
+  block: IBlock,
+  collison: ICollision
+) {
+  player.location.add({
+    x: collison.intersection.width,
+    y: 0,
+  });
+
+  if (player.velocity.x < 0) {
+    player.cutXVelocity();
+  }
+}
+
+function handleRightPlayerBlockCollision(
+  player: IPlayer,
+  block: IBlock,
+  collison: ICollision
+) {
+  player.location.subtract({
+    x: collison.intersection.width,
+    y: 0,
+  });
+
+  if (player.velocity.x > 0) {
+    player.cutXVelocity();
+  }
+}
+
+function handleBottomNonSmallPlayerPowerUpBlockCollision(
+  player: IPlayer,
+  block: IBlock,
+  collison: ICollision
+) {
+  player.location.add({
+    x: 0,
+    y: collison.intersection.height,
+  });
+
+  if (player.actionState.constructor.name === 'JumpingActionState') {
+    player.applyImpulse(
+      physics.blockBumpForce.subtract({ x: 0, y: player.velocity.y })
+    );
+    (block as IItemContainer).itemType = FireFlower;
+    block.bump();
+
+    // SoundManager.instance.playSoundEffect('handleBottomNonSmallPlayerPowerUpBlockCollision')
+  }
+}
+
+function handleBottomPlayerHiddenBlockCollision(
+  player: IPlayer,
+  block: IBlock,
+  collison: ICollision
+) {
+  player.location.add({
+    x: 0,
+    y: collison.intersection.height,
+  });
+
+  if (player.actionState.constructor.name === 'JumpingActionState') {
+    player.applyImpulse(
+      physics.blockBumpForce.subtract({ x: 0, y: player.velocity.y })
+    );
+    block.bump();
+
+    // SoundManager.instance.playSoundEffect('handleBottomPlayerHiddenBlockCollision')
+  }
+}
+
+function handleDestroyingPlayerBlockCollision(
+  player: IPlayer,
+  block: IBlock,
+  collison: ICollision
+) {
+  player.location.add({
+    x: 0,
+    y: collison.intersection.height,
+  });
+
+  if (player.actionState.constructor.name === 'JumpingActionState') {
+    player.applyImpulse(
+      physics.blockBumpForce.subtract({ x: 0, y: player.velocity.y })
+    );
+    block.destroy();
+
+    // StatManager.instance.gainPoints(collision.intersection, 'handleDestroyingPlayerBlockCollision');
+    // SoundManager.instance.playSoundEffect('handleDestroyingPlayerBlockCollision');
+  }
+}
+
+function handleTopPlayerPipeCollision(
+  player: IPlayer,
+  block: IBlock,
+  collison: ICollision
+) {
+  if (player.actionState.constructor.name !== 'WarpingActionState') {
+    player.location.subtract({
+      x: 0,
+      y: collison.intersection.height,
+    });
+
+    if (player.actionState.constructor.name === 'FallingActionState') {
+      player.land();
+      player.cutYVelocity();
+
+      // StatManager.instance(resetConsecutivePoints()
+    }
+  }
+}
+
+function handleBottomPlayerPipeCollision(
+  player: IPlayer,
+  block: IBlock,
+  collison: ICollision
+) {
+  if (player.actionState.constructor.name !== 'WarpingActionState') {
+    if (player.actionState.constructor.name === 'JumpingActionState') {
+      player.location.add({
+        x: 0,
+        y: collison.intersection.height,
+      });
+      player.applyImpulse(
+        physics.blockBumpForce.subtract({ x: 0, y: player.velocity.y })
+      );
+      block.bump();
+
+      // SoundManager.instance.playSoundEffect('handleTopPlayerPipeCollision');
+    }
+  }
+}
+
+function handleLeftPlayerPipeCollision(
+  player: IPlayer,
+  block: IBlock,
+  collison: ICollision
+) {
+  if (player.actionState.constructor.name !== 'WarpingActionState') {
+    player.location.add({
+      x: collison.intersection.width,
+      y: 0,
+    });
+
+    if (player.velocity.x < 0) {
+      player.cutXVelocity();
+    }
+  }
+}
+
+function handleRightPlayerPipeCollision(
+  player: IPlayer,
+  block: IBlock,
+  collison: ICollision
+) {
+  if (player.actionState.constructor.name !== 'WarpingActionState') {
+    player.location.subtract({
+      x: collison.intersection.width,
+      y: 0,
+    });
+
+    if (player.velocity.x > 0) {
+      player.cutXVelocity();
+    }
+  }
+}
+
+const playerBlockCollisionCommands: {
+  [key: string]: (
+    player: IPlayer,
+    block: IBlock,
+    collision: ICollision
+  ) => void;
+} = {
+  'SmallPowerUpState,ItemBrickBlock,TopCollision': handleTopPlayerBlockCollison,
+  'SmallPowerUpState,ItemBrickBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'SmallPowerUpState,ItemBrickBlock,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'SmallPowerUpState,ItemBrickBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'SmallPowerUpState,BrickBlock,TopCollision': handleTopPlayerBlockCollison,
+  'SmallPowerUpState,BrickBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'SmallPowerUpState,BrickBlock,LeftCollision': handleLeftPlayerBlockCollision,
+  'SmallPowerUpState,BrickBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'SmallPowerUpState,BrickCollectionBlock,TopCollision':
+    handleTopPlayerBlockCollison,
+  'SmallPowerUpState,BrickCollectionBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'SmallPowerUpState,BrickCollectionBlock,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'SmallPowerUpState,BrickCollectionBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'SmallPowerUpState,HiddenBlock,BottomCollision':
+    handleBottomPlayerHiddenBlockCollision,
+
+  'SmallPowerUpState,NonPowerUpQuestionBlock,TopCollision':
+    handleTopPlayerBlockCollison,
+  'SmallPowerUpState,NonPowerUpQuestionBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'SmallPowerUpState,NonPowerUpQuestionBlock,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'SmallPowerUpState,NonPowerUpQuestionBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'SmallPowerUpState,PowerUpQuestionBlock,TopCollision':
+    handleTopPlayerBlockCollison,
+  'SmallPowerUpState,PowerUpQuestionBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'SmallPowerUpState,PowerUpQuestionBlock,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'SmallPowerUpState,PowerUpQuestionBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'SmallPowerUpState,FloorBlock,TopCollision': handleTopPlayerBlockCollison,
+  'SmallPowerUpState,FloorBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'SmallPowerUpState,FloorBlock,LeftCollision': handleLeftPlayerBlockCollision,
+  'SmallPowerUpState,FloorBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'SmallPowerUpState,StairBlock,TopCollision': handleTopPlayerBlockCollison,
+  'SmallPowerUpState,StairBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'SmallPowerUpState,StairBlock,LeftCollision': handleLeftPlayerBlockCollision,
+  'SmallPowerUpState,StairBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'SmallPowerUpState,UsedBlock,TopCollision': handleTopPlayerBlockCollison,
+  'SmallPowerUpState,UsedBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'SmallPowerUpState,UsedBlock,LeftCollision': handleLeftPlayerBlockCollision,
+  'SmallPowerUpState,UsedBlock,RightCollision': handleRightPlayerBlockCollision,
+
+  'SmallPowerUpState,SmallVerticalGreenPipe,TopCollision':
+    handleTopPlayerPipeCollision,
+  'SmallPowerUpState,SmallVerticalGreenPipe,BottomCollision':
+    handleBottomPlayerPipeCollision,
+  'SmallPowerUpState,SmallVerticalGreenPipe,LeftCollision':
+    handleLeftPlayerPipeCollision,
+  'SmallPowerUpState,SmallVerticalGreenPipe,RightCollision':
+    handleRightPlayerPipeCollision,
+
+  'SmallPowerUpState,MediumVerticalGreenPipe,TopCollision':
+    handleTopPlayerPipeCollision,
+  'SmallPowerUpState,MediumVerticalGreenPipe,BottomCollision':
+    handleBottomPlayerPipeCollision,
+  'SmallPowerUpState,MediumVerticalGreenPipe,LeftCollision':
+    handleLeftPlayerPipeCollision,
+  'SmallPowerUpState,MediumVerticalGreenPipe,RightCollision':
+    handleRightPlayerPipeCollision,
+
+  'SmallPowerUpState,LargeVerticalGreenPipe,TopCollision':
+    handleTopPlayerPipeCollision,
+  'SmallPowerUpState,LargeVerticalGreenPipe,BottomCollision':
+    handleBottomPlayerPipeCollision,
+  'SmallPowerUpState,LargeVerticalGreenPipe,LeftCollision':
+    handleLeftPlayerPipeCollision,
+  'SmallPowerUpState,LargeVerticalGreenPipe,RightCollision':
+    handleRightPlayerPipeCollision,
+
+  'SmallPowerUpState,HorizontalGreenPipe,TopCollision':
+    handleTopPlayerPipeCollision,
+  'SmallPowerUpState,HorizontalGreenPipe,BottomCollision':
+    handleBottomPlayerPipeCollision,
+  'SmallPowerUpState,HorizontalGreenPipe,LeftCollision':
+    handleLeftPlayerPipeCollision,
+  'SmallPowerUpState,HorizontalGreenPipe,RightCollision':
+    handleRightPlayerPipeCollision,
+
+  'SmallPowerUpState,LargeGreenPipeShaft,TopCollision':
+    handleTopPlayerBlockCollison,
+  'SmallPowerUpState,LargeGreenPipeShaft,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'SmallPowerUpState,LargeGreenPipeShaft,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'SmallPowerUpState,LargeGreenPipeShaft,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'BigPowerUpState,ItemBrickBlock,TopCollision': handleTopPlayerBlockCollison,
+  'BigPowerUpState,ItemBrickBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'BigPowerUpState,ItemBrickBlock,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'BigPowerUpState,ItemBrickBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'BigPowerUpState,BrickBlock,TopCollision': handleTopPlayerBlockCollison,
+  'BigPowerUpState,BrickBlock,BottomCollision':
+    handleDestroyingPlayerBlockCollision,
+  'BigPowerUpState,BrickBlock,LeftCollision': handleLeftPlayerBlockCollision,
+  'BigPowerUpState,BrickBlock,RightCollision': handleRightPlayerBlockCollision,
+
+  'BigPowerUpState,BrickCollectionBlock,TopCollision':
+    handleTopPlayerBlockCollison,
+  'BigPowerUpState,BrickCollectionBlock,BottomCollision':
+    handleBottomPlayerBlockCollision, // TODO: Bug? should be destroy
+  'BigPowerUpState,BrickCollectionBlock,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'BigPowerUpState,BrickCollectionBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'BigPowerUpState,HiddenBlock,BottomCollision':
+    handleBottomPlayerHiddenBlockCollision,
+
+  'BigPowerUpState,NonPowerUpQuestionBlock,TopCollision':
+    handleTopPlayerBlockCollison,
+  'BigPowerUpState,NonPowerUpQuestionBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'BigPowerUpState,NonPowerUpQuestionBlock,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'BigPowerUpState,NonPowerUpQuestionBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'BigPowerUpState,PowerUpQuestionBlock,TopCollision':
+    handleTopPlayerBlockCollison,
+  'BigPowerUpState,PowerUpQuestionBlock,BottomCollision':
+    handleBottomNonSmallPlayerPowerUpBlockCollision,
+  'BigPowerUpState,PowerUpQuestionBlock,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'BigPowerUpState,PowerUpQuestionBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'BigPowerUpState,FloorBlock,TopCollision': handleTopPlayerBlockCollison,
+  'BigPowerUpState,FloorBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'BigPowerUpState,FloorBlock,LeftCollision': handleLeftPlayerBlockCollision,
+  'BigPowerUpState,FloorBlock,RightCollision': handleRightPlayerBlockCollision,
+
+  'BigPowerUpState,StairBlock,TopCollision': handleTopPlayerBlockCollison,
+  'BigPowerUpState,StairBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'BigPowerUpState,StairBlock,LeftCollision': handleLeftPlayerBlockCollision,
+  'BigPowerUpState,StairBlock,RightCollision': handleRightPlayerBlockCollision,
+
+  'BigPowerUpState,UsedBlock,TopCollision': handleTopPlayerBlockCollison,
+  'BigPowerUpState,UsedBlock,BottomCollision': handleBottomPlayerBlockCollision,
+  'BigPowerUpState,UsedBlock,LeftCollision': handleLeftPlayerBlockCollision,
+  'BigPowerUpState,UsedBlock,RightCollision': handleRightPlayerBlockCollision,
+
+  'BigPowerUpState,SmallVerticalGreenPipe,TopCollision':
+    handleTopPlayerPipeCollision,
+  'BigPowerUpState,SmallVerticalGreenPipe,BottomCollision':
+    handleBottomPlayerPipeCollision,
+  'BigPowerUpState,SmallVerticalGreenPipe,LeftCollision':
+    handleLeftPlayerPipeCollision,
+  'BigPowerUpState,SmallVerticalGreenPipe,RightCollision':
+    handleRightPlayerPipeCollision,
+
+  'BigPowerUpState,MediumVerticalGreenPipe,TopCollision':
+    handleTopPlayerPipeCollision,
+  'BigPowerUpState,MediumVerticalGreenPipe,BottomCollision':
+    handleBottomPlayerPipeCollision,
+  'BigPowerUpState,MediumVerticalGreenPipe,LeftCollision':
+    handleLeftPlayerPipeCollision,
+  'BigPowerUpState,MediumVerticalGreenPipe,RightCollision':
+    handleRightPlayerPipeCollision,
+
+  'BigPowerUpState,LargeVerticalGreenPipe,TopCollision':
+    handleTopPlayerPipeCollision,
+  'BigPowerUpState,LargeVerticalGreenPipe,BottomCollision':
+    handleBottomPlayerPipeCollision,
+  'BigPowerUpState,LargeVerticalGreenPipe,LeftCollision':
+    handleLeftPlayerPipeCollision,
+  'BigPowerUpState,LargeVerticalGreenPipe,RightCollision':
+    handleRightPlayerPipeCollision,
+
+  'BigPowerUpState,HorizontalGreenPipe,TopCollision':
+    handleTopPlayerPipeCollision,
+  'BigPowerUpState,HorizontalGreenPipe,BottomCollision':
+    handleBottomPlayerPipeCollision,
+  'BigPowerUpState,HorizontalGreenPipe,LeftCollision':
+    handleLeftPlayerPipeCollision,
+  'BigPowerUpState,HorizontalGreenPipe,RightCollision':
+    handleRightPlayerPipeCollision,
+
+  'BigPowerUpState,LargeGreenPipeShaft,TopCollision':
+    handleTopPlayerBlockCollison,
+  'BigPowerUpState,LargeGreenPipeShaft,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'BigPowerUpState,LargeGreenPipeShaft,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'BigPowerUpState,LargeGreenPipeShaft,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'FirePowerUpState,ItemBrickBlock,TopCollision': handleTopPlayerBlockCollison,
+  'FirePowerUpState,ItemBrickBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'FirePowerUpState,ItemBrickBlock,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'FirePowerUpState,ItemBrickBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'FirePowerUpState,BrickBlock,TopCollision': handleTopPlayerBlockCollison,
+  'FirePowerUpState,BrickBlock,BottomCollision':
+    handleDestroyingPlayerBlockCollision,
+  'FirePowerUpState,BrickBlock,LeftCollision': handleLeftPlayerBlockCollision,
+  'FirePowerUpState,BrickBlock,RightCollision': handleRightPlayerBlockCollision,
+
+  'FirePowerUpState,BrickCollectionBlock,TopCollision':
+    handleTopPlayerBlockCollison,
+  'FirePowerUpState,BrickCollectionBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'FirePowerUpState,BrickCollectionBlock,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'FirePowerUpState,BrickCollectionBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'FirePowerUpState,HiddenBlock,BottomCollision':
+    handleBottomPlayerHiddenBlockCollision,
+
+  'FirePowerUpState,NonPowerUpQuestionBlock,TopCollision':
+    handleTopPlayerBlockCollison,
+  'FirePowerUpState,NonPowerUpQuestionBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'FirePowerUpState,NonPowerUpQuestionBlock,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'FirePowerUpState,NonPowerUpQuestionBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'FirePowerUpState,PowerUpQuestionBlock,TopCollision':
+    handleTopPlayerBlockCollison,
+  'FirePowerUpState,PowerUpQuestionBlock,BottomCollision':
+    handleBottomNonSmallPlayerPowerUpBlockCollision,
+  'FirePowerUpState,PowerUpQuestionBlock,LeftCollision':
+    handleLeftPlayerBlockCollision,
+  'FirePowerUpState,PowerUpQuestionBlock,RightCollision':
+    handleRightPlayerBlockCollision,
+
+  'FirePowerUpState,FloorBlock,TopCollision': handleTopPlayerBlockCollison,
+  'FirePowerUpState,FloorBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'FirePowerUpState,FloorBlock,LeftCollision': handleLeftPlayerBlockCollision,
+  'FirePowerUpState,FloorBlock,RightCollision': handleRightPlayerBlockCollision,
+
+  'FirePowerUpState,StairBlock,TopCollision': handleTopPlayerBlockCollison,
+  'FirePowerUpState,StairBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'FirePowerUpState,StairBlock,LeftCollision': handleLeftPlayerBlockCollision,
+  'FirePowerUpState,StairBlock,RightCollision': handleRightPlayerBlockCollision,
+
+  'FirePowerUpState,UsedBlock,TopCollision': handleTopPlayerBlockCollison,
+  'FirePowerUpState,UsedBlock,BottomCollision':
+    handleBottomPlayerBlockCollision,
+  'FirePowerUpState,UsedBlock,LeftCollision': handleLeftPlayerBlockCollision,
+  'FirePowerUpState,UsedBlock,RightCollision': handleRightPlayerBlockCollision,
+
+  'FirePowerUpState,SmallVerticalGreenPipe,TopCollision':
+    handleTopPlayerPipeCollision,
+  'FirePowerUpState,SmallVerticalGreenPipe,BottomCollision':
+    handleBottomPlayerPipeCollision,
+  'FirePowerUpState,SmallVerticalGreenPipe,LeftCollision':
+    handleLeftPlayerPipeCollision,
+  'FirePowerUpState,SmallVerticalGreenPipe,RightCollision':
+    handleRightPlayerPipeCollision,
+
+  'FirePowerUpState,MediumVerticalGreenPipe,TopCollision':
+    handleTopPlayerPipeCollision,
+  'FirePowerUpState,MediumVerticalGreenPipe,BottomCollision':
+    handleBottomPlayerPipeCollision,
+  'FirePowerUpState,MediumVerticalGreenPipe,LeftCollision':
+    handleLeftPlayerPipeCollision,
+  'FirePowerUpState,MediumVerticalGreenPipe,RightCollision':
+    handleRightPlayerPipeCollision,
+
+  'FirePowerUpState,LargeVerticalGreenPipe,TopCollision':
+    handleTopPlayerPipeCollision,
+  'FirePowerUpState,LargeVerticalGreenPipe,BottomCollision':
+    handleBottomPlayerPipeCollision,
+  'FirePowerUpState,LargeVerticalGreenPipe,LeftCollision':
+    handleLeftPlayerPipeCollision,
+  'FirePowerUpState,LargeVerticalGreenPipe,RightCollision':
+    handleRightPlayerPipeCollision,
+
+  'FirePowerUpState,HorizontalGreenPipe,TopCollision':
+    handleTopPlayerPipeCollision,
+  'FirePowerUpState,HorizontalGreenPipe,BottomCollision':
+    handleBottomPlayerPipeCollision,
+  'FirePowerUpState,HorizontalGreenPipe,LeftCollision':
+    handleLeftPlayerPipeCollision,
+  'FirePowerUpState,HorizontalGreenPipe,RightCollision':
+    handleRightPlayerPipeCollision,
+
+  'FirePowerUpState,LargeGreenPipeShaft,TopCollision':
+    handleTopPlayerPipeCollision,
+  'FirePowerUpState,LargeGreenPipeShaft,BottomCollision':
+    handleBottomPlayerPipeCollision,
+  'FirePowerUpState,LargeGreenPipeShaft,LeftCollision':
+    handleLeftPlayerPipeCollision,
+  'FirePowerUpState,LargeGreenPipeShaft,RightCollision':
+    handleRightPlayerPipeCollision,
+};
