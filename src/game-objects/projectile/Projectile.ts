@@ -31,4 +31,12 @@ export abstract class Projectile
   public destroy(): void {
     this.projectileState.destroy();
   }
+
+  public override get collisionDetails() {
+    return {
+      interface: 'IProjectile',
+      class: this.constructor.name,
+      kinematic: true,
+    };
+  }
 }

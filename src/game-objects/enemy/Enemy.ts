@@ -76,4 +76,12 @@ export abstract class Enemy extends KinematicGameObject implements IEnemy {
     this._enemyState = enemyState;
     this.setSprite(this.spriteName);
   }
+
+  public override get collisionDetails() {
+    return {
+      interface: 'IEnemy',
+      class: this.constructor.name,
+      kinematic: true,
+    };
+  }
 }

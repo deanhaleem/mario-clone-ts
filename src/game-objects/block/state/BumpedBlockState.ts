@@ -22,7 +22,7 @@ export class BumpedBlockState extends BlockState {
   }
 
   private playBumpAnimation(elapsedTime: number) {
-    this.block.location = this.block.location.add(
+    this.block.location.add(
       elapsedTime < timers.blockBump / 2.0
         ? physics.blockBumpVelocity
         : physics.blockBumpVelocity.negate()

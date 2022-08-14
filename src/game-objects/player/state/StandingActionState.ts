@@ -14,6 +14,8 @@ export class StandingActionState extends ActionState {
 
     this.player.cutXVelocity();
     this.player.cutYVelocity();
+
+    console.log('stand', Date.now().toLocaleString('en-US'));
   }
 
   public override jump() {
@@ -41,6 +43,7 @@ export class StandingActionState extends ActionState {
   }
 
   public override fall(): void {
+    console.log('fall method from stand', Date.now().toLocaleString('en-US'));
     this.player.actionState = new FallingActionState(this.player);
   }
 }

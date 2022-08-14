@@ -24,4 +24,12 @@ export class Indicator extends GameObject implements IIndicator {
   private disposeOfIndicator(): void {
     //Game1.instance.disposeOfObject(this)
   }
+
+  public override get collisionDetails() {
+    return {
+      interface: 'IIndicator',
+      class: this.constructor.name,
+      kinematic: false,
+    };
+  }
 }

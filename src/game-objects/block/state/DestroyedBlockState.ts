@@ -16,9 +16,7 @@ export class DestroyedBlockState extends BlockState {
 
   private playBumpAnimation(elapsedTime: number): void {
     if (elapsedTime < timers.blockDestroy / 2.0) {
-      this.block.location = this.block.location.add(
-        physics.blockBumpVelocity.negate()
-      );
+      this.block.location.add(physics.blockBumpVelocity.negate());
     }
   }
 

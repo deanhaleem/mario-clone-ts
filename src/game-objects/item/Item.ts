@@ -18,4 +18,12 @@ export abstract class Item extends KinematicGameObject implements IItem {
 
     super.update(time, delta);
   }
+
+  public override get collisionDetails() {
+    return {
+      interface: 'IItem',
+      class: this.constructor.name,
+      kinematic: true,
+    };
+  }
 }

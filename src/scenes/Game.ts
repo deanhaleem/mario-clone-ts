@@ -1,49 +1,47 @@
 import Phaser from 'phaser';
-import { BrickBlock } from '../game-objects/block/BrickBlock';
-import { FloorBlock } from '../game-objects/block/FloorBlock';
-import { HiddenBlock } from '../game-objects/block/HiddenBlock';
-import { HorizontalGreenPipe } from '../game-objects/block/HorizontalGreenPipe';
-import { LargeGreenPipeShaft } from '../game-objects/block/LargeGreenPipeShaft';
-import { LargeVerticalGreenPipe } from '../game-objects/block/LargeVerticalGreenPipe';
-import { MediumVerticalGreenPipe } from '../game-objects/block/MediumVerticalGreenPipe';
-import { PowerUpQuestionBlock } from '../game-objects/block/PowerUpQuestionBlock';
-import { SmallVerticalGreenPipe } from '../game-objects/block/SmallVerticalGreenPipe';
-import { StairBlock } from '../game-objects/block/StairBlock';
-import { UsedBlock } from '../game-objects/block/UsedBlock';
-import { Goomba } from '../game-objects/enemy/Goomba';
-import { Koopa } from '../game-objects/enemy/Koopa';
-import { FireFlower } from '../game-objects/item/FireFlower';
-import { Flagpole } from '../game-objects/item/Flagpole';
-import { GreenMushroom } from '../game-objects/item/GreenMushroom';
-import { NonSpinningCoin } from '../game-objects/item/NonSpinningCoin';
-import { RedMushroom } from '../game-objects/item/RedMushroom';
-import { SpinningCoin } from '../game-objects/item/SpinningCoin';
-import { Star } from '../game-objects/item/Star';
-import { Mario } from '../game-objects/player/Mario';
+import { CollisionManager } from '../collisions/CollisionManager';
+import { ICollisionManager } from '../collisions/types';
+import { Camera } from '../display/Camera';
+import { CameraController } from '../display/CameraController';
+import { ICamera, ICameraController } from '../display/types';
 import { IPlayer } from '../game-objects/player/types';
-import { Fireball } from '../game-objects/projectile/Fireball';
-import { Scenery } from '../game-objects/scenery/Scenery';
-import { IGameObject } from '../game-objects/types';
 import SpriteFactory from '../graphics/SpriteFactory';
+import { AttackCommand } from '../input/commands/AttackCommand';
 import { CrouchCommand } from '../input/commands/CrouchCommand';
 import { JumpCommand } from '../input/commands/JumpCommand';
+import { NullCommand } from '../input/commands/NullCommand';
+import { RunCommand } from '../input/commands/RunCommand';
 import { StopCrouchingCommand } from '../input/commands/StopCrouchingCommand';
 import { StopJumpingCommand } from '../input/commands/StopJumpingCommand';
 import { StopMovingLeft } from '../input/commands/StopMovingLeftCommand';
 import { StopMovingRight } from '../input/commands/StopMovingRightCommand';
+import { StopRunningCommand } from '../input/commands/StopRunningCommand';
 import { WalkLeftCommand } from '../input/commands/WalkLeftCommand';
 import { WalkRightCommand } from '../input/commands/WalkRightCommand';
 import { KeyboardController } from '../input/KeyboardController';
 import { IController } from '../input/types';
-import { physics } from '../utils/constants/Physics';
+import { Level } from '../level/Level';
+import { ILevel } from '../level/types';
+import { TimedActionManager } from '../TimedActionManager';
 
 export default class Demo extends Phaser.Scene {
-  private gameObjects: IGameObject[];
   private keyboardController: IController;
+  private fpsText;
 
   private rt: Phaser.GameObjects.RenderTexture;
 
-  private fpsText;
+  private level: ILevel;
+  private collisionManager: ICollisionManager;
+  public camera: ICamera;
+  public cameraController: ICameraController;
+
+  public get player() {
+    return this.level.player as IPlayer;
+  }
+
+  public set player(player: IPlayer) {
+    this.level.player = player;
+  }
 
   constructor() {
     super('GameScene');
@@ -51,80 +49,18 @@ export default class Demo extends Phaser.Scene {
 
   preload() {
     SpriteFactory.instance.loadContent(this);
+    this.level = new Level();
+    this.level.loadContent();
   }
 
   create() {
+    this.fpsText = this.add.text(10, 10, 'FPS: -- \n-- Particles', {
+      font: 'bold 26px Arial',
+    });
+
     this.rt = this.add.renderTexture(0, 0, 800, 480);
-    this.gameObjects = [
-      new Mario(new Phaser.Math.Vector2(525, 200)),
-
-      new PowerUpQuestionBlock(new Phaser.Math.Vector2(50, 300), SpinningCoin),
-      new BrickBlock(new Phaser.Math.Vector2(82, 300)),
-      new FloorBlock(
-        new Phaser.Math.Vector2(114, 300),
-        Phaser.Math.Vector2.ZERO
-      ),
-      new HiddenBlock(new Phaser.Math.Vector2(146, 300), SpinningCoin),
-      new StairBlock(
-        new Phaser.Math.Vector2(178, 300),
-        Phaser.Math.Vector2.ZERO
-      ),
-      new UsedBlock(new Phaser.Math.Vector2(210, 300)),
-
-      new HorizontalGreenPipe(
-        new Phaser.Math.Vector2(100, 375),
-        Phaser.Math.Vector2.ZERO
-      ),
-      new LargeGreenPipeShaft(
-        new Phaser.Math.Vector2(200, 375),
-        Phaser.Math.Vector2.ZERO
-      ),
-      new LargeVerticalGreenPipe(
-        new Phaser.Math.Vector2(280, 375),
-        Phaser.Math.Vector2.ZERO
-      ),
-      new MediumVerticalGreenPipe(
-        new Phaser.Math.Vector2(350, 375),
-        Phaser.Math.Vector2.ZERO
-      ),
-      new SmallVerticalGreenPipe(
-        new Phaser.Math.Vector2(280, 245),
-        Phaser.Math.Vector2.ZERO
-      ),
-      // new LargeVerticalGreenPipe(new Phaser.Math.Vector2(466, 300)),
-      // new MediumVerticalGreenPipe(new Phaser.Math.Vector2(498, 300)),
-      // new SmallVerticalGreenPipe(new Phaser.Math.Vector2(530, 300)),
-
-      new FireFlower(new Phaser.Math.Vector2(50, 250)),
-      new GreenMushroom(new Phaser.Math.Vector2(82, 250)),
-      new RedMushroom(new Phaser.Math.Vector2(114, 250)),
-      new NonSpinningCoin(new Phaser.Math.Vector2(146, 250)),
-      new SpinningCoin(new Phaser.Math.Vector2(178, 250)),
-      new Star(new Phaser.Math.Vector2(210, 250)),
-      new Flagpole(new Phaser.Math.Vector2(700, 350)),
-
-      new Scenery(new Phaser.Math.Vector2(75, 50), 'LargeBush'),
-      new Scenery(new Phaser.Math.Vector2(190, 50), 'MediumBush'),
-      new Scenery(new Phaser.Math.Vector2(275, 50), 'SmallBush'),
-      new Scenery(new Phaser.Math.Vector2(75, 100), 'LargeCloud'),
-      new Scenery(new Phaser.Math.Vector2(190, 100), 'MediumCloud'),
-      new Scenery(new Phaser.Math.Vector2(275, 100), 'SmallCloud'),
-      new Scenery(new Phaser.Math.Vector2(100, 175), 'LargeHill'),
-      new Scenery(new Phaser.Math.Vector2(250, 175), 'SmallHill'),
-      new Scenery(new Phaser.Math.Vector2(475, 375), 'SmallCastle'),
-
-      new Goomba(new Phaser.Math.Vector2(425, 200)),
-      new Koopa(new Phaser.Math.Vector2(475, 200)),
-
-      new Fireball(
-        new Phaser.Math.Vector2(390, 200),
-        physics.rightProjectileVelocity
-      ),
-    ];
-
-    // this.fpsText = this.add.text(10, 10, 'FPS: -- \n-- Particles', {
-    //   font: 'bold 26px Arial',
-    // });
+    this.hardReset();
+    this.cameraController = new CameraController(this.camera);
 
     this.input.keyboard.addKey('Z');
     this.input.keyboard.addKey('RIGHT');
@@ -135,50 +71,71 @@ export default class Demo extends Phaser.Scene {
       this.input.keyboard,
       {
         key: Phaser.Input.Keyboard.KeyCodes.Z.toString(),
-        keyDownCommand: new JumpCommand(this.gameObjects[0] as IPlayer),
-        keyUpCommand: new StopJumpingCommand(this.gameObjects[0] as IPlayer),
-        canBeHeld: true, // TODO: remove once physics implemented
+        keyDownCommand: new JumpCommand(this.player),
+        keyUpCommand: new StopJumpingCommand(this.player),
+        canBeHeld: false,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.RIGHT.toString(),
-        keyDownCommand: new WalkRightCommand(this.gameObjects[0] as IPlayer),
-        keyUpCommand: new StopMovingRight(this.gameObjects[0] as IPlayer),
+        keyDownCommand: new WalkRightCommand(this.player),
+        keyUpCommand: new StopMovingRight(this.player),
         canBeHeld: true,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.LEFT.toString(),
-        keyDownCommand: new WalkLeftCommand(this.gameObjects[0] as IPlayer),
-        keyUpCommand: new StopMovingLeft(this.gameObjects[0] as IPlayer),
+        keyDownCommand: new WalkLeftCommand(this.player),
+        keyUpCommand: new StopMovingLeft(this.player),
         canBeHeld: true,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.DOWN.toString(),
-        keyDownCommand: new CrouchCommand(this.gameObjects[0] as IPlayer),
-        keyUpCommand: new StopCrouchingCommand(this.gameObjects[0] as IPlayer),
+        keyDownCommand: new CrouchCommand(this.player),
+        keyUpCommand: new StopCrouchingCommand(this.player),
         canBeHeld: true,
+      },
+      {
+        key: Phaser.Input.Keyboard.KeyCodes.X.toString(),
+        keyDownCommand: new RunCommand(this.player),
+        keyUpCommand: new StopRunningCommand(this.player),
+        canBeHeld: true,
+      },
+      {
+        key: Phaser.Input.Keyboard.KeyCodes.C.toString(),
+        keyDownCommand: new AttackCommand(this.player),
+        keyUpCommand: new NullCommand(),
+        canBeHeld: false,
       }
     );
   }
-
   private addDelta = 0;
-
   update(time: number, delta: number): void {
     this.keyboardController.update();
-    this.gameObjects.forEach((gameObject) => {
-      gameObject.update(time, delta);
-    });
+    this.level.update(time, delta);
+    TimedActionManager.instance.update(time, delta);
+    // this.cameraController.update(time, delta);
     this.addDelta += delta / 1000;
 
+    this.collisionManager.update(this.camera);
+
+    // this.level.cleanUp(this.camera.hitbox);
+
     this.rt.clear();
-    // this.fpsText.setText(
-    //   `FPS: ${(1000 / delta).toFixed(3)}\nDelta: ${(delta / 1000).toFixed(
-    //     4
-    //   )}\nTime: ${time / 1000}\nAdd Delta: ${this.addDelta}`
-    // );
+    this.fpsText.setText(
+      `Time: ${time / 1000}\nAccel: ${this.player.acceleration.x},${
+        this.player.acceleration.y
+      }\nVel: ${this.player.velocity.x},${this.player.velocity.y}`
+    );
     this.rt.beginDraw();
-    this.gameObjects.forEach((gameObject) => {
-      gameObject.draw(this.rt);
-    });
+    this.level.draw(this.rt);
     this.rt.endDraw();
+  }
+
+  hardReset() {
+    this.level.reset();
+    this.collisionManager = new CollisionManager(this.level);
+    this.camera = new Camera(
+      new Phaser.Math.Vector2(),
+      new Phaser.Math.Vector2(800, 480)
+    );
   }
 }

@@ -25,36 +25,35 @@ export abstract class KinematicGameObject
   }
 
   public override update(time: number, delta: number): void {
-    // TODO: can I override the += operator?
-    // TODO: test the set accessor still applies with this
-    this.velocity = this.velocity.add(
-      this.acceleration.multiply(
-        new Phaser.Math.Vector2(delta * 1000 - physics.deltaTime)
+    // console.log(delta * 1000);
+    this.velocity.add(
+      new Phaser.Math.Vector2(
+        this.acceleration.x * Math.fround(delta / 1000 - physics.deltaTime),
+        this.acceleration.y * Math.fround(delta / 1000 - physics.deltaTime)
       )
     );
-    // this.velocity = new Phaser.Math.Vector2(
-    //   this.velocity.x + this.acceleration.x * (delta - physics.deltaTime),
-    //   this.velocity.y + this.acceleration.y * (delta - physics.deltaTime)
-    // );
 
-    // TODO: Update to use add method
-    this.location = new Phaser.Math.Vector2(
-      this.location.x + this.velocity.x,
-      this.location.y + this.velocity.y
-    );
+    this.location.add(this.velocity);
+
+    // if (this.constructor.name === 'Mario') console.log(this.location);
 
     super.update(time, delta);
   }
 
   public applyImpulse(impulse: Phaser.Math.Vector2): void {
-    this.velocity = new Phaser.Math.Vector2(
-      this.velocity.x + impulse.x,
-      this.velocity.y + impulse.y
-    );
+    this.velocity.add(impulse);
+    if (this.constructor.name === 'Mario') {
+      console.log('apply impulse', Date.now().toLocaleString('en-US'));
+      console.log(impulse, Date.now().toLocaleString('en-US'));
+    }
   }
 
   public applyForce(force: Phaser.Math.Vector2): void {
     this.acceleration = force;
+    if (this.constructor.name === 'Mario') {
+      console.log('apply force', Date.now().toLocaleString('en-US'));
+      console.log(force, Date.now().toLocaleString('en-US'));
+    }
   }
 
   public cutXVelocity(): void {
@@ -65,6 +64,7 @@ export abstract class KinematicGameObject
   public cutYVelocity(): void {
     this.velocity.y = 0;
     this.acceleration.y = 0;
+    // console.log(this.velocity, Date.now().toLocaleString('en-US'));
   }
 
   public land(): void {
@@ -111,14 +111,16 @@ export abstract class KinematicGameObject
 
   public set velocity(velocity: Phaser.Math.Vector2) {
     this._velocity = velocity;
+    // if (this.constructor.name === 'Mario') console.log(velocity);
 
     if (this._velocity.x < -this.maxVelocity.x) {
       this._velocity.x = -this.maxVelocity.x;
-    } else if (this._velocity.x > -this.maxVelocity.x) {
+    } else if (this._velocity.x > this.maxVelocity.x) {
       this._velocity.x = this.maxVelocity.x;
     }
 
     if (this._velocity.y > this.maxVelocity.y) {
+      if (this.constructor.name === 'Mario') console.log(this._velocity.y);
       this._velocity.y = this.maxVelocity.y;
     }
   }

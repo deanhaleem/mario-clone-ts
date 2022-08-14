@@ -15,13 +15,13 @@ export class WalkingActionState extends ActionState {
   constructor(player: IPlayer) {
     super(player);
 
-    super.player.cutYVelocity();
-    super.player.applyForce(
+    this.player.cutYVelocity();
+    this.player.applyForce(
       physics.playerHorizontalAcceleration.multiply(
         new Phaser.Math.Vector2(this.player.direction)
       )
     );
-    super.player.setMaxVelocity(physics.maxPlayerVelocity);
+    this.player.setMaxVelocity(physics.maxPlayerVelocity);
   }
 
   public override jump() {

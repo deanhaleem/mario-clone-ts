@@ -16,20 +16,15 @@ export abstract class CollectionBlock extends NonBumpableBlock {
   }
 
   public override draw(renderTexture: Phaser.GameObjects.RenderTexture): void {
-    const initialLocation = this.location;
-
+    const initialLocation = new Phaser.Math.Vector2(this.location);
     for (let i = 0; i < this.numBlocksInColumn; i++) {
       for (let j = 0; j < this.numBlocksInRow; j++) {
         super.draw(renderTexture);
-        this.location = this.location.add(
-          new Phaser.Math.Vector2(offsets.tile, 0)
-        );
+        this.location.add(new Phaser.Math.Vector2(offsets.tile, 0));
       }
-      this.location = this.location.add(
-        new Phaser.Math.Vector2(
-          initialLocation.x,
-          initialLocation.y + offsets.tile * (i + 1)
-        )
+      this.location = new Phaser.Math.Vector2(
+        initialLocation.x,
+        initialLocation.y + offsets.tile * (i + 1)
       );
     }
 

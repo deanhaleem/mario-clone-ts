@@ -5,6 +5,8 @@ export class FloorBlock extends CollectionBlock {
     super(location, size);
 
     super.setSprite(this.spriteName);
+
+    //  / console.log(this.hitbox);
   }
 
   protected override get spriteName() {

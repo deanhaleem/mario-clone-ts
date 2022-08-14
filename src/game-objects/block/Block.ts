@@ -22,4 +22,12 @@ export abstract class Block extends GameObject implements IBlock {
   public destroy(): void {
     this.blockState.destroy();
   }
+
+  public override get collisionDetails() {
+    return {
+      interface: 'IBlock',
+      class: this.constructor.name,
+      kinematic: false,
+    };
+  }
 }

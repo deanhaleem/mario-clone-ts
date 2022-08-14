@@ -56,11 +56,11 @@ export abstract class Player extends KinematicGameObject implements IPlayer {
     this.actionState.run();
   }
 
-  public fall(): void {
+  public override fall(): void {
     this.actionState.fall();
   }
 
-  public land(): void {
+  public override land(): void {
     this.actionState.land();
   }
 
@@ -139,5 +139,13 @@ export abstract class Player extends KinematicGameObject implements IPlayer {
 
   public set canWarp(canWarp: boolean) {
     this._canWarp = canWarp;
+  }
+
+  public override get collisionDetails() {
+    return {
+      interface: 'IPlayer',
+      class: this.constructor.name,
+      kinematic: true,
+    };
   }
 }

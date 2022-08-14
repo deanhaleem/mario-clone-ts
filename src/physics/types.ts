@@ -1,5 +1,11 @@
 export interface ICollidable {
   hitbox: Phaser.Geom.Rectangle;
+
+  collisionDetails: {
+    interface: string;
+    class: string;
+    kinematic: boolean;
+  };
 }
 
 export interface IRigidBody extends ICollidable {
