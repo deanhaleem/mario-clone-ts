@@ -1,9 +1,9 @@
 import SpriteFactory from '../graphics/SpriteFactory';
 import { ISprite } from '../graphics/types';
 import getCurrentScene from '../scenes/Scene';
-import { locations } from '../utils/constants/Locations';
-import { offsets } from '../utils/constants/Offsets';
-import { strings } from '../utils/constants/String';
+import { locations } from '../utils/constants/locations';
+import { offsets } from '../utils/constants/offsets';
+import { strings } from '../utils/constants/strings';
 import { IHud } from './types';
 
 export class Hud implements IHud {

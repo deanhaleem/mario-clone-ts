@@ -1,5 +1,5 @@
-import { physics } from '../../../utils/constants/Physics';
-import { timers } from '../../../utils/constants/Timers';
+import { physics } from '../../../utils/constants/physics';
+import { timers } from '../../../utils/constants/timers';
 import { BlockFactory } from '../BlockFactory';
 import { IBlock } from '../types';
 import { BlockState } from './BlockState';

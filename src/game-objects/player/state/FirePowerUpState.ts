@@ -1,4 +1,4 @@
-import { utilities } from '../../../utils/constants/Utilities';
+import { utilities } from '../../../utils/constants/utilities';
 import { IPlayer } from '../types';
 import { PowerUpState } from './PowerUpState';
 

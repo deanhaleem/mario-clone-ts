@@ -1,5 +1,5 @@
-import { offsets } from '../../../utils/constants/Offsets';
-import { physics } from '../../../utils/constants/Physics';
+import { offsets } from '../../../utils/constants/offsets';
+import { physics } from '../../../utils/constants/physics';
 import { IPlayer } from '../types';
 import { ActionState } from './ActionState';
 import { StandingActionState } from './StandingActionState';

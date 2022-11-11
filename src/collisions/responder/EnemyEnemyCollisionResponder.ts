@@ -1,7 +1,8 @@
 import { IEnemy } from '../../game-objects/enemy/types';
 import { ICollidable } from '../../physics/types';
 import { ICollision } from '../types';
-import { physics } from '../../utils/constants/Physics';
+import { physics } from '../../utils/constants/physics';
+import { gainPoints } from '../../statistics/statistics';
 
 export function respondToEnemyEnemyCollision(
   instigatingEnemy: ICollidable,
@@ -94,7 +95,7 @@ function handleLeftEnemyShellCollision(
   if (Math.abs(receivingEnemy.velocity.x) >= physics.shellSpeed) {
     instigatingEnemy.flip();
 
-    // StatManager.instance.gainPoints(collision.intersection, 'handleLeftEnemyShellCollision');
+    gainPoints(collision.intersection, 'handleLeftEnemyShellCollision');
     // SoundManager.instance.playSoundEffect('handleLeftEnemyShellCollision')
   } else {
     instigatingEnemy.location.add({
@@ -113,7 +114,7 @@ function handleRightEnemyShellCollision(
   if (Math.abs(receivingEnemy.velocity.x) >= physics.shellSpeed) {
     instigatingEnemy.flip();
 
-    // StatManager.instance.gainPoints(collision.intersection, 'handleLeftEnemyShellCollision');
+    gainPoints(collision.intersection, 'handleLeftEnemyShellCollision');
     // SoundManager.instance.playSoundEffect('handleLeftEnemyShellCollision')
   } else {
     instigatingEnemy.location.subtract({

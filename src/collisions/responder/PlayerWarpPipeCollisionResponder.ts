@@ -3,7 +3,7 @@ import { IPipe } from '../../game-objects/block/types';
 import { BlinkingMario } from '../../game-objects/player/BlinkingMario';
 import { IPlayer } from '../../game-objects/player/types';
 import { Directions, ICollidable } from '../../physics/types';
-import { physics } from '../../utils/constants/Physics';
+import { physics } from '../../utils/constants/physics';
 import { ICollision } from '../types';
 
 export function respondToPlayerWarpPipeCollision(

@@ -1,12 +1,11 @@
 import { ISprite, SpriteDetails } from './types';
 import atlasMap from '../../public/assets/atlas/atlas-map.json';
-import getCurrentScene from '../scenes/Scene';
+import Game1 from '../scenes/Game';
 
 export function createSprite(objectName: string): Sprite {
-  const scene = getCurrentScene();
   // TODO: fix error by creating type equal to possible keys of atlasMap?
   const spriteDetails = atlasMap[objectName] as SpriteDetails;
-  return new Sprite(spriteDetails, scene);
+  return new Sprite(spriteDetails, Game1.instance);
 }
 
 export class Sprite implements ISprite {

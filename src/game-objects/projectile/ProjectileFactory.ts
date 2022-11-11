@@ -1,4 +1,4 @@
-import { physics } from '../../utils/constants/Physics';
+import { physics } from '../../utils/constants/physics';
 import { Fireball } from './Fireball';
 
 export class ProjectileFactory {

@@ -1,7 +1,7 @@
 import { IPlayer } from '../game-objects/player/types';
 import { IGameObject } from '../game-objects/types';
-import { locations } from '../utils/constants/Locations';
-import { offsets } from '../utils/constants/Offsets';
+import { locations } from '../utils/constants/locations';
+import { offsets } from '../utils/constants/offsets';
 import { generateGameObjects } from './LevelGenerator';
 import { ILevel } from './types';
 import levelFile from '../../public/assets/1-1.json';

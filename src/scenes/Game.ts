@@ -10,7 +10,9 @@ import { Level } from '../level/Level';
 import { ILevel } from '../level/types';
 import { progressTimedActions } from '../TimedActionManager';
 
-export default class Demo extends Phaser.Scene {
+export default class Game1 extends Phaser.Scene {
+  public static instance: Game1 = new Game1();
+
   private keyboardController: IController;
   private fpsText;
 
@@ -28,7 +30,7 @@ export default class Demo extends Phaser.Scene {
     this.level.player = player;
   }
 
-  constructor() {
+  private constructor() {
     super('GameScene');
   }
 
@@ -90,37 +92,37 @@ export default class Demo extends Phaser.Scene {
       this.input.keyboard,
       {
         key: Phaser.Input.Keyboard.KeyCodes.Z.toString(),
-        keyDownCommand: () => this.player.jump,
-        keyUpCommand: () => this.player.stopJumping,
+        keyDownCommand: () => this.player.jump(),
+        keyUpCommand: () => this.player.stopJumping(),
         canBeHeld: false,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.RIGHT.toString(),
-        keyDownCommand: () => this.player.walkRight,
-        keyUpCommand: () => this.player.stopMovingRight,
+        keyDownCommand: () => this.player.walkRight(),
+        keyUpCommand: () => this.player.stopMovingRight(),
         canBeHeld: true,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.LEFT.toString(),
-        keyDownCommand: () => this.player.walkLeft,
-        keyUpCommand: () => this.player.stopMovingLeft,
+        keyDownCommand: () => this.player.walkLeft(),
+        keyUpCommand: () => this.player.stopMovingLeft(),
         canBeHeld: true,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.DOWN.toString(),
-        keyDownCommand: () => this.player.crouch,
-        keyUpCommand: () => this.player.stopCrouching,
+        keyDownCommand: () => this.player.crouch(),
+        keyUpCommand: () => this.player.stopCrouching(),
         canBeHeld: true,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.X.toString(),
-        keyDownCommand: () => this.player.run,
-        keyUpCommand: () => this.player.stopRunning,
+        keyDownCommand: () => this.player.run(),
+        keyUpCommand: () => this.player.stopRunning(),
         canBeHeld: true,
       },
       {
         key: Phaser.Input.Keyboard.KeyCodes.C.toString(),
-        keyDownCommand: () => this.player.attack,
+        keyDownCommand: () => this.player.attack(),
         keyUpCommand: () => {},
         canBeHeld: false,
       }

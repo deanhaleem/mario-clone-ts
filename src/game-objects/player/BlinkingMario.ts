@@ -1,4 +1,4 @@
-import { timers } from '../../utils/constants/Timers';
+import { timers } from '../../utils/constants/timers';
 import { PlayerDecorator } from './PlayerDecorator';
 import { IPlayer } from './types';
 

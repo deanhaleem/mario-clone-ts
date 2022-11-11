@@ -2,7 +2,11 @@ import { IBlock, IItemContainer } from '../../game-objects/block/types';
 import { FireFlower } from '../../game-objects/item/FireFlower';
 import { IPlayer } from '../../game-objects/player/types';
 import { ICollidable } from '../../physics/types';
-import { physics } from '../../utils/constants/Physics';
+import {
+  gainPoints,
+  resetConsecutivePoints,
+} from '../../statistics/statistics';
+import { physics } from '../../utils/constants/physics';
 import { ICollision } from '../types';
 
 export function respondToPlayerBlockCollision(
@@ -22,38 +26,38 @@ export function respondToPlayerBlockCollision(
   }
 }
 
-function handleTopPlayerBlockCollison(
+function handleTopPlayerBlockCollision(
   player: IPlayer,
   block: IBlock,
-  collison: ICollision
+  collision: ICollision
 ) {
   player.location.subtract({
     x: 0,
-    y: collison.intersection.height,
+    y: collision.intersection.height,
   });
 
   if (player.actionState.constructor.name === 'FallingActionState') {
     player.land();
     player.cutYVelocity();
 
-    // StatManager.instance.resetConsecutivePoints();
+    resetConsecutivePoints();
   }
 }
 
 function handleBottomPlayerBlockCollision(
   player: IPlayer,
   block: IBlock,
-  collison: ICollision
+  collision: ICollision
 ) {
   player.location.add({
     x: 0,
-    y: collison.intersection.height,
+    y: collision.intersection.height,
   });
 
   if (player.actionState.constructor.name === 'JumpingActionState') {
     player.location.add({
       x: 0,
-      y: collison.intersection.height,
+      y: collision.intersection.height,
     });
     player.applyImpulse(
       physics.blockBumpForce.subtract({ x: 0, y: player.velocity.y })
@@ -67,10 +71,10 @@ function handleBottomPlayerBlockCollision(
 function handleLeftPlayerBlockCollision(
   player: IPlayer,
   block: IBlock,
-  collison: ICollision
+  collision: ICollision
 ) {
   player.location.add({
-    x: collison.intersection.width,
+    x: collision.intersection.width,
     y: 0,
   });
 
@@ -82,10 +86,10 @@ function handleLeftPlayerBlockCollision(
 function handleRightPlayerBlockCollision(
   player: IPlayer,
   block: IBlock,
-  collison: ICollision
+  collision: ICollision
 ) {
   player.location.subtract({
-    x: collison.intersection.width,
+    x: collision.intersection.width,
     y: 0,
   });
 
@@ -97,11 +101,11 @@ function handleRightPlayerBlockCollision(
 function handleBottomNonSmallPlayerPowerUpBlockCollision(
   player: IPlayer,
   block: IBlock,
-  collison: ICollision
+  collision: ICollision
 ) {
   player.location.add({
     x: 0,
-    y: collison.intersection.height,
+    y: collision.intersection.height,
   });
 
   if (player.actionState.constructor.name === 'JumpingActionState') {
@@ -118,11 +122,11 @@ function handleBottomNonSmallPlayerPowerUpBlockCollision(
 function handleBottomPlayerHiddenBlockCollision(
   player: IPlayer,
   block: IBlock,
-  collison: ICollision
+  collision: ICollision
 ) {
   player.location.add({
     x: 0,
-    y: collison.intersection.height,
+    y: collision.intersection.height,
   });
 
   if (player.actionState.constructor.name === 'JumpingActionState') {
@@ -138,11 +142,11 @@ function handleBottomPlayerHiddenBlockCollision(
 function handleDestroyingPlayerBlockCollision(
   player: IPlayer,
   block: IBlock,
-  collison: ICollision
+  collision: ICollision
 ) {
   player.location.add({
     x: 0,
-    y: collison.intersection.height,
+    y: collision.intersection.height,
   });
 
   if (player.actionState.constructor.name === 'JumpingActionState') {
@@ -151,7 +155,7 @@ function handleDestroyingPlayerBlockCollision(
     );
     block.destroy();
 
-    // StatManager.instance.gainPoints(collision.intersection, 'handleDestroyingPlayerBlockCollision');
+    gainPoints(collision.intersection, 'handleDestroyingPlayerBlockCollision');
     // SoundManager.instance.playSoundEffect('handleDestroyingPlayerBlockCollision');
   }
 }
@@ -159,19 +163,19 @@ function handleDestroyingPlayerBlockCollision(
 function handleTopPlayerPipeCollision(
   player: IPlayer,
   block: IBlock,
-  collison: ICollision
+  collision: ICollision
 ) {
   if (player.actionState.constructor.name !== 'WarpingActionState') {
     player.location.subtract({
       x: 0,
-      y: collison.intersection.height,
+      y: collision.intersection.height,
     });
 
     if (player.actionState.constructor.name === 'FallingActionState') {
       player.land();
       player.cutYVelocity();
 
-      // StatManager.instance(resetConsecutivePoints()
+      resetConsecutivePoints();
     }
   }
 }
@@ -179,13 +183,13 @@ function handleTopPlayerPipeCollision(
 function handleBottomPlayerPipeCollision(
   player: IPlayer,
   block: IBlock,
-  collison: ICollision
+  collision: ICollision
 ) {
   if (player.actionState.constructor.name !== 'WarpingActionState') {
     if (player.actionState.constructor.name === 'JumpingActionState') {
       player.location.add({
         x: 0,
-        y: collison.intersection.height,
+        y: collision.intersection.height,
       });
       player.applyImpulse(
         physics.blockBumpForce.subtract({ x: 0, y: player.velocity.y })
@@ -200,11 +204,11 @@ function handleBottomPlayerPipeCollision(
 function handleLeftPlayerPipeCollision(
   player: IPlayer,
   block: IBlock,
-  collison: ICollision
+  collision: ICollision
 ) {
   if (player.actionState.constructor.name !== 'WarpingActionState') {
     player.location.add({
-      x: collison.intersection.width,
+      x: collision.intersection.width,
       y: 0,
     });
 
@@ -217,11 +221,11 @@ function handleLeftPlayerPipeCollision(
 function handleRightPlayerPipeCollision(
   player: IPlayer,
   block: IBlock,
-  collison: ICollision
+  collision: ICollision
 ) {
   if (player.actionState.constructor.name !== 'WarpingActionState') {
     player.location.subtract({
-      x: collison.intersection.width,
+      x: collision.intersection.width,
       y: 0,
     });
 
@@ -238,7 +242,8 @@ const playerBlockCollisionCommands: {
     collision: ICollision
   ) => void;
 } = {
-  'SmallPowerUpState,ItemBrickBlock,TopCollision': handleTopPlayerBlockCollison,
+  'SmallPowerUpState,ItemBrickBlock,TopCollision':
+    handleTopPlayerBlockCollision,
   'SmallPowerUpState,ItemBrickBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'SmallPowerUpState,ItemBrickBlock,LeftCollision':
@@ -246,7 +251,7 @@ const playerBlockCollisionCommands: {
   'SmallPowerUpState,ItemBrickBlock,RightCollision':
     handleRightPlayerBlockCollision,
 
-  'SmallPowerUpState,BrickBlock,TopCollision': handleTopPlayerBlockCollison,
+  'SmallPowerUpState,BrickBlock,TopCollision': handleTopPlayerBlockCollision,
   'SmallPowerUpState,BrickBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'SmallPowerUpState,BrickBlock,LeftCollision': handleLeftPlayerBlockCollision,
@@ -254,7 +259,7 @@ const playerBlockCollisionCommands: {
     handleRightPlayerBlockCollision,
 
   'SmallPowerUpState,BrickCollectionBlock,TopCollision':
-    handleTopPlayerBlockCollison,
+    handleTopPlayerBlockCollision,
   'SmallPowerUpState,BrickCollectionBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'SmallPowerUpState,BrickCollectionBlock,LeftCollision':
@@ -266,7 +271,7 @@ const playerBlockCollisionCommands: {
     handleBottomPlayerHiddenBlockCollision,
 
   'SmallPowerUpState,NonPowerUpQuestionBlock,TopCollision':
-    handleTopPlayerBlockCollison,
+    handleTopPlayerBlockCollision,
   'SmallPowerUpState,NonPowerUpQuestionBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'SmallPowerUpState,NonPowerUpQuestionBlock,LeftCollision':
@@ -275,7 +280,7 @@ const playerBlockCollisionCommands: {
     handleRightPlayerBlockCollision,
 
   'SmallPowerUpState,PowerUpQuestionBlock,TopCollision':
-    handleTopPlayerBlockCollison,
+    handleTopPlayerBlockCollision,
   'SmallPowerUpState,PowerUpQuestionBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'SmallPowerUpState,PowerUpQuestionBlock,LeftCollision':
@@ -283,21 +288,21 @@ const playerBlockCollisionCommands: {
   'SmallPowerUpState,PowerUpQuestionBlock,RightCollision':
     handleRightPlayerBlockCollision,
 
-  'SmallPowerUpState,FloorBlock,TopCollision': handleTopPlayerBlockCollison,
+  'SmallPowerUpState,FloorBlock,TopCollision': handleTopPlayerBlockCollision,
   'SmallPowerUpState,FloorBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'SmallPowerUpState,FloorBlock,LeftCollision': handleLeftPlayerBlockCollision,
   'SmallPowerUpState,FloorBlock,RightCollision':
     handleRightPlayerBlockCollision,
 
-  'SmallPowerUpState,StairBlock,TopCollision': handleTopPlayerBlockCollison,
+  'SmallPowerUpState,StairBlock,TopCollision': handleTopPlayerBlockCollision,
   'SmallPowerUpState,StairBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'SmallPowerUpState,StairBlock,LeftCollision': handleLeftPlayerBlockCollision,
   'SmallPowerUpState,StairBlock,RightCollision':
     handleRightPlayerBlockCollision,
 
-  'SmallPowerUpState,UsedBlock,TopCollision': handleTopPlayerBlockCollison,
+  'SmallPowerUpState,UsedBlock,TopCollision': handleTopPlayerBlockCollision,
   'SmallPowerUpState,UsedBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'SmallPowerUpState,UsedBlock,LeftCollision': handleLeftPlayerBlockCollision,
@@ -340,7 +345,7 @@ const playerBlockCollisionCommands: {
     handleRightPlayerPipeCollision,
 
   'SmallPowerUpState,LargeGreenPipeShaft,TopCollision':
-    handleTopPlayerBlockCollison,
+    handleTopPlayerBlockCollision,
   'SmallPowerUpState,LargeGreenPipeShaft,BottomCollision':
     handleBottomPlayerBlockCollision,
   'SmallPowerUpState,LargeGreenPipeShaft,LeftCollision':
@@ -348,7 +353,7 @@ const playerBlockCollisionCommands: {
   'SmallPowerUpState,LargeGreenPipeShaft,RightCollision':
     handleRightPlayerBlockCollision,
 
-  'BigPowerUpState,ItemBrickBlock,TopCollision': handleTopPlayerBlockCollison,
+  'BigPowerUpState,ItemBrickBlock,TopCollision': handleTopPlayerBlockCollision,
   'BigPowerUpState,ItemBrickBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'BigPowerUpState,ItemBrickBlock,LeftCollision':
@@ -356,14 +361,14 @@ const playerBlockCollisionCommands: {
   'BigPowerUpState,ItemBrickBlock,RightCollision':
     handleRightPlayerBlockCollision,
 
-  'BigPowerUpState,BrickBlock,TopCollision': handleTopPlayerBlockCollison,
+  'BigPowerUpState,BrickBlock,TopCollision': handleTopPlayerBlockCollision,
   'BigPowerUpState,BrickBlock,BottomCollision':
     handleDestroyingPlayerBlockCollision,
   'BigPowerUpState,BrickBlock,LeftCollision': handleLeftPlayerBlockCollision,
   'BigPowerUpState,BrickBlock,RightCollision': handleRightPlayerBlockCollision,
 
   'BigPowerUpState,BrickCollectionBlock,TopCollision':
-    handleTopPlayerBlockCollison,
+    handleTopPlayerBlockCollision,
   'BigPowerUpState,BrickCollectionBlock,BottomCollision':
     handleBottomPlayerBlockCollision, // TODO: Bug? should be destroy
   'BigPowerUpState,BrickCollectionBlock,LeftCollision':
@@ -375,7 +380,7 @@ const playerBlockCollisionCommands: {
     handleBottomPlayerHiddenBlockCollision,
 
   'BigPowerUpState,NonPowerUpQuestionBlock,TopCollision':
-    handleTopPlayerBlockCollison,
+    handleTopPlayerBlockCollision,
   'BigPowerUpState,NonPowerUpQuestionBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'BigPowerUpState,NonPowerUpQuestionBlock,LeftCollision':
@@ -384,7 +389,7 @@ const playerBlockCollisionCommands: {
     handleRightPlayerBlockCollision,
 
   'BigPowerUpState,PowerUpQuestionBlock,TopCollision':
-    handleTopPlayerBlockCollison,
+    handleTopPlayerBlockCollision,
   'BigPowerUpState,PowerUpQuestionBlock,BottomCollision':
     handleBottomNonSmallPlayerPowerUpBlockCollision,
   'BigPowerUpState,PowerUpQuestionBlock,LeftCollision':
@@ -392,19 +397,19 @@ const playerBlockCollisionCommands: {
   'BigPowerUpState,PowerUpQuestionBlock,RightCollision':
     handleRightPlayerBlockCollision,
 
-  'BigPowerUpState,FloorBlock,TopCollision': handleTopPlayerBlockCollison,
+  'BigPowerUpState,FloorBlock,TopCollision': handleTopPlayerBlockCollision,
   'BigPowerUpState,FloorBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'BigPowerUpState,FloorBlock,LeftCollision': handleLeftPlayerBlockCollision,
   'BigPowerUpState,FloorBlock,RightCollision': handleRightPlayerBlockCollision,
 
-  'BigPowerUpState,StairBlock,TopCollision': handleTopPlayerBlockCollison,
+  'BigPowerUpState,StairBlock,TopCollision': handleTopPlayerBlockCollision,
   'BigPowerUpState,StairBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'BigPowerUpState,StairBlock,LeftCollision': handleLeftPlayerBlockCollision,
   'BigPowerUpState,StairBlock,RightCollision': handleRightPlayerBlockCollision,
 
-  'BigPowerUpState,UsedBlock,TopCollision': handleTopPlayerBlockCollison,
+  'BigPowerUpState,UsedBlock,TopCollision': handleTopPlayerBlockCollision,
   'BigPowerUpState,UsedBlock,BottomCollision': handleBottomPlayerBlockCollision,
   'BigPowerUpState,UsedBlock,LeftCollision': handleLeftPlayerBlockCollision,
   'BigPowerUpState,UsedBlock,RightCollision': handleRightPlayerBlockCollision,
@@ -446,7 +451,7 @@ const playerBlockCollisionCommands: {
     handleRightPlayerPipeCollision,
 
   'BigPowerUpState,LargeGreenPipeShaft,TopCollision':
-    handleTopPlayerBlockCollison,
+    handleTopPlayerBlockCollision,
   'BigPowerUpState,LargeGreenPipeShaft,BottomCollision':
     handleBottomPlayerBlockCollision,
   'BigPowerUpState,LargeGreenPipeShaft,LeftCollision':
@@ -454,7 +459,7 @@ const playerBlockCollisionCommands: {
   'BigPowerUpState,LargeGreenPipeShaft,RightCollision':
     handleRightPlayerBlockCollision,
 
-  'FirePowerUpState,ItemBrickBlock,TopCollision': handleTopPlayerBlockCollison,
+  'FirePowerUpState,ItemBrickBlock,TopCollision': handleTopPlayerBlockCollision,
   'FirePowerUpState,ItemBrickBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'FirePowerUpState,ItemBrickBlock,LeftCollision':
@@ -462,14 +467,14 @@ const playerBlockCollisionCommands: {
   'FirePowerUpState,ItemBrickBlock,RightCollision':
     handleRightPlayerBlockCollision,
 
-  'FirePowerUpState,BrickBlock,TopCollision': handleTopPlayerBlockCollison,
+  'FirePowerUpState,BrickBlock,TopCollision': handleTopPlayerBlockCollision,
   'FirePowerUpState,BrickBlock,BottomCollision':
     handleDestroyingPlayerBlockCollision,
   'FirePowerUpState,BrickBlock,LeftCollision': handleLeftPlayerBlockCollision,
   'FirePowerUpState,BrickBlock,RightCollision': handleRightPlayerBlockCollision,
 
   'FirePowerUpState,BrickCollectionBlock,TopCollision':
-    handleTopPlayerBlockCollison,
+    handleTopPlayerBlockCollision,
   'FirePowerUpState,BrickCollectionBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'FirePowerUpState,BrickCollectionBlock,LeftCollision':
@@ -481,7 +486,7 @@ const playerBlockCollisionCommands: {
     handleBottomPlayerHiddenBlockCollision,
 
   'FirePowerUpState,NonPowerUpQuestionBlock,TopCollision':
-    handleTopPlayerBlockCollison,
+    handleTopPlayerBlockCollision,
   'FirePowerUpState,NonPowerUpQuestionBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'FirePowerUpState,NonPowerUpQuestionBlock,LeftCollision':
@@ -490,7 +495,7 @@ const playerBlockCollisionCommands: {
     handleRightPlayerBlockCollision,
 
   'FirePowerUpState,PowerUpQuestionBlock,TopCollision':
-    handleTopPlayerBlockCollison,
+    handleTopPlayerBlockCollision,
   'FirePowerUpState,PowerUpQuestionBlock,BottomCollision':
     handleBottomNonSmallPlayerPowerUpBlockCollision,
   'FirePowerUpState,PowerUpQuestionBlock,LeftCollision':
@@ -498,19 +503,19 @@ const playerBlockCollisionCommands: {
   'FirePowerUpState,PowerUpQuestionBlock,RightCollision':
     handleRightPlayerBlockCollision,
 
-  'FirePowerUpState,FloorBlock,TopCollision': handleTopPlayerBlockCollison,
+  'FirePowerUpState,FloorBlock,TopCollision': handleTopPlayerBlockCollision,
   'FirePowerUpState,FloorBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'FirePowerUpState,FloorBlock,LeftCollision': handleLeftPlayerBlockCollision,
   'FirePowerUpState,FloorBlock,RightCollision': handleRightPlayerBlockCollision,
 
-  'FirePowerUpState,StairBlock,TopCollision': handleTopPlayerBlockCollison,
+  'FirePowerUpState,StairBlock,TopCollision': handleTopPlayerBlockCollision,
   'FirePowerUpState,StairBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'FirePowerUpState,StairBlock,LeftCollision': handleLeftPlayerBlockCollision,
   'FirePowerUpState,StairBlock,RightCollision': handleRightPlayerBlockCollision,
 
-  'FirePowerUpState,UsedBlock,TopCollision': handleTopPlayerBlockCollison,
+  'FirePowerUpState,UsedBlock,TopCollision': handleTopPlayerBlockCollision,
   'FirePowerUpState,UsedBlock,BottomCollision':
     handleBottomPlayerBlockCollision,
   'FirePowerUpState,UsedBlock,LeftCollision': handleLeftPlayerBlockCollision,

@@ -3,7 +3,7 @@ import { IItem } from '../../game-objects/item/types';
 import { PlayerDecorator } from '../../game-objects/player/PlayerDecorator';
 import { IPlayer } from '../../game-objects/player/types';
 import { ICollidable } from '../../physics/types';
-import { physics } from '../../utils/constants/Physics';
+import { physics } from '../../utils/constants/physics';
 import { ICollision } from '../types';
 
 export function respondToPlayerItemCollision(

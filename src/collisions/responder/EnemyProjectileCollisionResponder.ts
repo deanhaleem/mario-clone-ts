@@ -1,6 +1,7 @@
 import { IEnemy } from '../../game-objects/enemy/types';
 import { IProjectile } from '../../game-objects/projectile/types';
 import { ICollidable } from '../../physics/types';
+import { gainPoints } from '../../statistics/statistics';
 import { ICollision } from '../types';
 
 export function respondToEnemyProjectileCollision(
@@ -18,6 +19,9 @@ export function respondToEnemyProjectileCollision(
     (collisionInstigator as IProjectile).destroy();
   }
 
-  // StatManager.instance.gainPoints(collision.intersection, ``);
+  gainPoints(
+    collisionSide.intersection,
+    `${collisionInstigator.collisionDetails.class}${collisionReceiver.collisionDetails.class}`
+  );
   // SoundManager.instance.playSoundEffect();
 }

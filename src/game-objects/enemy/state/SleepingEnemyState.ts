@@ -1,4 +1,4 @@
-import { physics } from '../../../utils/constants/Physics';
+import { physics } from '../../../utils/constants/physics';
 import { IEnemy } from '../types';
 import { EnemyState } from './EnemyState';
 import { WalkingEnemyState } from './WalkingEnemyState';

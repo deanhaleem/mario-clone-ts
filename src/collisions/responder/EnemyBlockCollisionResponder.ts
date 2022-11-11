@@ -1,6 +1,7 @@
 import { IBlock } from '../../game-objects/block/types';
 import { IEnemy } from '../../game-objects/enemy/types';
 import { ICollidable } from '../../physics/types';
+import { gainPoints } from '../../statistics/statistics';
 import { ICollision } from '../types';
 
 export function respondToEnemyBlockCollision(
@@ -35,7 +36,7 @@ function handleTopEnemyBlockCollision(
   ) {
     enemy.flip();
 
-    // StatManager.instance.gainPoints(collison.intersection, 'handleTopEnemyBlockCollision');
+    gainPoints(collision.intersection, 'handleTopEnemyBlockCollision');
     // SoundManager.instance.playSoundEffect('handleTopEnemyBlockCollision');
   }
 }

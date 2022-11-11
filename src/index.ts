@@ -4,7 +4,7 @@ import GameScene from './scenes/Game';
 
 const game = new Phaser.Game({
   ...config,
-  scene: [GameScene],
+  scene: [GameScene.instance],
 });
 
 export default game;

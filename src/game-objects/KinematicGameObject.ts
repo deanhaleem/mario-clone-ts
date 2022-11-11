@@ -1,6 +1,6 @@
 import { Directions, IRigidBody } from '../physics/types';
-import { offsets } from '../utils/constants/Offsets';
-import { physics } from '../utils/constants/Physics';
+import { offsets } from '../utils/constants/offsets';
+import { physics } from '../utils/constants/physics';
 import { GameObject } from './GameObject';
 
 export abstract class KinematicGameObject

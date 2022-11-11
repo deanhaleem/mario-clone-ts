@@ -1,4 +1,4 @@
-import { offsets } from '../../utils/constants/Offsets';
+import { offsets } from '../../utils/constants/offsets';
 import { NonBumpableBlock } from './NonBumpableBlock';
 
 export abstract class CollectionBlock extends NonBumpableBlock {

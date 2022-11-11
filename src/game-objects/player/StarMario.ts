@@ -1,7 +1,7 @@
 import SpriteFactory from '../../graphics/SpriteFactory';
 import { ISprite } from '../../graphics/types';
 import { Directions } from '../../physics/types';
-import { timers } from '../../utils/constants/Timers';
+import { timers } from '../../utils/constants/timers';
 import { PlayerDecorator } from './PlayerDecorator';
 import { IActionState } from './state/types';
 import { IPlayer } from './types';

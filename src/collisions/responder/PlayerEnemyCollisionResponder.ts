@@ -2,7 +2,7 @@ import { IEnemy } from '../../game-objects/enemy/types';
 import { ICollidable } from '../../physics/types';
 import { ICollision } from '../types';
 import { IPlayer } from '../../game-objects/player/types';
-import { physics } from '../../utils/constants/Physics';
+import { physics } from '../../utils/constants/physics';
 
 export function respondToPlayerEnemyCollision(
   collisionInstigator: ICollidable,

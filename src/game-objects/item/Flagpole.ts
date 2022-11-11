@@ -1,4 +1,4 @@
-import { offsets } from '../../utils/constants/Offsets';
+import { offsets } from '../../utils/constants/offsets';
 import { Item } from './Item';
 import { IdleItemState } from './state/IdleItemState';
 

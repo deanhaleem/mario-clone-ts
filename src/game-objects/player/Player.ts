@@ -2,8 +2,8 @@ import { KinematicGameObject } from '../KinematicGameObject';
 import { IPlayer } from './types';
 import { IActionState, IPowerUpState } from './state/types';
 import { Directions } from '../../physics/types';
-import { physics } from '../../utils/constants/Physics';
-import { locations } from '../../utils/constants/Locations';
+import { physics } from '../../utils/constants/physics';
+import { locations } from '../../utils/constants/locations';
 import { SmallPowerUpState } from './state/SmallPowerUpState';
 
 export abstract class Player extends KinematicGameObject implements IPlayer {
