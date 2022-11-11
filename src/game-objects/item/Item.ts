@@ -1,5 +1,5 @@
 import { Directions } from '../../physics/types';
-import { physics } from '../../utils/constants/Physics';
+import { physics } from '../../utils/constants/physics';
 import { KinematicGameObject } from '../KinematicGameObject';
 import { IItemState } from './state/types';
 import { IItem } from './types';
@@ -17,5 +17,13 @@ export abstract class Item extends KinematicGameObject implements IItem {
     this.itemState.update(time, delta);
 
     super.update(time, delta);
+  }
+
+  public override get collisionDetails() {
+    return {
+      interface: 'IItem',
+      class: this.constructor.name,
+      kinematic: true,
+    };
   }
 }

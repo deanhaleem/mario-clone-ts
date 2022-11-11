@@ -1,4 +1,4 @@
-import { offsets } from '../../utils/constants/Offsets';
+import { offsets } from '../../utils/constants/offsets';
 import { NonBumpableBlock } from './NonBumpableBlock';
 import { IPipe } from './types';
 

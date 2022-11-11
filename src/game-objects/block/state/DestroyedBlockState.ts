@@ -1,5 +1,5 @@
-import { physics } from '../../../utils/constants/Physics';
-import { timers } from '../../../utils/constants/Timers';
+import { physics } from '../../../utils/constants/physics';
+import { timers } from '../../../utils/constants/timers';
 import { BlockFactory } from '../BlockFactory';
 import { IBlock } from '../types';
 import { BlockState } from './BlockState';
@@ -16,9 +16,7 @@ export class DestroyedBlockState extends BlockState {
 
   private playBumpAnimation(elapsedTime: number): void {
     if (elapsedTime < timers.blockDestroy / 2.0) {
-      this.block.location = this.block.location.add(
-        physics.blockBumpVelocity.negate()
-      );
+      this.block.location.add(physics.blockBumpVelocity.negate());
     }
   }
 

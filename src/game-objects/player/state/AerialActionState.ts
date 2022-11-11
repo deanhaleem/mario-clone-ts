@@ -1,4 +1,4 @@
-import { physics } from '../../../utils/constants/Physics';
+import { physics } from '../../../utils/constants/physics';
 import { IPlayer } from '../types';
 import { ActionState } from './ActionState';
 

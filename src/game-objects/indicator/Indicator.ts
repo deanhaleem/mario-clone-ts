@@ -1,4 +1,4 @@
-import { physics } from '../../utils/constants/Physics';
+import { physics } from '../../utils/constants/physics';
 import { GameObject } from '../GameObject';
 import { IIndicator } from './types';
 
@@ -23,5 +23,13 @@ export class Indicator extends GameObject implements IIndicator {
 
   private disposeOfIndicator(): void {
     //Game1.instance.disposeOfObject(this)
+  }
+
+  public override get collisionDetails() {
+    return {
+      interface: 'IIndicator',
+      class: this.constructor.name,
+      kinematic: false,
+    };
   }
 }

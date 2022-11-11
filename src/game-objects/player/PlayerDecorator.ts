@@ -1,5 +1,5 @@
 import { Directions } from '../../physics/types';
-import { physics } from '../../utils/constants/Physics';
+import { physics } from '../../utils/constants/physics';
 import { KinematicGameObject } from '../KinematicGameObject';
 import { IActionState, IPowerUpState } from './state/types';
 import { IPlayer } from './types';
@@ -186,6 +186,7 @@ export abstract class PlayerDecorator
   }
 
   public set velocity(velocity: Phaser.Math.Vector2) {
+    console.log('we not in here right?');
     this.decoratedPlayer.velocity = velocity;
   }
 

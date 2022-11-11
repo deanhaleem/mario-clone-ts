@@ -1,6 +1,6 @@
 import { Constructor } from '../../../types';
-import { physics } from '../../../utils/constants/Physics';
-import { timers } from '../../../utils/constants/Timers';
+import { physics } from '../../../utils/constants/physics';
+import { timers } from '../../../utils/constants/timers';
 import { IBlock } from '../types';
 import { BlockState } from './BlockState';
 import { IBlockState } from './types';
@@ -22,7 +22,7 @@ export class BumpedBlockState extends BlockState {
   }
 
   private playBumpAnimation(elapsedTime: number) {
-    this.block.location = this.block.location.add(
+    this.block.location.add(
       elapsedTime < timers.blockBump / 2.0
         ? physics.blockBumpVelocity
         : physics.blockBumpVelocity.negate()

@@ -1,4 +1,4 @@
-import { physics } from '../../../utils/constants/Physics';
+import { physics } from '../../../utils/constants/physics';
 import { IProjectile } from '../types';
 import { DestroyedProjectileState } from './DestroyedProjectileState';
 import { ProjectileState } from './ProjectileState';

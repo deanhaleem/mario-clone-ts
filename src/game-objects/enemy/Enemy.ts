@@ -1,5 +1,5 @@
 import { Directions } from '../../physics/types';
-import { physics } from '../../utils/constants/Physics';
+import { physics } from '../../utils/constants/physics';
 import { KinematicGameObject } from '../KinematicGameObject';
 import { IEnemyState } from './state/types';
 import { IEnemy } from './types';
@@ -75,5 +75,13 @@ export abstract class Enemy extends KinematicGameObject implements IEnemy {
   public set enemyState(enemyState: IEnemyState) {
     this._enemyState = enemyState;
     this.setSprite(this.spriteName);
+  }
+
+  public override get collisionDetails() {
+    return {
+      interface: 'IEnemy',
+      class: this.constructor.name,
+      kinematic: true,
+    };
   }
 }
