@@ -1,4 +1,4 @@
-import { physics } from '../../../utils/constants/Physics';
+import { physics } from '../../../utils/constants/physics';
 import { IPlayer } from '../types';
 import { AerialActionState } from './AerialActionState';
 import { FallingActionState } from './FallingActionState';
@@ -10,15 +10,19 @@ export class JumpingActionState extends AerialActionState {
     super(player);
 
     this.player.applyForce(
-      physics.playerJumpingGravitationalForce.add(
-        new Phaser.Math.Vector2(this.player.acceleration.x, 0)
+      new Phaser.Math.Vector2(
+        physics.playerJumpingGravitationalForce.x + this.player.acceleration.x,
+        physics.playerJumpingGravitationalForce.y
       )
     );
 
+    console.log('jumping', Date.now().toLocaleString('en-US'));
+    console.log(this.player.velocity);
     if (this.player.velocity.y <= 0) {
       this.player.applyImpulse(
-        physics.playerJumpImpulse.subtract(
-          new Phaser.Math.Vector2(0, this.player.velocity.y)
+        new Phaser.Math.Vector2(
+          physics.playerJumpImpulse.x,
+          physics.playerJumpImpulse.y - this.player.velocity.y
         )
       );
     }
@@ -28,6 +32,7 @@ export class JumpingActionState extends AerialActionState {
 
   public override update(time: number, delta: number): void {
     if (this.player.velocity.y >= 0) {
+      console.log('MADE IT INTO HERE');
       this.player.actionState = new FallingActionState(this.player);
     }
 
@@ -35,6 +40,7 @@ export class JumpingActionState extends AerialActionState {
   }
 
   public override stopJumping(): void {
+    console.log('EXECUTE STOP JUMPING');
     if (this.player.velocity.y < -physics.stopJumpingThreshold) {
       this.player.applyImpulse(
         new Phaser.Math.Vector2(

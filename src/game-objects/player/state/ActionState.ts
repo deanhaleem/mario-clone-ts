@@ -1,7 +1,11 @@
 import { Directions } from '../../../physics/types';
 import { ProjectileFactory } from '../../projectile/ProjectileFactory';
 import { IPlayer } from '../types';
+import { DowngradingActionState } from './DowngradingActionState';
 import { IActionState } from './types';
+import { UpgradingActionState } from './UpgradingActionState';
+import { VictoryActionState } from './VictoryActionState';
+import { WarpingActionState } from './WarpingActionState';
 
 export abstract class ActionState implements IActionState {
   protected player: IPlayer;
@@ -17,25 +21,26 @@ export abstract class ActionState implements IActionState {
   }
 
   public upgrade(): void {
-    this.player.actionState = new UpgradingActionState(this.player);
+    //this.player.actionState = new UpgradingActionState(this.player);
   }
 
   public downgrade(): void {
-    this.player.actionState = new DowngradingActionState(this.player);
+    //this.player.actionState = new DowngradingActionState(this.player);
   }
 
   public winLevel(): void {
-    this.player.actionState = new VictoryActionState(this.player);
+    //this.player.actionState = new VictoryActionState(this.player);
   }
 
   public warp(
     location: Phaser.Math.Vector2,
     velocity: Phaser.Math.Vector2
   ): void {
-    this.player.actionState = new WarpingActionState(
-      this.player.location,
-      velocity
-    );
+    // this.player.actionState = new WarpingActionState(
+    //   this.player,
+    //   this.player.location,
+    //   velocity
+    // );
   }
 
   public attack(projectileType: string): void {

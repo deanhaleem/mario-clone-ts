@@ -1,4 +1,4 @@
-import { timers } from '../../../utils/constants/Timers';
+import { timers } from '../../../utils/constants/timers';
 import { IPlayer } from '../types';
 import { StandingActionState } from './StandingActionState';
 import { TransformingActionStae } from './TransformingActionState';

@@ -1,4 +1,4 @@
-import { utilities } from '../../../utils/constants/Utilities';
+import { utilities } from '../../../utils/constants/utilities';
 import { IPlayer } from '../types';
 import { PowerUpState } from './PowerUpState';
 
@@ -16,7 +16,7 @@ export class FirePowerUpState extends PowerUpState {
   }
 
   public override update(time: number, delta: number): void {
-    this.elapsedTime += delta * 1000;
+    this.elapsedTime += delta / 1000;
 
     if (this.elapsedTime > utilities.attackDelay) {
       this.attackTimer = 0;

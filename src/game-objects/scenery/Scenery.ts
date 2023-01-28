@@ -7,4 +7,12 @@ export class Scenery extends GameObject implements IScenery {
 
     this.setSprite(sceneryType);
   }
+
+  public override get collisionDetails() {
+    return {
+      interface: 'IScenery',
+      class: this.constructor.name,
+      kinematic: false,
+    };
+  }
 }

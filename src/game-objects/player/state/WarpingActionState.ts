@@ -1,5 +1,5 @@
-import { offsets } from '../../../utils/constants/Offsets';
-import { physics } from '../../../utils/constants/Physics';
+import { offsets } from '../../../utils/constants/offsets';
+import { physics } from '../../../utils/constants/physics';
 import { IPlayer } from '../types';
 import { ActionState } from './ActionState';
 import { StandingActionState } from './StandingActionState';
@@ -34,7 +34,7 @@ export class WarpingActionState extends ActionState {
   public override update(time: number, delta: number): void {
     this.setWarpTimer(physics.warpSpeed);
 
-    this.player.location = this.player.location.add(this.warpVelocity);
+    this.player.location.add(this.warpVelocity);
 
     super.update(time, delta);
   }
@@ -44,8 +44,8 @@ export class WarpingActionState extends ActionState {
     if (this.warpTimer >= this.warpTime) {
       this.player.actionState = new StandingActionState(this.player);
       // Game1.instance.registerGameObject(this.player);
-      if (!this.warpLocation.equals(Phaser.Math.Vector2.ZERO)) {
-        this.player.location = new Phaser.Math.Vector2(
+      if (!this.warpLocation.equals(new Phaser.Math.Vector2())) {
+        new Phaser.Math.Vector2(
           this.warpLocation.x,
           this.warpLocation.y + offsets.tile
         );
